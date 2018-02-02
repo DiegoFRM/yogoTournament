@@ -36,7 +36,9 @@ window.minigame.orientation = function(){
 			if(onPortraitOrientation && typeof(onPortraitOrientation) == "function"){
 				onPortraitOrientation()
 			}
-		}
+		}else{
+            onPortraitOrientation()
+        }
 		window.addEventListener("orientationchange", function(event){
 			var currentDegree = window.orientation || screen.orientation.angle
 			var currentOrientation = checkOrientation(currentDegree)
