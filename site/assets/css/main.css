@@ -1,0 +1,43 @@
+html{
+    height: 100%;
+}
+
+
+
+
+body{
+    position: relative;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background: #18167a; /* Old browsers */
+    background: url("../images/bg1.png"), linear-gradient(to bottom, #18167a 0%,#e492f7 100%);
+    background-repeat: repeat-x;
+    background-position: bottom;
+    perspective: 1000px;
+}
+
+.floor{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:40%;
+    background:  url("../images/floorexample.jpg");
+    background-repeat: repeat;
+    background-position: bottom;
+    animation: animatedBackground 3s linear infinite;
+    transform: rotateX(90deg) rotateY(0deg);
+}
+
+
+@keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: 0% -100%; }
+}
+
+.logoTour{
+    padding: 2vw;
+    width: 80%;
+}
+
+
