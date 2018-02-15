@@ -6,38 +6,163 @@ html{
 
 
 body{
-    position: relative;
+    position: absolute;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background: #18167a;
+    overflow-x: hidden;
+    
+}
+
+
+
+#bgGradient{
+    position: fixed;
     margin: 0;
     height: 100%;
     width: 100%;
     background: #18167a; /* Old browsers */
-    background: url("../images/bg1.png"), linear-gradient(to bottom, #18167a 0%,#e492f7 100%);
+    background:  linear-gradient(to bottom, #18167a 0%,#e492f7 100%);
+    
+}
+
+#bgParallax{
+    position: fixed;
+    margin: 0;
+    top:70%;
+    height: 100%;
+    width: 100%;    
+    background-image: url("../images/bg1.png");
     background-repeat: repeat-x;
-    background-position: bottom;
+}
+
+
+#parallaxContainer{
+    position: absolute;
+    top:0% !important; 
+    height: 100% !important;
+    width: 100%; 
+    margin-bottom: 20%;
     perspective: 1000px;
 }
 
 .floor{
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    left:10%;
+    height: 120%;
     top:40%;
-    background:  url("../images/floorexample.jpg");
-    background-repeat: repeat;
-    background-position: bottom;
-    animation: animatedBackground 3s linear infinite;
+    background:  url("../images/floor.png");
     transform: rotateX(90deg) rotateY(0deg);
 }
 
+.gradientfloor{
+    position: absolute;
+    width: 60%;
+    left:20%;
+    height: 100%;
+    top:47%;
+    background:  url("../images/gradient.png");
+    background-repeat: repeat-x;
+    transform: rotateX(90deg) rotateY(0deg);
+}
 
-@keyframes animatedBackground {
-	from { background-position: 0 0; }
-	to { background-position: 0% -100%; }
+.sideLeft{
+    position: absolute;
+    width: 40%;
+    height: 120%;
+    top:39%;
+    left:-20%;
+    background:  url("../images/grasstile.png");
+    transform: rotateX(90deg) rotateY(0deg);   
+    border-radius: 80% 0% 0% 0%;
+}
+
+.grassrim{
+    position: absolute;
+    width: 5%;
+    height: 120%;
+    top:35%;
+    left:17%;
+    background:  url("../images/grassrim.png");
+    background-repeat: repeat-y;
+    transform: rotateX(90deg) rotateY(-90deg); 
+    border-radius: 0% 100% 0% 0%;
+}
+
+.grassrim2{
+    position: absolute;
+    width: 3%;
+    height: 120%;
+    top:40%;
+    left:19%;
+    background:  url("../images/grassrim.png");
+    background-repeat: repeat-y;
+    transform: rotateX(90deg) rotateY(0deg); 
+    
+}
+
+.grassRrim{
+    position: absolute;
+    width: 5%;
+    height: 120%;
+    top:35%;
+    right:16%;
+    background:  url("../images/grassrim.png");
+    background-repeat: repeat-y;
+    transform: rotateX(90deg) rotateY(-90deg); 
+    border-radius: 0% 100% 0% 0%;
+}
+
+.grassRrim2{
+    position: absolute;
+    width: 3%;
+    height: 120%;
+    top:40%;
+    right:19%;
+    background:  url("../images/grassrim.png");
+    background-repeat: repeat-y;
+    transform: rotateX(90deg) rotateY(0deg) scaleX(-1); 
+}
+
+.sideRight{
+    position: absolute;
+    width: 40%;
+    height: 120%;
+    top:39%;
+    right:-20%;
+    background:  url("../images/grasstile.png");
+    transform: rotateX(90deg) rotateY(0deg); 
+    border-radius: 0% 80% 0% 0%;
+}
+
+
+
+#logo{
+    position: fixed;
+    width: 100%;
+    
 }
 
 .logoTour{
     padding: 2vw;
-    width: 80%;
+    width: 50%;
+    max-width: 900px !important;
 }
 
+.object-left1{
+    transform: scale(1);
+    position: absolute;
+    bottom: 15%;
+    left:30%;
+    overflow:visible;
+    height: 10%;
+    opacity: 0;
+    z-index: 1;
+}
+
+.object-left1 img{
+    height: 100%;
+}
 
