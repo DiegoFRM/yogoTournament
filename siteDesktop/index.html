@@ -18,9 +18,6 @@
 
 </head>
     <body>
-    <script>
-var controller = new ScrollMagic.Controller({vertical: true});
-</script>    
 
     <section id="bgGradient"></section> 
     <section id="bgParallax"></section>      
@@ -36,10 +33,21 @@ var controller = new ScrollMagic.Controller({vertical: true});
             <div class="grassrim2"></div>
             <div class="grassRrim"></div>
             <div class="grassRrim2"></div>
-        
-        <div class="object-left1"><img src="assets/images/tower-left.png"></div>    
     </div> 
-        
+    
+        <div class="container">
+            <div class="row objectsmain">
+            <div class="object-left col-xs-4">
+            </div>  
+            <div class="object-center col-xs-4">
+                    <img src="assets/images/createButton.png">
+                    <img src="assets/images/joinButton.png">
+            </div>
+            <div class="object-right col-xs-4">
+            </div>    
+            </div>
+            
+        </div>
     
    
 
@@ -47,6 +55,9 @@ var controller = new ScrollMagic.Controller({vertical: true});
     </body>
 <script>
 
+    TweenMax.to("#bgGradient", 30, {backgroundPosition: "0% 100%", repeat:-1, ease: Linear.easeNone})                                
+                                    
+                                    
     
     
     

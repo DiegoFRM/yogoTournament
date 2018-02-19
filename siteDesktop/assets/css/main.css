@@ -2,9 +2,6 @@ html{
     height: 100%;
 }
 
-
-
-
 body{
     position: absolute;
     margin: 0;
@@ -22,15 +19,13 @@ body{
     margin: 0;
     height: 100%;
     width: 100%;
-    background: #18167a; /* Old browsers */
-    background:  linear-gradient(to bottom, #18167a 0%,#e492f7 100%);
-    
+    background:url("../images/stars.png"), linear-gradient(to bottom, #18167a 0%,#e492f7 100%);
 }
 
 #bgParallax{
     position: fixed;
     margin: 0;
-    top:70%;
+    top:60%;
     height: 100%;
     width: 100%;    
     background-image: url("../images/bg1.png");
@@ -40,10 +35,9 @@ body{
 
 #parallaxContainer{
     position: absolute;
-    top:0% !important; 
-    height: 100% !important;
+    top:30%; 
+    height: 60% !important;
     width: 100%; 
-    margin-bottom: 20%;
     perspective: 1000px;
 }
 
@@ -142,27 +136,55 @@ body{
 #logo{
     position: fixed;
     width: 100%;
-    
+    z-index: 12;
 }
 
 .logoTour{
-    padding: 2vw;
-    width: 50%;
-    max-width: 900px !important;
+    width: 100%;
+    max-width: 600px !important;
+    
 }
 
-.object-left1{
-    transform: scale(1);
+.objectsmain{
     position: absolute;
-    bottom: 15%;
-    left:30%;
-    overflow:visible;
-    height: 10%;
-    opacity: 0;
-    z-index: 1;
+    width: 100%;
+    height: 100% !important;
+    left:0%;
+    margin:0% !important;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.object-left1 img{
+.object-left{
+    position: absolute;
+    background-image: url("../images/tower-left.png");
     height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: contain;
 }
 
+.object-right{
+    position: absolute;
+    background-image: url("../images/tower-right.png");
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: contain;
+    right: 0%;
+}
+
+.object-center{
+    width: 100%;
+    text-align: center;
+}
+
+.object-center img{
+    width: 100%;
+    max-width: 200px;
+    padding: 1vw;
+    
+}
