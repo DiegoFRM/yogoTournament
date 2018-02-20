@@ -9,10 +9,14 @@ body{
     width: 100%;
     background: #18167a;
     overflow: hidden;
-    
 }
 
-
+.luky-font{
+    
+    font-family: 'Luckiest Guy', cursive !important;
+    /*font-size: 22px;*/
+    color: white;
+}
 
 #bgGradient{
     position: fixed;

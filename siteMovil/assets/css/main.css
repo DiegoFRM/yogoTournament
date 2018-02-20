@@ -160,18 +160,6 @@ body{
     background-size: contain;
 }
 
-.yogo-left{
-    
-    background-image: url("../images/nao.png");
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    left: 30%;
-    background-repeat: no-repeat;
-    background-position: left bottom;
-    background-size: contain;
-}
-
 .object-right{
     
     background-image: url("../images/tower-right.png");
@@ -186,7 +174,27 @@ body{
     background-size: contain;
 }
 
-.yogo-right{
+.object-center{
+    width: 100%;
+    text-align: center;
+    height: 50%;
+    top: 5%;
+    z-index: 2;
+}
+
+.yogo-nao{
+    
+    background-image: url("../images/nao.png");
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 30%;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: contain;
+}
+
+.yogo-estrella{
     
     background-image: url("../images/estrella.png");
     position: absolute;
@@ -198,11 +206,32 @@ body{
     background-size: contain;
 }
 
-.object-center{
+.yogo-oona{
+    
+    background-image: url("../images/oona.png");
+    transform: scale(2);
+    position: absolute;
+    height: 100%;
     width: 100%;
-    text-align: center;
-    height: 50%;
-    top: 5%;
+    bottom: 60%;
+    left: -15%;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: contain;
+}
+
+.yogo-arturius{
+    
+    background-image: url("../images/arturius.png");
+    transform: scale(2);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: 60%;
+    right: -20%;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: contain;
 }
 
 .container{
@@ -230,6 +259,56 @@ body{
     right: 15%;
     text-align: center;
 }
+
+.planets-container {
+    height: 450px;
+    margin:30px auto;
+    padding-top: 5vh;
+}
+
+.planets-container ul {}
+
+.planets-container ul li {
+    /* transition: width .5s, height .5s, top .5s, left .5s;
+        -webkit-transition: width .5s, height .5s, top .5s, left .5s;
+        */
+    border: none;
+}
+
+.planets-container ul li img {}
+
+.left{
+    cursor: pointer;
+    width: 15%;
+    padding-top: 50%;
+}
+
+.right {
+    cursor: pointer;
+    width: 15%;
+    padding-top: 50%;
+    transform: scaleX(-1)
+}
+
+.banner img{
+    width: 70%;
+    padding-bottom: 135%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
