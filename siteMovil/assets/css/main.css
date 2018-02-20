@@ -28,7 +28,7 @@ body{
 #bgParallax{
     position: fixed;
     margin: 0;
-    top:70%;
+    top:60%;
     height: 100%;
     width: 100%;    
     background-image: url("../images/bg1.png");
@@ -38,10 +38,9 @@ body{
 
 #parallaxContainer{
     position: absolute;
-    top:0% !important; 
-    height: 100% !important;
+    top:30%; 
+    height: 60% !important;
     width: 100%; 
-    margin-bottom: 20%;
     perspective: 1000px;
 }
 
@@ -49,7 +48,7 @@ body{
     position: absolute;
     width: 80%;
     left:10%;
-    height: 130%;
+    height: 120%;
     top:40%;
     background:  url("../images/floor.png");
     transform: rotateX(90deg) rotateY(0deg);
@@ -135,8 +134,6 @@ body{
     border-radius: 0% 80% 0% 0%;
 }
 
-
-
 #logo{
     position: fixed;
     width: 100%;
@@ -144,54 +141,93 @@ body{
 }
 
 .logoTour{
-    padding: 2vw;
-    width: 80%;
+    padding: 3vw;
+    width: 100%;
     max-width: 900px !important;
 }
 
 .object-left{
     
+    background-image: url("../images/tower-left.png");
+    transform: scale(1.5);
     position: absolute;
-    bottom: 0%;
-    left: -25%;
-    height: 65%;
+    height: 100%;
+    width: 100%;
+    bottom: 25%;
+    left: -15%;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: contain;
 }
 
-.object-left img{
+.yogo-left{
+    
+    background-image: url("../images/nao.png");
+    position: absolute;
     height: 100%;
+    width: 100%;
+    left: 30%;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: contain;
 }
 
 .object-right{
     
+    background-image: url("../images/tower-right.png");
+    transform: scale(1.5);
     position: absolute;
-    bottom: 0%;
-    right: -25%;
-    height: 65%;
-}
-
-.object-right img{
     height: 100%;
+    width: 100%;
+    bottom: 25%;
+    right: -15%;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: contain;
 }
 
-#menu{
-    border: 5%;
-    margin: 5%;
-    height: 50%;
-    width: 90%;
-    padding-top: 50%;
+.yogo-right{
+    
+    background-image: url("../images/estrella.png");
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    right: 30%;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: contain;
+}
+
+.object-center{
+    width: 100%;
     text-align: center;
+    height: 50%;
+    top: 5%;
+}
+
+.container{
+    position: absolute;
+    width: 100% !important;
+    height: 100% !important;
+    left:0%;
+    margin:0% !important;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .menuBtn {
     background-size: contain;
     background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
     border-style: none;
     display:inline-block;
     position: relative;
-    margin: 5%;
     cursor:pointer;
-    width: 50%;
-    height: 35%;
+    width: 130%;
+    height: 22%;
+    right: 15%;
     text-align: center;
 }
 
