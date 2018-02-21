@@ -260,39 +260,44 @@ body{
     text-align: center;
 }
 
-.planets-container {
+.carousel-container {
     height: 450px;
     margin:30px auto;
     padding-top: 5vh;
 }
 
-.planets-container ul {}
+.carousel-container ul {}
 
-.planets-container ul li {
+.carousel-container ul li {
     /* transition: width .5s, height .5s, top .5s, left .5s;
         -webkit-transition: width .5s, height .5s, top .5s, left .5s;
         */
     border: none;
 }
 
-.planets-container ul li img {}
+.carousel-container ul li img {}
 
 .left{
     cursor: pointer;
     width: 15%;
-    padding-top: 50%;
 }
 
 .right {
     cursor: pointer;
     width: 15%;
-    padding-top: 50%;
     transform: scaleX(-1)
 }
 
 .banner img{
     width: 70%;
     padding-bottom: 135%;
+}
+
+.font-luckiest{
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 10vw;
+    color: white;
+    text-align: center;
 }
 
 
