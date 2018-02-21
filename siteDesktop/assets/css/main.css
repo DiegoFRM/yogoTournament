@@ -9,10 +9,10 @@ body{
     width: 100%;
     background: #18167a;
     overflow: hidden;
+    font-family: 'Luckiest Guy', cursive !important;
 }
 
 .luky-font{
-    
     font-family: 'Luckiest Guy', cursive !important;
     /*font-size: 22px;*/
     color: white;
@@ -224,13 +224,14 @@ body{
 /*SECTION 2*/
 
 #section1{
-    display: none;
+    display: block;
 }
 
 #section2{
     position: absolute;
     width: 100%;
     height: 100%;
+    display: none;
 }
 
 .worlds{
@@ -266,3 +267,233 @@ body{
     width: 100%;
     max-width: 350px;
 }
+
+.slider{
+    z-index: 1213;
+    position: absolute;
+}
+
+.menuSlider{
+    position: absolute;
+    width: 0%;
+    left:0%;
+    top:0%;
+    transform: translate(-50%,-50%);
+}
+
+.textSubject{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    text-align: center;
+    
+}
+.navButtons{
+    position: absolute;
+    width: 100%;
+    top: 80%;
+    text-align: center;
+    z-index: 12000;
+}
+
+#createGame{
+    cursor: pointer;
+}
+
+#backButton1{
+    cursor: pointer;
+}
+
+
+/*SECTION 3*/
+
+#section3{
+    position: absolute;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.titlered{
+    font-size: 3vw;
+    width: 50%;
+    height: 20%;
+    margin: 0 auto;
+    position: ab;
+    text-align: center;
+    background-color: #ff4560;
+}
+
+.containerRules{
+    position: absolute;
+    height: 50%;
+    width: 50%;
+    left:50%;
+    transform: translate(-50%,20%);
+}
+
+.rules{
+    background-color: #367fce;
+    padding: 0.5vw;
+    display: flex;
+    justify-content: space-around;
+    font-size: 3vw;
+}
+
+.nextDifficulty{
+    transform: scale(-1,1);
+}
+
+.optionsDifficulty{
+    background-color: #b0f0ff;
+    padding: 0 !important;
+    height: 100%;
+}
+.iconDifficulty{
+    background-color: #64d6f9;
+    text-align: center;
+    height: 100%;;
+}
+
+.iconDifficulty img{
+    position: relative;
+    padding: 4vw;
+    width: 100%;
+}
+
+
+
+.textRules{
+    color:#144a99;
+    font-size: 3vw;
+}
+
+.divisionShape{
+    width: 0%;
+    height: 70%;
+    border-radius: 2vw;
+    background-color: rgba(250,250,250,0.7);
+}
+
+.optionPurple{
+    background-color: #4e10f9;
+    font-size: 2vw;
+    border:0.3vw solid #FFF;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.optionPink{
+    background-color: #f220f2;
+    font-size: 2vw;
+    border:0.3vw solid #FFF;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.optionYellow{
+    background-color: #edaa24;
+    font-size: 2vw;
+    border:0.3vw solid #FFF;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.optionGreen{
+    background-color: #24ed5d;
+    font-size: 2vw;
+    border:0.3vw solid #FFF;
+    height: 20%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center; 
+}
+
+.checkBlank{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkBlank img{
+    position: absolute;
+    top: 20%;
+}
+
+#modalDifficulty{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.m-containerDifficulty{
+    position: absolute;
+    background: #c0b4fc;
+    background-image: url("../images/patternoptions.png");
+    width: 50%;
+    height: 70%;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.headerDifficulty{
+    position: absolute;
+    background-image: url("../images/headerModalDifficulty.png");
+    width: 100%;
+    height: 20%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top:-10%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.headerDifficulty p{
+    width: 50%;
+    font-size: 2vw;
+}
+.choiceOptions{
+    top:10%;
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    overflow: scroll;
+}
+
+.optionOperations{
+    font-size: 2vw;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0.5vw;
+    
+}
+
+.optionPar{
+    background-color: #a89df9;
+}
+
+.checkChoice{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2vw;
+}
+
+.checkChoice img{
+    position: absolute;
+}
+
+/*a89df9*/

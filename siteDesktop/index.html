@@ -16,6 +16,10 @@
 	<script type="text/javascript" src="assets/js/scrollmagic/minified/plugins/animation.gsap.min.js"></script>
 	<script type="text/javascript" src="assets/js/scrollmagic/minified/plugins/debug.addIndicators.min.js"></script>
 
+	<script type="text/javascript" src="assets/js/jquery.easy_slides.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/jquery.easy_slides.css">
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+    
 </head>
     <body>
 
@@ -40,7 +44,7 @@
             <div class="object-left col-xs-4">
             </div>  
             <div class="object-center col-xs-4">
-                    <img src="assets/images/createButton.png">
+                    <img id="createGame" src="assets/images/createButton.png">
                     <img src="assets/images/joinButton.png">
             </div>
             <div class="object-right col-xs-4">
@@ -58,16 +62,27 @@
         </section>
         
         <section id="section2">
-            <div class="worlds">
-                <div id="planet1" class="planets"><img  src="assets/images/planets/geogra.png"></div>
-                <div id="planet2" class="planets"><img  src="assets/images/planets/codus.png"></div>
-                <div id="planet3" class="planets"><img  src="assets/images/planets/creat.png"></div>
-                <div id="planet4" class="planets"><img  src="assets/images/planets/mathdromeda.png"></div>
-                <div id="planet5" class="planets"><img  src="assets/images/planets/health.png"></div>
-                <div id="planet6" class="planets"><img  src="assets/images/planets/science.png"></div>
-                <div id="planet7" class="planets"><img  src="assets/images/planets/wordo.png"></div>
+            <div class="slider slider_circle_10">
+                <div id="planet1" class="planets"><img src="assets/images/planets/mathdromeda.png"></div>
+                <div id="planet2" class="planets"><img src="assets/images/planets/codus.png"></div>
+                <div id="planet3" class="planets"><img src="assets/images/planets/creat.png"></div>
+                <div id="planet4" class="planets"><img src="assets/images/planets/geogra.png"></div>
+                <div id="planet5" class="planets"><img src="assets/images/planets/health.png"></div>
+                <div id="planet6" class="planets"><img src="assets/images/planets/science.png"></div>
+                <div id="planet7" class="planets"><img src="assets/images/planets/wordo.png"></div>
+     
+                <div class="next_button"><img src="assets/images/arrow_side.png"></div>  
+                <div class="prev_button"><img src="assets/images/arrow_side.png"></div>           
+     
+            </div>        
+
+            <div class="textSubject"><img src="assets/images/math_text.png"></div>
+            
+            <div class="navButtons">
+                <img id="backButton1" src="assets/images/backButton.png">
+                <img id="nextButton1" src="assets/images/nextButton.png">
             </div>
-        
+            
             <div id="oonaMain">
                 <img src="assets/images/oona.png">
             </div>
@@ -77,12 +92,183 @@
             </div>
             
         </section>
+        
+        <section id="section3">
+            <div class="containerRules">
+                <div class="titlered">Difficulty</div>
+                <div class="rules">
+                    <div class="prevDifficulty"><img src="assets/images/arrow_side.png"></div>  
+                    <div>EASY</div>
+                    <div class="nextDifficulty"><img src="assets/images/arrow_side.png"></div>  
+                </div>
+                <div class="col-xs-6 optionsDifficulty">
+                    <div class="col-xs-12 textRules">SET RULES</div>
+                    <div class="col-xs-12 optionPurple">
+                        <div id="checkBox1" class="checkBlank">
+                            <img src="assets/images/blank_check.png"> 
+                            <img class="markCheck" src="assets/images/mark_check.png">
+                        </div>
+                        <div>Addition</div>
+                        <div class="divisionShape"></div>
+                        <div class="showModal"><img src="assets/images/plus.png"></div>
+                    </div>
+                    <div class="col-xs-12 optionPink">
+                        <div id="checkBox2" class="checkBlank">
+                            <img src="assets/images/blank_check.png"> 
+                            <img class="markCheck" src="assets/images/mark_check.png">
+                        </div>
+                        <div>Substraction</div>
+                        <div class="divisionShape"></div>
+                        <div class="showModal"><img src="assets/images/plus.png"></div>    
+                        
+                    </div>
+                    <div class="col-xs-12 optionYellow">
+                        <div id="checkBox3" class="checkBlank">
+                            <img src="assets/images/blank_check.png">
+                            <img class="markCheck" src="assets/images/mark_check.png">
+                        </div>
+                        <div>MULTIPLICATION</div>
+                        <div class="divisionShape"></div>
+                        <div class="showModal"><img src="assets/images/plus.png"></div>         
+                    </div>
+                    <div class="col-xs-12 optionGreen">
+                        <div id="checkBox4" class="checkBlank">
+                            <img src="assets/images/blank_check.png"> 
+                            <img class="markCheck" src="assets/images/mark_check.png">
+                        </div>
+                        <div>DIVISION</div>
+                        <div class="divisionShape"></div>
+                        <div class="showModal"><img src="assets/images/plus.png"></div> 
+                        
+                    </div>
+                </div>
+                <div class="col-xs-6 iconDifficulty">
+                    <img src="assets/images/difficultyimage.png">
+                </div>
+            
+            </div>
+            
+            <div id="modalDifficulty">
+                <div class="m-containerDifficulty">
+                    <div class="headerDifficulty">
+                        <p>MULTIPLICATION</p>
+                        <img class="closeButton" src="assets/images/closeButton.png">
+                    </div>
+                    <div class="choiceOptions">
+                        
+                    </div>
+                
+                </div>
+            
+            </div>
+            
+            
+            <div class="navButtons" style="top:85%;">
+                <img id="backButton2" src="assets/images/backButton.png">
+                <img id="nextButton2" src="assets/images/nextButton.png">
+            </div>
+            
+            <script>
+                
+                 for(var i = 1;i<=4;i++){
+                        $("#checkBox" + i).attr("selection",1);
+                        
+                        $("#checkBox" + i).click(function(){
+                            
+                             if($(this).attr("selection") == 1){
+                                 $(this).find(".markCheck").css("display","none");
+                                 $(this).attr("selection",0)
+                             }else{
+                                 $(this).find(".markCheck").css("display","block");
+                                 $(this).attr("selection",1)
+                             }
+                        });
+                    }
+                
+                
+                var totalSum = 
+                    [
+                    "X+X=? Max Sum 9",
+                    "X+?=X Max Sum 9",
+                    "X+X=? Max Sum 19",
+                    "10+X=? Max Sum 19",
+                    "XX+X=? Max Sum 104",
+                    "XX+?=X Max Sum 104",
+                    "XX+X=? Min 11 Max Sum 108",
+                    "XX+?=X Min 11 Max Sum 108 "    
+                    ]
+                
+                //var totalSum =  easy.sum
+                /*
+                function printRule(rule){
+                    rule.    
+                }
+                */
+                
+                for(var p = 0;p<=totalSum.length-1;p++){
+                    $(".choiceOptions").append(`
+                    <div id="operation`+p+`" class="optionOperations">
+                            <div class="operation">` +totalSum[p] + `</div>
+                            <div class="checkChoice">
+                                <img src="assets/images/blank_check.png"> 
+                                <img class="markCheck" src="assets/images/mark_check.png">
+                            </div>
+                        </div>
+                    `);
+                    
+                    
+                    if(p % 2 == 0){
+                        console.log(p)
+                       $("#operation"+ p).addClass("optionPar");
+                    }
+                }
+                
+                $("#modalDifficulty").hide();
+                $(".showModal").click(function(){
+                    $("#modalDifficulty").show();  
+                });
+                
+                $(".closeButton").click(function(){
+                    $("#modalDifficulty").hide();  
+                });
+                
+            </script>
+            
+        </section>
     
     </body>
 <script>
-            $("#logo").hide();              
+            //$("#logo").hide();   
+    
+    $("#createGame").click(function(){
+        $("#logo").hide();
+        $("#section1").css("display","none");
+        $("#section2").css("display","block");
+    });
+                    
+    $("#backButton1").click(function(){
+        $("#logo").show();
+        $("#section1").css("display","block");
+        $("#section2").css("display","none");
+    });
+                    
+    $("#nextButton1").click(function(){
+        $("#section3").css("display","block");
+        $("#section2").css("display","none");
+    });
+                    
+    $("#backButton2").click(function(){
+        $("#section2").css("display","block");
+        $("#section3").css("display","none");
+    });
+                    
+    $("#nextButton2").click(function(){
+    });
                                     
-                                    
+   $(document).ready(function() {
+     $('.slider_circle_10').EasySlides({'autoplay': false, 'show': 13})
+   });
+    
     
     
     
