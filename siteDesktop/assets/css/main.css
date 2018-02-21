@@ -315,14 +315,22 @@ body{
     display: none;
 }
 
+
 .titlered{
-    font-size: 3vw;
+    font-size: 4vw;
     width: 50%;
     height: 20%;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: ab;
     text-align: center;
-    background-color: #ff4560;
+    background-image: url("../images/bgred.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    color:#345468;
 }
 
 .containerRules{
@@ -496,4 +504,12 @@ body{
     position: absolute;
 }
 
-/*a89df9*/
+/*SECTION 3*/
+
+#section4{
+    position: absolute;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
