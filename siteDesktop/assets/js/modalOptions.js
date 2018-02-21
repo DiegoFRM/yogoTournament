@@ -19,6 +19,8 @@ for(var i = 1;i<=4;i++){
 function printRule(rule, operator){
 	var string = ""
 
+	if(operator === "MUL")
+		string += "("
 	if(rule.paramToAnswer === operationGenerator.OPERATION_PARAMS.operand1)
 		string += "?"
 	else if(rule.operand1X) {
@@ -26,9 +28,12 @@ function printRule(rule, operator){
 		for (var index = 0; index < rule.operand1X; index++){
 			string += "X"
 		}
+
 	}else if(rule.operand1Const){
 		string += rule.operand1Const
 	}
+	if(operator === "MUL")
+		string += ")"
 
 	switch (operator){
 		case "SUM":
@@ -38,13 +43,15 @@ function printRule(rule, operator){
 			string+="-"
 			break
 		case "MUL":
-			string+="*"
+			string+=""
 			break
 		case "DIV":
 			string+="÷"
 			break
 	}
 
+	if(operator === "MUL")
+		string += "("
 	if(rule.paramToAnswer === operationGenerator.OPERATION_PARAMS.operand2)
 		string += "?"
 	else if(rule.operand2X) {
@@ -55,6 +62,8 @@ function printRule(rule, operator){
 	}else if(rule.operand2Const){
 		string += rule.operand1Const
 	}
+	if(operator === "MUL")
+		string += ")"
 
 	if(rule.paramToAnswer === operationGenerator.OPERATION_PARAMS.result)
 		string += "=?"
@@ -67,7 +76,20 @@ function printRule(rule, operator){
 	}
 
 	if(rule.maxRange) {
-		string += " Max " + operator + " " + rule.maxRange
+		switch (operator){
+			case "SUM":
+				string += " Max Sum " + rule.maxRange
+				break
+			case "SUB":
+				string += " Max Difference " + rule.maxRange
+				break
+			case "MUL":
+				string += " Max Product " + rule.maxRange
+				break
+			case "DIV":
+				string += " " + rule.maxRange
+				break
+		}
 	}
 
 	return string
