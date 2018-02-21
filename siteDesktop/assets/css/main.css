@@ -18,6 +18,24 @@ body{
     color: white;
 }
 
+.redBtn{
+    background-image: url("../images/redButton.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    font-size: 2vw;
+    padding: 2.5vw;
+}
+
+.greenBtn{
+    background-image: url("../images/greenButton.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    font-size: 2vw;
+    padding: 2vw;
+}
+
 #bgGradient{
     position: fixed;
     margin: 0;
@@ -221,6 +239,8 @@ body{
     max-width: 230px;
 }
 
+
+
 /*SECTION 2*/
 
 #section1{
@@ -294,6 +314,9 @@ body{
     top: 80%;
     text-align: center;
     z-index: 12000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #createGame{
@@ -317,9 +340,9 @@ body{
 
 
 .titlered{
-    font-size: 4vw;
-    width: 50%;
-    height: 20%;
+    font-size: 3vw;
+    width: 40%;
+    height: 25%;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -338,7 +361,7 @@ body{
     height: 50%;
     width: 50%;
     left:50%;
-    transform: translate(-50%,20%);
+    transform: translate(-50%,10%);
 }
 
 .rules{
@@ -358,11 +381,8 @@ body{
     padding: 0 !important;
     height: 100%;
 }
-.iconDifficulty{
-    background-color: #64d6f9;
-    text-align: center;
-    height: 100%;;
-}
+
+
 
 .iconDifficulty img{
     position: relative;
@@ -512,4 +532,163 @@ body{
     width: 100%;
     height: 100%;
     display: none;
+}
+
+
+.optionsTime{
+    background-color: #cc00ff;
+    text-align: center;
+    height: 100%;
+    border-radius: 2vw 0 0 2vw;
+    background-image: url("../images/patternCircles.png");
+}
+
+.optionsRounds{
+    background-color: #ffe966;
+    text-align: center;
+    height: 100%;
+    border-radius: 0 2vw 2vw 0;
+    background-image: url("../images/patternCircles.png");
+}
+
+.bgYellow{
+    background-image: url("../images/bgyellow.png");
+    width: 100%;
+    background-repeat: no-repeat;
+    font-size: 3vw;
+    background-size: contain;
+    background-position: center;
+    color:#3d3b2d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 3vw;
+    
+}
+
+.bgPurple{
+    background-image: url("../images/bgPurple.png");
+    width: 100%;
+    background-repeat: no-repeat;
+    font-size: 3vw;
+    background-size: contain;
+    background-position: center;
+    color:#FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 3vw;
+    
+}
+
+.timeOptions{
+    font-size: 3vw;
+}
+
+#roundOptions{
+    position: relative;
+    background-image: url("../images/hexapurple.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 4vw;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    margin-top: -5%;
+    height: 10%;
+}
+
+#restRound{
+    transform: scale(-1,1);
+}
+
+/*SECTION 5*/
+
+#section5{
+    position: absolute;
+    width: 80%;
+    left:10%;
+    height: 100%;
+}
+
+.containerPin{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:50%;
+    background-color: #00ff78;
+    background-image: url("../images/patternCircles.png");
+    border-radius:  0 0vw 2vw 2vw;
+}
+
+.bgGreen{
+    background-image: url("../images/bggreen.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    margin-top: -15%;
+    font-size: 6vw;
+    position: absolute;
+    text-align: center;  
+    color:#FFF;
+}
+
+#pin{
+    background-color: #FFF;
+    color:#006837;
+    font-size: 4vw;
+    margin-top: 10%;
+    width: 50%;
+    margin-left:50%;
+    transform: translate(-50%,0);
+    text-align: center;
+    border-radius: 2vw;
+}
+
+.textShare{
+    text-align: center;
+    padding: 1vw;
+    font-size: 1.5vw;
+    color:#000000;
+}
+
+.yogotarsSelecitons{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.yogotarSelect{
+    text-align: center;
+    width: 100%;
+    margin-left:20%;
+}
+
+.yogotarSelect .imageYogotar{
+    text-align: center;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20%;
+    background-color:#FFF;  
+}
+
+.imageYogotar img{
+    width: 100%;
+}
+
+.playerName{
+    width: 50%;
+    font-size: 1vw;
+}
+
+#StartButton{
+    color: #FFF;
 }

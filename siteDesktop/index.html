@@ -110,7 +110,7 @@
                         </div>
                         <div>Addition</div>
                         <div class="divisionShape"></div>
-                        <div class="showModal"><img src="assets/images/plus.png"></div>
+                        <div class="showModal" data-type="SUM"><img src="assets/images/plus.png"></div>
                     </div>
                     <div class="col-xs-12 optionPink">
                         <div id="checkBox2" class="checkBlank">
@@ -119,7 +119,7 @@
                         </div>
                         <div>Substraction</div>
                         <div class="divisionShape"></div>
-                        <div class="showModal"><img src="assets/images/plus.png"></div>    
+                        <div class="showModal" data-type="SUB"><img src="assets/images/plus.png"></div>
                         
                     </div>
                     <div class="col-xs-12 optionYellow">
@@ -129,7 +129,7 @@
                         </div>
                         <div>MULTIPLICATION</div>
                         <div class="divisionShape"></div>
-                        <div class="showModal"><img src="assets/images/plus.png"></div>         
+                        <div class="showModal" data-type="MUL"><img src="assets/images/plus.png"></div>
                     </div>
                     <div class="col-xs-12 optionGreen">
                         <div id="checkBox4" class="checkBlank">
@@ -138,7 +138,7 @@
                         </div>
                         <div>DIVISION</div>
                         <div class="divisionShape"></div>
-                        <div class="showModal"><img src="assets/images/plus.png"></div> 
+                        <div class="showModal" data-type="DIV"><img src="assets/images/plus.png"></div>
                         
                     </div>
                 </div>
@@ -172,7 +172,78 @@
         
         
         <section  id="section4">
+            <div class="containerRules">
             <div class="titlered">Customize</div>
+                <div class="col-xs-6 optionsTime">
+                    <div class="bgYellow">
+                        TIME
+                    </div>
+                    
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <img src="assets/images/clockImage.png">
+                            </div>
+                            <div class="row timeOptions">
+                                <div class="col-xs-4"><img src="assets/images/restButton.png"></div>
+                                <div class="col-xs-4"> 3:00</div>
+                                <div class="col-xs-4"><img src="assets/images/sumButton.png"></div>
+                                <div class="col-xs-12">Minutes</div>
+                            </div>
+                            
+                        </div>
+                </div>
+                
+                <div class="col-xs-6 optionsRounds">
+                    <div class="bgPurple">
+                        Rounds
+                    </div>
+                        <div class="row">
+                            
+                            <div class="col-xs-12" style="opacity:0;">
+                                <img src="assets/images/clockImage.png">
+                            </div>
+                            <div class="row roundOptions">
+                                <div id="restRound" class="col-xs-4"><img src="assets/images/arrowPurple.png"></div>
+                                <div id="roundOptions" class="col-xs-4 "> <div>3</div></div>
+                                <div id="sumRound" class="col-xs-4"><img src="assets/images/arrowPurple.png"></div>
+                            </div>
+                            
+                        </div>
+                </div>
+            </div>
+            
+            <div class="navButtons" style="top:85%;">
+                <div id="backButton3" class="redBtn" >BACK</div>
+                <div id="nextButton3" class="greenBtn">SET UP</div>
+            </div>
+            
+        </section>
+        
+        <section id="section5">
+        <div class="containerRules">
+            <div class="titlered">Lobby</div>
+            <div class="containerPin">
+                <div class="bgGreen">PIN</div>
+                <div id="pin">00000</div>
+                <div class="textShare">Share this number with the other player</div>
+                <div>
+                    <div class="yogotarsSelecitons">
+                        <div class="yogotarSelect">
+                            <span class="imageYogotar"><img src="assets/yogotars/1.png"></span>
+                            <div class="playerName">sdasdsada</div>
+                        </div>
+                        <div class="yogotarSelect">
+                            <span class="imageYogotar"><img src="assets/yogotars/1.png"></span>
+                            <div class="playerName">sdasdsada</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="navButtons">
+                <div id="StartButton" class="greenBtn">START</div>
+            </div>
+            
         </section>
     
     </body>
@@ -204,18 +275,37 @@
     });
                     
     $("#nextButton2").click(function(){
+        
+        $("#section4").css("display","block");
+        $("#section3").css("display","none");
+    });
+                    
+    $("#backButton3").click(function(){
+        $("#section3").css("display","block");
+        $("#section4").css("display","none");
+    });
+                    
+    $("#nextButton3").click(function(){
+        
+        $("#section5").css("display","block");
+        $("#section4").css("display","none");
+    });
+    
+    $("#StartButton").click(function(){
+        
     });
                                     
    $(document).ready(function() {
      $('.slider_circle_10').EasySlides({'autoplay': false, 'show': 13})
    });
-        
-        $("#logo").hide();
-        $("#section1").css("display","none");
         $("#section2").css("display","none");
         $("#section3").css("display","none");
-        $("#section4").css("display","block");
+        $("#section4").css("display","none");
+        $("#section5").css("display","none");
+        $("#section3").css("display","none");
+        $("#section4").css("display","none");
     
-</script>    
+</script>
+<script src="assets/js/operationGenerator.js"></script>
     
 </html>
