@@ -60,7 +60,7 @@ function printRule(rule, operator){
 			string += "X"
 		}
 	}else if(rule.operand2Const){
-		string += rule.operand1Const
+		string += rule.operand2Const
 	}
 	if(operator === "MUL")
 		string += ")"
