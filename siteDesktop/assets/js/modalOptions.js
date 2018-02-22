@@ -132,3 +132,41 @@ $(".closeButton").click(function(){
 });
 
 var current_set = "EASY"
+
+    var difficultyNameLevel = 0;
+    
+    function levelDifficulty(difficultyNameLevel){
+        switch(difficultyNameLevel){
+            case 0:
+               $("#difficultyName").text("EASY");
+                current_set = "EASY"
+            break; 
+            case 1:
+               $("#difficultyName").text("HARD");
+                current_set = "HARD"
+            break;
+            case 2:
+               $("#difficultyName").text("MASTER");
+                current_set = "MASTER"
+            break;
+                
+        }
+    }
+    
+    $(".prevDifficulty").click(function(){
+        if(difficultyNameLevel >= 1){
+            difficultyNameLevel--
+        }else{
+            difficultyNameLevel = 2;
+        }        
+        levelDifficulty(difficultyNameLevel)
+    })
+    
+    $(".nextDifficulty").click(function(){
+        if(difficultyNameLevel != 2){
+            difficultyNameLevel++
+        }else{
+            difficultyNameLevel = 0;
+        }        
+        levelDifficulty(difficultyNameLevel)
+    })
