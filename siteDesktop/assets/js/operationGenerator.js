@@ -40,6 +40,109 @@ var operationGenerator = function () {
 				{operand1X: 1, operand2X: 1, minRange:1, maxRange: 9, paramToAnswer:OPERATION_PARAMS.result},
 				{operand1X: 1, operand2X: 1, minRange:1, maxRange: 9, paramToAnswer:OPERATION_PARAMS.operand2},
 			]
+		},
+
+		MEDIUM:{
+			SUM:[
+				{operand1X: 2, operand2Const: 10, minRange:20, maxRange: 109, paramToAnswer:OPERATION_PARAMS.result},
+				{operand1X: 2, operand2X: 2, minRange:20, maxRange: 50, paramToAnswer:OPERATION_PARAMS.result},
+				{operand1X: 2, operand2X: 2, minRange:20, maxRange: 50, paramToAnswer:OPERATION_PARAMS.operand2},
+				{operand1X: 2, operand2X: 2, minRange:51, maxRange: 198, paramToAnswer:OPERATION_PARAMS.result},
+				{operand1X: 2, operand2X: 2, minRange:51, maxRange: 198, paramToAnswer:OPERATION_PARAMS.result},
+			],
+			SUB:[
+				{operand1X: 2, operand2Const: 10, minRange:0, maxRange: 89, paramToAnswer:OPERATION_PARAMS.result},
+				{operand1X: 2, operand2X: 2, minRange:0, maxRange: 89, paramToAnswer:OPERATION_PARAMS.result},
+				{operand1X: 2, operand2X: 2, minRange:0, maxRange: 89, paramToAnswer:OPERATION_PARAMS.operand2},
+				{operand1X: 3, operand2X: 1, minRange:91, maxRange: 990, paramToAnswer:OPERATION_PARAMS.result},
+				{operand1X: 3, operand2X: 1, minRange:91, maxRange: 990, paramToAnswer:OPERATION_PARAMS.operand2},
+			],
+			MUL:[
+				{operand1X: 2, operand2Const: 10, minRange:0, maxRange: 89, paramToAnswer:OPERATION_PARAMS.result},
+				{operand1X: 2, operand2X: 2, minRange:0, maxRange: 89, paramToAnswer:OPERATION_PARAMS.result},
+				{operand1X: 2, operand2X: 2, minRange:0, maxRange: 89, paramToAnswer:OPERATION_PARAMS.operand2},
+				{operand1X: 3, operand2X: 1, minRange:91, maxRange: 990, paramToAnswer:OPERATION_PARAMS.result},
+				{operand1X: 3, operand2X: 1, minRange:91, maxRange: 990, paramToAnswer:OPERATION_PARAMS.operand2},
+			],
+			DIV:[
+				{operand1X: 2, operand2X: 1, minRange:91, maxRange: 990, paramToAnswer:OPERATION_PARAMS.result},
+				{operand1X: 2, operand2X: 1, minRange:91, maxRange: 990, paramToAnswer:OPERATION_PARAMS.operand2},
+			]
+		},
+
+		MEDIUM:{
+			SUM:[
+				{operand1X: 2, operand2Const: 10, minRange:20, maxRange: 109, paramToAnswer:OPERATION_PARAMS.result},
+				{operand1X: 2, operand2X: 2, minRange:20, maxRange: 50, paramToAnswer:OPERATION_PARAMS.result},
+				{operand1X: 2, operand2X: 2, minRange:20, maxRange: 50, paramToAnswer:OPERATION_PARAMS.operand2},
+				{operand1X: 2, operand2X: 2, minRange:51, maxRange: 198, paramToAnswer:OPERATION_PARAMS.result},
+				{operand1X: 2, operand2X: 2, minRange:51, maxRange: 198, paramToAnswer:OPERATION_PARAMS.result},
+			],
+			SUB:[
+				{operand1X: 2, operand2Const: 10, minRange:0, maxRange: 89, paramToAnswer:OPERATION_PARAMS.result},
+				{operand1X: 2, operand2X: 2, minRange:0, maxRange: 89, paramToAnswer:OPERATION_PARAMS.result},
+				{operand1X: 2, operand2X: 2, minRange:0, maxRange: 89, paramToAnswer:OPERATION_PARAMS.operand2},
+				{operand1X: 3, operand2X: 1, minRange:91, maxRange: 990, paramToAnswer:OPERATION_PARAMS.result},
+				{operand1X: 3, operand2X: 1, minRange:91, maxRange: 990, paramToAnswer:OPERATION_PARAMS.operand2},
+			],
+			MUL:[
+				{operand1X: 2, operand2Const: 10, minRange:0, maxRange: 89, paramToAnswer:OPERATION_PARAMS.result},
+				{operand1X: 2, operand2X: 2, minRange:0, maxRange: 89, paramToAnswer:OPERATION_PARAMS.result},
+				{operand1X: 2, operand2X: 2, minRange:0, maxRange: 89, paramToAnswer:OPERATION_PARAMS.operand2},
+				{operand1X: 3, operand2X: 1, minRange:91, maxRange: 990, paramToAnswer:OPERATION_PARAMS.result},
+				{operand1X: 3, operand2X: 1, minRange:91, maxRange: 990, paramToAnswer:OPERATION_PARAMS.operand2},
+			],
+			DIV:[
+				{operand1X: 2, operand2X: 1, paramToAnswer:OPERATION_PARAMS.result},
+				{operand1X: 2, operand2X: 1, paramToAnswer:OPERATION_PARAMS.operand2},
+			]
+		},
+
+		HARD:{
+			SUM:[
+				{operand1X: 3, operand2X: 1, minRange:101, maxRange: 1008, paramToAnswer:OPERATION_PARAMS.result},
+				{operand1X: 3, operand2X: 1, minRange:101, maxRange: 1008, paramToAnswer:OPERATION_PARAMS.operand2},
+				{operand1X: 3, operand2Const: 10, minRange:110, maxRange: 1009, paramToAnswer:OPERATION_PARAMS.operand2},
+				{operand1X: 3, operand2X: 2, minRange:110, maxRange: 1098, paramToAnswer:OPERATION_PARAMS.result},
+				{operand1X: 3, operand2X: 2, minRange:110, maxRange: 1098, paramToAnswer:OPERATION_PARAMS.operand2},
+			],
+			SUB:[
+				{operand1X: 3, operand2X: 2, minRange:90, maxRange: 989, paramToAnswer:OPERATION_PARAMS.result},
+				{operand1X: 3, operand2X: 2, minRange:90, maxRange: 989, paramToAnswer:OPERATION_PARAMS.operand2},
+				{operand1X: 4, operand2X: 1, minRange:991, maxRange: 9998, paramToAnswer:OPERATION_PARAMS.result},
+				{operand1X: 4, operand2X: 1, minRange:991, maxRange: 9998, paramToAnswer:OPERATION_PARAMS.operand2},
+			],
+			MUL:[
+				{operand1X: 3, operand2X: 1, minRange:100, maxRange: 8991, paramToAnswer:OPERATION_PARAMS.result},
+				{operand1X: 3, operand2Const: 10, minRange:1000, maxRange: 9990, paramToAnswer:OPERATION_PARAMS.result},
+				{operand1X: 3, operand2X: 2, minRange:90, maxRange: 98901, paramToAnswer:OPERATION_PARAMS.result},
+			],
+			DIV:[
+				{operand1X: 3, operand2X: 1, paramToAnswer:OPERATION_PARAMS.result},
+			]
+		},
+
+		MASTER:{
+			SUM:[
+				{operand1X: 4, operand2Const: 10, minRange:1010, maxRange: 10009, paramToAnswer:OPERATION_PARAMS.result},
+				{operand1X: 4, operand2X: 2, minRange:1010, maxRange: 10098, paramToAnswer:OPERATION_PARAMS.result},
+				{operand1X: 4, operand2X: 2, minRange:1010, maxRange: 10098, paramToAnswer:OPERATION_PARAMS.operand2},
+				{operand1X: 4, operand2X: 3, minRange:1100, maxRange: 10998, paramToAnswer:OPERATION_PARAMS.result},
+				{operand1X: 4, operand2X: 3, minRange:1100, maxRange: 10998, paramToAnswer:OPERATION_PARAMS.operand2},
+			],
+			SUB:[
+				{operand1X: 4, operand2X: 2, minRange:990, maxRange: 9900, paramToAnswer:OPERATION_PARAMS.result},
+				{operand1X: 4, operand2X: 2, minRange:990, maxRange: 9900, paramToAnswer:OPERATION_PARAMS.operand2},
+				{operand1X: 4, operand2X: 3, minRange:900, maxRange: 9000, paramToAnswer:OPERATION_PARAMS.result},
+				{operand1X: 4, operand2X: 3, minRange:900, maxRange: 9000, paramToAnswer:OPERATION_PARAMS.operand2},
+			],
+			MUL:[
+				{operand1X: 4, operand2X: 1, minRange:1000, maxRange: 89991, paramToAnswer:OPERATION_PARAMS.result},
+				{operand1X: 4, operand2X: 2, minRange:10000, maxRange: 989901, paramToAnswer:OPERATION_PARAMS.result},
+			],
+			DIV:[
+				{operand1X: 3, operand2X: 2, paramToAnswer:OPERATION_PARAMS.result},
+			]
 		}
 	}
 
