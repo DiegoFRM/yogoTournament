@@ -142,10 +142,14 @@ var current_set = "EASY"
                 current_set = "EASY"
             break; 
             case 1:
+               $("#difficultyName").text("MEDIUM");
+                current_set = "MEDIUM"
+            break;
+            case 2:
                $("#difficultyName").text("HARD");
                 current_set = "HARD"
             break;
-            case 2:
+            case 3:
                $("#difficultyName").text("MASTER");
                 current_set = "MASTER"
             break;
@@ -157,13 +161,13 @@ var current_set = "EASY"
         if(difficultyNameLevel >= 1){
             difficultyNameLevel--
         }else{
-            difficultyNameLevel = 2;
+            difficultyNameLevel = 3;
         }        
         levelDifficulty(difficultyNameLevel)
     })
     
     $(".nextDifficulty").click(function(){
-        if(difficultyNameLevel != 2){
+        if(difficultyNameLevel != 3){
             difficultyNameLevel++
         }else{
             difficultyNameLevel = 0;
