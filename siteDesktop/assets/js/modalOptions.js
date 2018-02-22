@@ -38,15 +38,19 @@ function printRule(rule, operator){
 	switch (operator){
 		case "SUM":
 			string+="+"
+            $(".headerDifficulty").find("p").text("ADDITION")
 			break
 		case "SUB":
 			string+="-"
+            $(".headerDifficulty").find("p").text("SUBSTRACTION")
 			break
 		case "MUL":
 			string+=""
+            $(".headerDifficulty").find("p").text("MULTIPLICATION")
 			break
 		case "DIV":
 			string+="÷"
+            $(".headerDifficulty").find("p").text("DIVISION")
 			break
 	}
 
@@ -95,22 +99,39 @@ function printRule(rule, operator){
 	return string
 }
 
-function getRules(operator) {
+var ruleSet = false
 
+function getRules(operator) {
+    
 	$(".choiceOptions").html("")
 
-	var ruleSet = operationGenerator.RULES_SET[current_set][operator]
+	ruleSet = operationGenerator.RULES_SET[current_set][operator]
 	for (var p = 0; p <= ruleSet.length - 1; p++) {
 		var rule = ruleSet[p]
 
 		$(".choiceOptions")
 			.append(' <div id="operation' + p + '" class="optionOperations">' +
 				'<div class="operation">' + printRule(rule, operator) + '</div>' +
-				'<div class="checkChoice">' +
+				'<div id="checkChoice' + p + '"  class="checkChoice">' +
 				'<img src="assets/images/blank_check.png"> ' +
 				'<img class="markCheck" src="assets/images/mark_check.png"> ' +
 				'</div> ' +
 				'</div>');
+        
+    $("#checkChoice" + p).attr("selection",1);
+
+	$("#checkChoice" + p).click(function(){
+
+		if($(this).attr("selection") == 1){
+			$(this).find(".markCheck").css("display","none");
+			$(this).attr("selection",0)
+            //aqui para guardar el deseleccionado
+		}else{
+			$(this).find(".markCheck").css("display","block");
+			$(this).attr("selection",1)
+            //aqui para guardar el seleccionado
+		}
+	});
 
 
 		if (p % 2 === 0) {
@@ -132,8 +153,7 @@ $(".closeButton").click(function(){
 });
 
 var current_set = "EASY"
-
-    var difficultyNameLevel = 0;
+var difficultyNameLevel = 0;
     
     function levelDifficulty(difficultyNameLevel){
         switch(difficultyNameLevel){
