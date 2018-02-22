@@ -1,0 +1,116 @@
+
+.menu-container{
+    height: 77%
+}
+
+.condition-container{
+
+    height: 50%;
+    width: 100%;
+    background-color: #367fce;
+}
+
+.condition-header{
+    height: 20%;
+    width: 100%;
+    background-color: yellow;
+}
+
+.condition-header span{
+    color: grey;
+    position: relative;
+    top: 10%;
+}
+
+.condition-body{
+    width: 100%;
+    height: 80%;
+    background-color: purple;
+}
+
+.pink-penta{
+    background-image: url(../images/pink_container.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border-style: none;
+    width: 70%;
+    height: 100%;
+    margin-left: 20%;
+    font-size: 20vw;
+}
+
+.up-arrow{
+    background-image: url(../images/arrow_up.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border-style: none;
+    width: 70%;
+    height: 100%;
+    margin-left: 20%;
+}
+
+.down-arrow{
+    background-image: url(../images/arrow_up.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border-style: none;
+    transform: scaleY(-1);
+    width: 70%;
+    height: 90%;
+    margin-left: 20%;
+}
+
+.round-image{
+    background-image: url(../images/round.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border-style: none;
+    width: 100%;
+    height: 50%;
+    padding-top: 5%;
+    margin-top: 30%;
+    font-size: 20vw;
+}
+
+.time-image{
+    background-image: url(../images/clock.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border-style: none;
+    width: 100%;
+    height: 40%;
+    margin-top: 10%;
+}
+
+.title-container{
+     background-color: darkseagreen;
+}
+
+.bottom-container{
+     background-color: lightskyblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

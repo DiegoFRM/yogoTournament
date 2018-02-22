@@ -1,0 +1,281 @@
+<!doctype html>
+<html>
+<head>
+    <title class="languageTitle">Yogome tournament</title>
+    <meta name="viewport" content="width = 1050, user-scalable = no" />
+    <meta charset="UTF-8">   
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/dificulty.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/modal.css" />
+    <!-- Jquery   -->
+    <script src="assets/js/lib/jquery.min.js" ></script>
+    <!--  Bootstrap 3.0  -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+    
+    <script type="text/javascript" src="assets/js/lib/greensock/TweenMax.min.js"></script>
+    <script type="text/javascript" src="assets/js/lib/iscroll-probe.js"></script>
+
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    
+    <script src="assets/js/Carousel.js"></script>
+    
+    <script>
+    $(document).ready(function() {
+        $('.carousel-container').carousel({
+            num: 1,
+            maxWidth: 450,
+            maxHeight: 450,
+            distance: 100,
+            scale: 0.6,
+            animationTime: 500,
+            autoPlay: false,
+            distance: 100
+        });
+    });
+    </script>
+    
+</head>
+    
+<body>
+     
+    <div class="container font-luckiest">
+        
+        <div class="title-container">
+            <div class="center-text" style="transform: translateY(-35%);">DIFFICULTY</div>
+        </div>
+        
+        <div class="dificult-container">
+            
+            <div class="col-xs-3 sub-grid">
+                <button type="button" class="left-arrow"></button>
+            </div>
+
+            <div class="col-xs-6 sub-grid">
+                <div class="lvl-image"></div>
+                <div class="center-text" id="lvl-text">EASY</div>
+            </div>
+
+            <div class="col-xs-3 sub-grid">
+                <button type="button" class="right-arrow"></button>
+            </div>
+            
+        </div>
+        
+        <div class="menu-container">
+            <div class="small-blue-text">SET RULES</div>
+            
+            <div class="grid-container">
+                
+                <div id="adition">
+                    
+                     <div class="col-xs-3 sub-grid">
+                        <div id="checkBox0" class="checkBlank">
+                            <img src="assets/images/blank_check.png"> 
+                            <img class="markCheck" src="assets/images/mark_check.png">
+                        </div>
+                    </div>
+                    
+                    <div class="col-xs-6 sub-grid">
+                        <div class="center-text">ADITION</div>
+                    </div>
+                    
+                    <div class="col-xs-3 sub-grid">
+                        <div class="vl"></div>
+                        <div class="plus-btn"><img src="assets/images/plus.png"></div>
+                    </div>
+                    
+                </div>
+                
+                <div id="substraction">
+                    
+                     <div class="col-xs-3 sub-grid">
+                        <div id="checkBox1" class="checkBlank">
+                            <img src="assets/images/blank_check.png"> 
+                            <img class="markCheck" src="assets/images/mark_check.png">
+                        </div>
+                    </div>
+                    
+                    <div class="col-xs-6 sub-grid">
+                        <div class="center-text">SUBSTRACTION</div>
+                    </div>
+                    
+                    <div class="col-xs-3 sub-grid">
+                        <div class="vl"></div>
+                        <div class="plus-btn"><img src="assets/images/plus.png"></div>
+                    </div>
+                    
+                </div>
+                
+                <div id="multiplcation">
+                    
+                     <div class="col-xs-3 sub-grid">
+                        <div id="checkBox2" class="checkBlank">
+                            <img src="assets/images/blank_check.png"> 
+                            <img class="markCheck" src="assets/images/mark_check.png">
+                        </div>
+                    </div>
+                    
+                    <div class="col-xs-6 sub-grid">
+                        <div class="center-text">MULTIPLICATION</div>
+                    </div>
+                    
+                    <div class="col-xs-3 sub-grid">
+                        <div class="vl"></div>
+                        <div class="plus-btn"><img src="assets/images/plus.png"></div>
+                    </div>
+                    
+                </div>  
+                
+                <div id="division">
+                    
+                    <div class="col-xs-3 sub-grid">
+                        <div id="checkBox3" class="checkBlank">
+                            <img src="assets/images/blank_check.png"> 
+                            <img class="markCheck" src="assets/images/mark_check.png">
+                        </div>
+                    </div>
+                    
+                    <div class="col-xs-6 sub-grid">
+                        <div class="center-text">DIVISION</div>
+                    </div>
+                    
+                    <div class="col-xs-3 sub-grid">
+                        <div class="vl"></div>
+                        <div class="plus-btn"><img src="assets/images/plus.png"></div>
+                    </div>
+                    
+                </div>
+
+            </div>        
+            
+            <div class="bottom-container">
+            <button class="menuBtn" style="background-image: url(assets/images/backButton.png);" type="button" onclick="window.location.href='selectSubject.html'"></button>
+            <button class="menuBtn" style="background-image: url(assets/images/nextButton.png);" type="button" onclick="window.location.href='winConditions.html'"></button>
+        </div>
+            
+        </div>
+        
+        
+    </div>
+
+    
+    <!-- modal -->
+    <div id="modal" class="modal ">
+        <div class="modal-content font-luckiest">
+            <div class="modal-title">
+                <span>ADITION</span>
+                <img class="close-btn" src="assets/images/closeButton.png">
+            </div>
+            
+            <div class="modal-body">
+            </div>
+        </div>
+            
+    </div>
+
+
+<script type="text/javascript" src="assets/js/modal.js"></script>
+<script>
+
+    for(var i = 0; i < 4; i++){
+        $("#checkBox" + i).attr("selection",1);
+
+        $("#checkBox" + i).click(function(){
+
+             if($(this).attr("selection") == 1){
+                 $(this).find(".markCheck").css("display","none");
+                 $(this).attr("selection",0)
+             }else{
+                 $(this).find(".markCheck").css("display","block");
+                 $(this).attr("selection",1)
+             }
+        });
+    }
+    
+    var index = 0;
+    
+    var lvl = ['EASY', 'MEDIUM', 'HARD', 'MASTER']
+    
+    $(".left-arrow").click(function(){
+        if(index > 0){
+            index--
+        }
+        else{
+            index = lvl.length - 1
+        }
+        $("#lvl-text").text(lvl[index]);
+    });
+    
+    $(".right-arrow").click(function(){
+        if(index < lvl.length -1){
+            index++
+        }
+        else{
+            index = 0
+        }
+        $("#lvl-text").text(lvl[index]);
+    });
+    
+    var aditionOptions = 
+        [
+        "X+X=? Max Sum 9",
+        "X+?=X Max Sum 9",
+        "X+X=? Max Sum 19",
+        "10+X=? Max Sum 19",
+        "XX+X=? Max Sum 104",
+        "XX+?=X Max Sum 104",
+        "XX+X=? Min 11 Max Sum 108",
+        "XX+?=X Min 11 Max Sum 108 "    
+        ]
+    
+    for(var p = 0; p < aditionOptions.length; p++){
+
+        $(".modal-body").append(`<div id="operation`+p+`" class="menu-options">
+                                    <div>
+                                        <span>` + aditionOptions[p] + `</span>
+                                    </div>
+
+                                    <div>
+                                        <div class="checkChoice">
+                                            <img src="assets/images/blank_check.png">
+                                            <img class="markCheck" src="assets/images/mark_check.png">
+                                        </div>
+                                    </div>
+                                </div>`
+        );
+
+        if(p % 2 == 0){
+           $("#operation" + p).addClass("purple-back");
+        }
+    }
+
+    for(var i = 0; i < aditionOptions.length; i++){
+        $("#operation" + i).attr("selection",1);
+
+        $("#operation" + i).click(function(){
+
+             if($(this).attr("selection") == 1){
+                 $(this).find(".markCheck").css("display","none");
+                 $(this).attr("selection",0)
+             }else{
+                 $(this).find(".markCheck").css("display","block");
+                 $(this).attr("selection",1)
+             }
+        });
+    }
+    
+</script>
+    
+</body>       
+</html>
+
+
+        
+    
+
+
+
+
