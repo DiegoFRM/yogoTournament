@@ -110,7 +110,7 @@ body{
 
 .logoTour{
     padding: 2vw;
-    width: 100%;
+    width: 70%;
     max-width: 600px !important;
     
 }
@@ -132,9 +132,10 @@ body{
     position: absolute;
     display: flex;
     width: 100%;
-    justify-content: center;
+    justify-content:center;
     align-content: center;
-    color:#FFF;    
+    color:#FFF; 
+    top:30%;
 }
 
 .object-center div{
@@ -142,7 +143,8 @@ body{
     padding: 2vw;
     margin: 1vw;
     font-size: 3vw;
-    width: 50%;
+    width: 100%;
+    min-width: 100px
 }
 
 
@@ -151,6 +153,8 @@ body{
     bottom: 0;
     width: 50%;
     top: 50%;
+    left: 0;
+    text-align: center;
 }
 
 #naoMain img{
@@ -160,16 +164,17 @@ body{
 
 #estrellaMain{
     position: absolute;
-    top: 50%;
-    right: 16%;
-    margin: 0%;
+    bottom: 0;
     width: 50%;
-    text-align: right;
+    top: 50%;
+    right: 0;
+    text-align: center;
 }
 
 
 #estrellaMain img{
-    max-width: 230px;
+    width: 40%;
+    max-width: 180px;
 }
 
 
@@ -280,6 +285,10 @@ body{
     display: none;
 }
 
+
+.prevDifficulty{
+    z-index: 12;
+}
 
 .titlered{
     font-size: 3vw;
