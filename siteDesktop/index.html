@@ -35,8 +35,8 @@
             </div>  
             <div class="object-center col-xs-4 row">
                    
-                    <div id="createGame" class="greenBtn col-xs-6">Create</div>
-                    <div id="joinGame" class="greenpink col-xs-6">JOIN</div>
+                    <div id="createGame" class="greenBtn scaleButton col-xs-6">Create</div>
+                    <div id="joinGame" class="greenpink scaleButton col-xs-6">JOIN</div>
             </div>
             <div class="object-right col-xs-4">
             </div>    
@@ -74,8 +74,8 @@
 <!--                <img id="backButton1" src="assets/images/backButton.png">
                 <img id="nextButton1" src="assets/images/nextButton.png">
 -->
-                <div id="backButton1" class="greenpink col-xs-6">BACK</div>
-                    <div id="nextButton1" class="greenBtn col-xs-6">NEXT</div>
+                <div id="backButton1" class="greenpink scaleButton col-xs-6">BACK</div>
+                    <div id="nextButton1" class="greenBtn scaleButton col-xs-6">NEXT</div>
                 
             </div>
             
@@ -148,8 +148,8 @@
             
             
             <div class="navButtons">
-                <div id="backButton2" class="greenpink col-xs-6">BACK</div>
-                    <div id="nextButton2" class="greenBtn col-xs-6">NEXT</div>
+                <div id="backButton2" class="greenpink scaleButton col-xs-6">BACK</div>
+                    <div id="nextButton2" class="greenBtn scaleButton col-xs-6">NEXT</div>
             </div>
             
         </section>
@@ -198,8 +198,8 @@
             
             
             <div class="navButtons">
-                <div id="backButton3" class="redBtn col-xs-6" >BACK</div>
-                <div id="nextButton3" class="greenBtn col-xs-6">SET UP</div>
+                <div id="backButton3" class="redBtn scaleButton col-xs-6" >BACK</div>
+                <div id="nextButton3" class="greenBtn scaleButton col-xs-6">SET UP</div>
             </div>
             
         </section>
@@ -226,7 +226,7 @@
             </div>
             </div>
             <div class="navButtons">
-                <div id="StartButton" class="greenBtn">START</div>
+                <div id="StartButton" class="greenBtn scaleButton">START</div>
             </div>
             
         </section>
@@ -317,6 +317,22 @@
             counterRound++
             $("#roundOptions").find("span").text(counterRound);
         }
+    });
+    
+    //animations
+    $(".scaleButton").mouseover(function(){
+       TweenMax.fromTo(this,0.5,{scale:1},{scale:1.1,ease:Elastic.easeOut}); 
+    });
+    
+    $(".scaleButton").mouseout(function(){
+       TweenMax.fromTo(this,0.5,{scale:1.1},{scale:1,ease:Elastic.easeOut}); 
+    });    
+    
+    $(".scaleButton").mousedown(function(){
+       TweenMax.fromTo(this,0.5,{scale:1},{scale:0.9,ease:Elastic.easeOut}); 
+    }); 
+    $(".scaleButton").mouseup(function(){
+       TweenMax.fromTo(this,0.5,{scale:0.9},{scale:1,ease:Elastic.easeOut}); 
     });
     
 
