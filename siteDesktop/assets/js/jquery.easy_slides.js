@@ -131,25 +131,25 @@ Usage:
                   
                   switch(nextslide % 7){
                       case 0:
-                          $(".textSubject").text("MATH")
+                          $(".textSubject").find("p").text("MATH")
                           break;
                       case 1:
-                          $(".textSubject").text("CODE")
+                          $(".textSubject").find("p").text("CODE")
                           break;
                       case 2:
-                          $(".textSubject").text("CREATIVITY")
+                          $(".textSubject").find("p").text("CREATIVITY")
                           break;
                       case 3:
-                          $(".textSubject").text("GEOGRAPHY")
+                          $(".textSubject").find("p").text("GEOGRAPHY")
                           break;
                       case 4:
-                          $(".textSubject").text("HEALTH")
+                          $(".textSubject").find("p").text("HEALTH")
                           break;
                       case 5:
-                          $(".textSubject").text("SCIENCE")
+                          $(".textSubject").find("p").text("SCIENCE")
                           break;
                       case 6:
-                          $(".textSubject").text("LANGUAGE")
+                          $(".textSubject").find("p").text("LANGUAGE")
                           break;
                   }
                   

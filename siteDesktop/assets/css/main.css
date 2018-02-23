@@ -567,6 +567,9 @@ body{
     margin-top: -5%;
     height: 10%;
 }
+#roundOptions span{
+    margin-top: 10%;
+}
 
 #restRound{
     transform: scale(-1,1);
