@@ -10,6 +10,8 @@
     <!--  Bootstrap 3.0  -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+    
     <script type="text/javascript" src="assets/js/lib/greensock/TweenMax.min.js"></script>
     <script type="text/javascript" src="assets/js/lib/iscroll-probe.js"></script>
     
@@ -21,14 +23,13 @@
     <script>
     $(document).ready(function() {
         $('.carousel-container').carousel({
-            num: 5,
+            num: 3,
             maxWidth: 450,
             maxHeight: 450,
-            distance: 100,
-            scale: 0.6,
+            distance: 180,
+            scale: 0.4,
             animationTime: 500,
             autoPlay: false,
-            distance: 100
         });
     });
     </script>
@@ -38,21 +39,8 @@
 <body>
      
     <section id="bgGradient"></section> 
-    <section id="bgParallax"></section>      
-<!--    <div id="logo"><img class="logoTour img-responsive center-block" src="assets/images/logo.png"></div> -->
-        
-    <div id="parallaxContainer">                                                           
-            <div class="floor"></div>
-            <div class="gradientfloor"></div>
-            <div class="sideRight"></div>
-            <div class="sideLeft"></div>
-            <div class="grassrim"></div>
-            <div class="grassrim2"></div>
-            <div class="grassRrim"></div>
-            <div class="grassRrim2"></div>            
-    </div> 
     
-
+     <div class="container font-luckiest">
             
     <div class="carousel-container">
         <ul>
@@ -78,34 +66,50 @@
             <li>
                 <img src="assets/images/planets/science.png" alt="" />
             </li>
-            <img src="assets/images/arrowSide.png" class="left" style="padding-top: 50% !important;">
-            <img src="assets/images/arrowSide.png" class="right" style="padding-top: 50% !important;">
+            <img src="assets/images/arrowYellow.png" class="left">
+            <img src="assets/images/arrowYellow.png" class="right">
         </ul>
     </div>
-    
-    <div class="container banner">
-        <img src="assets/images/banner.png">
-    </div>
-    
-    
-    <div class="container" style="bottom: 0%">
         
-        <div class="yogo-oona col-xs-4">
-            </div>
+        <div class="banner" id="subject">CODING</div>
         
-            <div class="object-center col-xs-4" style="top: 40%">
-    
-                <button class="menuBtn" style="background-image: url(assets/images/nextButton.png);" type="button" onclick="window.location.href='selectDifficult.html'"></button>
-                
-                <button class="menuBtn" style="background-image: url(assets/images/backButton.png);" type="button" onclick="window.location.href='index.html'"></button>
-                
-            </div>
+        <div class="object-center" style="display: flex;">
+
+            <button class="menuBtn red-btn" type="button" onclick="window.location.href='index.html'">BACK</button>
+            
+            <button class="menuBtn green-btn" type="button" onclick="window.location.href='selectDifficult.html'">NEXT</button>
+            
+        </div>
         
-        <div class="yogo-arturius col-xs-4">
-            </div> 
-          
     </div>
         
-</body>    
-<script src="assets/js/subjects/subjects.js"></script>
+</body> 
+    
+<script>
+        
+    var index = 0;
+    
+    var subjectList = ['CODING', 'CREATIVITY', 'HEALTH', 'GEOGRAPHY', 'LANGUAGE', 'MATH', 'SCIENCE']
+    
+    $(".left").on('touchstart', function(){
+        if(index > 0){
+            index--
+        }
+        else{
+            index = subjectList.length - 1
+        }
+        $("#subject").text(subjectList[index]);
+    });
+    
+    $(".right").on('touchstart', function(){
+        if(index < subjectList.length -1){
+            index++
+        }
+        else{
+            index = 0
+        }
+        $("#subject").text(subjectList[index]);
+    });
+        
+</script>
 </html>

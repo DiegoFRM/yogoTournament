@@ -1,35 +1,34 @@
 
 .menu-container{
-    height: 77%
+    height: 60%;
+    background-color: #cc00ff;
 }
 
 .condition-container{
 
     height: 50%;
     width: 100%;
-    background-color: #367fce;
 }
 
 .condition-header{
+    background-image: url("../images/titleTime.png");
+    background-repeat: no-repeat;
+    background-size: 60% 100%;
+    padding: 1vw;
+    background-position: center;
     height: 20%;
-    width: 100%;
-    background-color: yellow;
-}
-
-.condition-header span{
-    color: grey;
-    position: relative;
-    top: 10%;
+    text-align: center;
+    margin: 0% 10%;
+    font-size: 7vw;
 }
 
 .condition-body{
     width: 100%;
     height: 80%;
-    background-color: purple;
 }
 
-.pink-penta{
-    background-image: url(../images/pink_container.png);
+.more-time{
+    background-image: url(../images/time_more.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -41,8 +40,8 @@
     font-size: 20vw;
 }
 
-.up-arrow{
-    background-image: url(../images/arrow_up.png);
+.less-time{
+    background-image: url(../images/time_less.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -51,18 +50,31 @@
     width: 70%;
     height: 100%;
     margin-left: 20%;
+    font-size: 20vw;
 }
 
-.down-arrow{
-    background-image: url(../images/arrow_up.png);
+.more-rounds{
+    background-image: url(../images/round_arrow.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     background-color: transparent;
     border-style: none;
-    transform: scaleY(-1);
     width: 70%;
-    height: 90%;
+    height: 100%;
+    margin-left: 20%;
+    transform: scaleX(-1);
+}
+
+.less-rounds{
+    background-image: url(../images/round_arrow.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border-style: none;
+    width: 70%;
+    height: 100%;
     margin-left: 20%;
 }
 
@@ -75,7 +87,6 @@
     border-style: none;
     width: 100%;
     height: 50%;
-    padding-top: 5%;
     margin-top: 30%;
     font-size: 20vw;
 }
@@ -89,7 +100,7 @@
     border-style: none;
     width: 100%;
     height: 40%;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 .title-container{

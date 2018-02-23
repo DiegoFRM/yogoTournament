@@ -42,11 +42,11 @@
     
 <body>
          
+    <section id="bgGradient"></section>
+    
     <div class="container font-luckiest">
         
-        <div class="title-container">
-            <div class="center-text" style="transform: translateY(-35%);">LOBBY</div>
-        </div>
+        <div class="banner">LOBBY</div>
         
         <div class="pin-container">
             
@@ -55,7 +55,7 @@
             
             <div class="pin-body">
                 <div id="pin" class="pin-style">123535</div>
-                <div style="font-size: 4vw; margin-left: 5%; margin-right: 5%;">SHARE THE NUMBER WITH THE OTHER PLAYER</div>
+                <div class="share-style">SHARE THE NUMBER WITH THE OTHER PLAYER</div>
                 <div class="players-container">
                     <div class="yogo-container" id="player"></div>
                     <div class="yogo-container" id="challenger">
@@ -65,10 +65,13 @@
             </div>
         </div>
         
-        <div class="bottom-container">
-                <button class="menuBtn" style="background-image: url(assets/images/backButton.png);" type="button" onclick="window.location.href='winConditions.html'"></button>
-                <button class="menuBtn" style="background-image: url(assets/images/nextButton.png);"></button>
-            </div>
+        <div class="object-center" style="margin-top: 10%;">
+
+            <button class="menuBtn red-btn" type="button" onclick="window.location.href='customize.html'">BACK</button>
+            
+            <button class="menuBtn green-btn" type="button">START</button>
+            
+        </div>
     </div>
 
 

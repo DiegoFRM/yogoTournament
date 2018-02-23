@@ -214,14 +214,14 @@
 
         $container.find('.left').css({
             position: 'absolute',
-            left: 10,
+            //left: 10,
             top: '50%',
             'z-index': 9999 + $container.data('totalNum') + 1
         });
 
         $container.find('.right').css({
             position: 'absolute',
-            right: 10,
+            //right: 10,
             top: '50%',
             'z-index': 9999 + $container.data('totalNum') + 1
         });
