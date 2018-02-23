@@ -6,7 +6,7 @@
     <meta charset="UTF-8">   
     <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/dificulty.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/winConditions.css" />
+    <!--<link rel="stylesheet" type="text/css" href="assets/css/customize.css" />-->
     <link rel="stylesheet" type="text/css" href="assets/css/lobby.css" />
     <!-- Jquery   -->
     <script src="assets/js/lib/jquery.min.js" ></script>
@@ -44,81 +44,85 @@
          
     <section id="bgGradient"></section>
     
-    <div class="container font-luckiest">
+    <!-- portrait view -->
+    <section id="portrait">
         
-        <div class="banner">LOBBY</div>
-        
-        <div class="pin-container">
-            
-            <div class="pin-title"><span>PIN</span>
-            </div>
-            
-            <div class="pin-body">
-                <div id="pin" class="pin-style">123535</div>
-                <div class="share-style">SHARE THE NUMBER WITH THE OTHER PLAYER</div>
-                <div class="players-container">
-                    <div class="yogo-container" id="player"></div>
-                    <div class="yogo-container" id="challenger">
-                        <div class="mini">LOOKING FOR PLAYERS ...</div>
+        <div class="container font-luckiest">
+
+            <div class="banner">LOBBY</div>
+
+            <div class="pin-container">
+
+                <div class="pin-title"><span>PIN</span>
+                </div>
+
+                <div class="pin-body">
+                    <div id="pin" class="pin-style">123535</div>
+                    <div class="share-style">SHARE THE NUMBER WITH THE OTHER PLAYER</div>
+                    <div class="players-container">
+                        <div class="yogo-container" id="player"></div>
+                        <div class="yogo-container" id="challenger">
+                            <div class="mini">LOOKING FOR PLAYERS ...</div>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <div class="object-center" style="margin-top: 10%;">
+
+                <button class="menuBtn red-btn" type="button" onclick="window.location.href='customize.html'">BACK</button>
+
+                <button class="menuBtn green-btn" type="button">START</button>
+
+            </div>
         </div>
+    </section>
+    
+    <!-- landscape view -->
+    <section id="landscape">
         
-        <div class="object-center" style="margin-top: 10%;">
+        <div class="container font-luckiest">
 
-            <button class="menuBtn red-btn" type="button" onclick="window.location.href='customize.html'">BACK</button>
-            
-            <button class="menuBtn green-btn" type="button">START</button>
-            
+            <div class="banner">LOBBY</div>
+
+            <div class="pin-container">
+
+                <div class="pin-title"><span>PIN</span>
+                </div>
+
+                <div class="pin-body">
+                    <div>
+                        <div id="pin" class="pin-style">123535</div>
+                        <div class="share-style">SHARE THE NUMBER WITH THE OTHER PLAYER</div>
+                    </div>
+                    
+                    <div class="players-container">
+                        <div class="yogo-container player"></div>
+                        <div class="yogo-container" id="challenger">
+                            <div class="mini">LOOKING FOR PLAYERS ...</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="object-center" style="margin-top: 3%;">
+
+                <button class="menuBtn red-btn" type="button" onclick="window.location.href='customize.html'">BACK</button>
+
+                <button class="menuBtn green-btn" type="button">START</button>
+
+            </div>
         </div>
-    </div>
+    </section>
 
+    <script>
 
-<script>
-    var round = 3
-    var time = 3
+        $("#portrait").css("display","none");
+        $("#landscape").css("display","block");
 
-    $(".down-arrow").click(function(){
+        $(".player").css("background-image", "url('assets/images/yogotars/"+1+".png')");
 
-        if(round > 1)
-            round--
-        else
-            round = 10
-        $("#round").text(round);
-    });
-
-    $(".up-arrow").click(function(){
-
-        if(round < 10)
-            round++
-        else 
-            round = 1
-        $("#round").text(round);
-    });
-
-    
-    $("#less").click(function(){
-
-        if(time > 1)
-            time--
-        else
-            time = 10
-        $("#time").text(time + ':00');
-    });
-
-    $("#more").click(function(){
-
-        if(time < 10)
-            time++
-        else 
-            time = 1
-        $("#time").text(time + ':00');
-    });
-    
-    $("#player").css("background-image", "url('assets/images/yogotars/"+1+".png')");
-    
-</script>
+    </script>
     
 </body>       
 </html>

@@ -72,7 +72,6 @@
 }
 
 .banner{
-    margin: 5%;
     height: 15%;
     margin: 5% 10%;
     padding-top: 7%;
@@ -219,20 +218,21 @@
 
 .modal-title{
     position: absolute;
-    background-image: url("../images/headerModalDifficulty.png");
+    background-image: url("../images/addition.png");
     background-color: transparent;
+    background-size: 100% 100%;
     width: 100%;
-    background-size: contain;
     background-repeat: no-repeat;
-    top: -7%;
-    left: -0.5%;
+    top: -12%;
     display: flex;
     justify-content:space-around;
     align-items: center;
+    left: -1vw;
 }
 
 .modal-title span{
-    font-size: 5vw;
+    font-size: 8vw;
+    padding-top: 4%;
 }
 
 .modal-body span{
@@ -265,13 +265,92 @@
     background-color: #a89df9;
 }
 
+/*----- Landscape mode -----*/
 
+.banner{
+    margin: 2% 10%;
+    padding-top: 1.5%;
+    font-size: 5vw;
+    margin-bottom: 1%;
+}
 
+.dificult-container{
+    margin: 0 10%;
+    padding-top: 0;
+    font-size: 5vw;
+}
 
+.left-arrow{
+    margin: 0 0; 
+    margin-right: 0; 
+}
 
+.right-arrow{
+    margin: 0 0; 
+    margin-left: 0; 
+}
 
+.menu-container {
+    height: 50%;
+    margin-bottom: 0%;
+}
 
+.subject-container {
+    font-size: 5vw;
+    height: 25%;
+}
+    
+.checkBlank img {
+    width: 6%;
+}
 
+#adition{
+    height: 100%;
+    padding: 0.5vw;
+    padding-left: 3vw;
+}
+
+#multiplcation {
+    font-size: 5vw;
+    height: 100%;
+    padding: 0.5vw;
+    padding-left: 3vw;
+}
+
+#substraction{
+    font-size: 5vw;
+    height: 100%;
+        padding: 0.5vw;
+    padding-left: 3vw;
+}
+
+#division{
+    height: 100%;
+    padding: 0.5vw;
+    padding-left: 3vw;
+}
+
+.plus-btn{
+    height: 100%;
+}
+
+.object-center {
+    height: 65%;
+    margin-top: 1%;
+}
+
+.green-btn {
+    font-size: 5vw;
+    bottom: 1%;
+}
+
+.red-btn {
+    font-size: 5vw;
+}
+
+.modal-body{
+    
+}
 
 
 

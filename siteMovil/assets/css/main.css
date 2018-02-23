@@ -2,9 +2,6 @@ html{
     height: 100%;
 }
 
-
-
-
 body{
     position: absolute;
     margin: 0;
@@ -30,7 +27,6 @@ body{
 #logo{
     position: fixed;
     width: 100%;
-    
 }
 
 .logoTour{
@@ -170,8 +166,7 @@ body{
     background-position: center;
     background-color: transparent;
     border-style: none;
-    padding: 2vw;
-    z-index: 5;
+    padding-top: 2vw;
     cursor: pointer;
     color:#FFF;
     font-size: 8vw;
@@ -185,8 +180,7 @@ body{
     background-position: center;
     background-color: transparent;
     border-style: none;
-    padding: 2vw;
-    z-index: 5;
+    padding-top: 2vw;
     cursor: pointer;
     color:#FFF;
     font-size: 8vw;
@@ -199,11 +193,10 @@ body{
     background-position: center;
     background-color: transparent;
     border-style: none;
-    padding: 2vw;
-    z-index: 5;
+    padding-top: 2.5vw;
     cursor: pointer;
     color:#FFF;
-    font-size: 8vw;
+    font-size: 10vw;
 }
 
 
@@ -258,19 +251,65 @@ body{
 }
 
 
+/*----- Landscape mode -----*/
 
 
 
+.logoTour {
+    width: 60%;
+    padding-top: 5%;
+}
 
+.yogo-oona{
+    height: 30%;
+}
 
+.yogo-arturius{
+    height: 43%;
+}
 
+.object-center{
+    height: 100%;
+    top: 50%;
+}
 
+.green-btn{
+    font-size: 6vw;
+}
 
+.pink-btn{
+    font-size: 6vw;
+}
 
+.red-btn{
+    font-size: 6vw;
+}
 
+.carousel-container {
+    height: 20% !important;
+    margin: 10%;
+    margin-bottom: 0;
+}
 
+.banner{
+    font-size: 6vw;
+    padding-top: 3%;
+    margin: 7% 15%;
+    margin-bottom: 3%;
+}
 
+.left {
+    padding-top: 23%;
+}
 
+.right {
+    padding-top: 23%;
+}
+
+.object-center{
+    width: 70%;
+    margin: 0 15%;
+}
 
 
 

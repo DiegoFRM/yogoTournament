@@ -86,14 +86,54 @@
 }
 
 
+/*-----Landscape-----*/
 
+.red-btn,
+.green-btn{
+    font-size: 5vw;
+    height: 30%;
+    width: 40%;
+    bottom: 9%;
+    padding-top: 1vw; 
+}
 
+.pin-title{
+    padding: 0.5vw;
+    height: 20%;
+    font-size: 5vw;
+}
 
+.pin-body{
+    height: 80%;
+    display: flex;
+}
 
+.pin-style{
+   
+    padding-top: 2vw;
+    font-size: 8vw;
+    margin: 0 10%;
+}
 
+.share-style{
+    
+    font-size: 3vw;
+    margin: 5%;
+}
 
+.players-container{
+    margin: 0% 5%;
+    font-size: 2.5vw;
+}
 
+.yogo-container{
+    width: 13vw;
+    height: 13vw;
+}
 
+.mini{
+    padding-top: 10%;
+}
 
 
 

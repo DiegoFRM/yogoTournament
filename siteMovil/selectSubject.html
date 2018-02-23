@@ -20,73 +20,141 @@
     
     <script src="assets/js/Carousel.js"></script>
     
-    <script>
-    $(document).ready(function() {
-        $('.carousel-container').carousel({
-            num: 3,
-            maxWidth: 450,
-            maxHeight: 450,
-            distance: 180,
-            scale: 0.4,
-            animationTime: 500,
-            autoPlay: false,
-        });
-    });
-    </script>
-
 </head>
     
 <body>
-     
+
     <section id="bgGradient"></section> 
     
-     <div class="container font-luckiest">
-            
-    <div class="carousel-container">
-        <ul>
-            <div id="load-planets"></div>
-            <li>
-                <img src="assets/images/planets/codus.png" alt="" />
-            </li>
-            <li>
-                <img src="assets/images/planets/creat.png" alt="" />
-            </li>
-            <li>
-                <img src="assets/images/planets/health.png" alt="" />
-            </li>
-            <li>
-                <img src="assets/images/planets/geogra.png" alt="" />
-            </li>
-            <li>
-                <img src="assets/images/planets/wordo.png" alt="" />
-            </li>
-            <li>
-                <img src="assets/images/planets/mathdromeda.png" alt="" />
-            </li>
-            <li>
-                <img src="assets/images/planets/science.png" alt="" />
-            </li>
-            <img src="assets/images/arrowYellow.png" class="left">
-            <img src="assets/images/arrowYellow.png" class="right">
-        </ul>
-    </div>
+    <section id="portrait">
         
-        <div class="banner" id="subject">CODING</div>
+        <script>
+            $(document).ready(function() {
+                $('.carousel-container').carousel({
+                    num: 3,
+                    maxWidth: 450,
+                    maxHeight: 450,
+                    distance: 180,
+                    scale: 0.4,
+                    animationTime: 500,
+                    autoPlay: false,
+                });
+            });
+        </script>
         
-        <div class="object-center" style="display: flex;">
+        <div class="container font-luckiest">
 
-            <button class="menuBtn red-btn" type="button" onclick="window.location.href='index.html'">BACK</button>
-            
-            <button class="menuBtn green-btn" type="button" onclick="window.location.href='selectDifficult.html'">NEXT</button>
-            
+            <div class="carousel-container">
+                <ul>
+                    <div id="load-planets"></div>
+                    <li>
+                        <img src="assets/images/planets/codus.png" alt="" />
+                    </li>
+                    <li>
+                        <img src="assets/images/planets/creat.png" alt="" />
+                    </li>
+                    <li>
+                        <img src="assets/images/planets/health.png" alt="" />
+                    </li>
+                    <li>
+                        <img src="assets/images/planets/geogra.png" alt="" />
+                    </li>
+                    <li>
+                        <img src="assets/images/planets/wordo.png" alt="" />
+                    </li>
+                    <li>
+                        <img src="assets/images/planets/mathdromeda.png" alt="" />
+                    </li>
+                    <li>
+                        <img src="assets/images/planets/science.png" alt="" />
+                    </li>
+                    <img src="assets/images/arrowYellow.png" class="left">
+                    <img src="assets/images/arrowYellow.png" class="right">
+                </ul>
+            </div>
+
+            <div class="banner subject">CODING</div>
+
+            <div class="object-center" style="display: flex;">
+
+                <button class="menuBtn red-btn" type="button" onclick="window.location.href='index.html'">BACK</button>
+
+                <button class="menuBtn green-btn" type="button" onclick="window.location.href='selectDifficult.html'">NEXT</button>
+
+            </div>
+
         </div>
         
-    </div>
+    </section>
+    
+    <section id="landscape">
         
+        <script>
+            $(document).ready(function() {
+                $('.carousel-container').carousel({
+                    num: 3,
+                    maxWidth: 250,
+                    maxHeight: 250,
+                    distance: 180,
+                    scale: 0.4,
+                    animationTime: 500,
+                    autoPlay: false,
+                });
+            });
+        </script>
+        
+        <div class="container font-luckiest">
+
+            <div class="carousel-container">
+                <ul>
+                    <div id="load-planets"></div>
+                    <li>
+                        <img src="assets/images/planets/codus.png" alt="" />
+                    </li>
+                    <li>
+                        <img src="assets/images/planets/creat.png" alt="" />
+                    </li>
+                    <li>
+                        <img src="assets/images/planets/health.png" alt="" />
+                    </li>
+                    <li>
+                        <img src="assets/images/planets/geogra.png" alt="" />
+                    </li>
+                    <li>
+                        <img src="assets/images/planets/wordo.png" alt="" />
+                    </li>
+                    <li>
+                        <img src="assets/images/planets/mathdromeda.png" alt="" />
+                    </li>
+                    <li>
+                        <img src="assets/images/planets/science.png" alt="" />
+                    </li>
+                    <img src="assets/images/arrowYellow.png" class="left">
+                    <img src="assets/images/arrowYellow.png" class="right">
+                </ul>
+            </div>
+
+            <div class="banner subject">CODING</div>
+
+            <div class="object-center" style="display: flex;">
+
+                <button class="menuBtn red-btn" type="button" onclick="window.location.href='index.html'">BACK</button>
+
+                <button class="menuBtn green-btn" type="button" onclick="window.location.href='selectDifficult.html'">NEXT</button>
+
+            </div>
+
+        </div>
+        
+    </section>
+    
 </body> 
     
 <script>
         
+    $("#portrait").css("display","none");
+    $("#landscape").css("display","block");
+    
     var index = 0;
     
     var subjectList = ['CODING', 'CREATIVITY', 'HEALTH', 'GEOGRAPHY', 'LANGUAGE', 'MATH', 'SCIENCE']
@@ -98,7 +166,7 @@
         else{
             index = subjectList.length - 1
         }
-        $("#subject").text(subjectList[index]);
+        $(".subject").text(subjectList[index]);
     });
     
     $(".right").on('touchstart', function(){
@@ -108,7 +176,7 @@
         else{
             index = 0
         }
-        $("#subject").text(subjectList[index]);
+        $(".subject").text(subjectList[index]);
     });
         
 </script>
