@@ -229,9 +229,13 @@ body{
 .textSubject{
     left:50%;
     transform: translate(-50%,0);
-    font-size: 4vw !important;
-    height: 15% !important;
-    
+    font-size: 3vw !important;
+    height: 15% !important;  
+    z-index: 10000;
+}
+
+.textSubject p{
+    margin-top: 5% !important; 
 }
 
 .slider{
@@ -494,21 +498,23 @@ body{
     display: none;
 }
 
+.containerCustomize{
+    height: 100%;
+    background-image: url("../images/patternCircles.png");
+    background-color: #cc00ff;
+    border-radius: 2vw;
+    padding: 1vw;
+}
 
 .optionsTime{
-    background-color: #cc00ff;
+    
     text-align: center;
     height: 100%;
-    border-radius: 2vw 0 0 2vw;
-    background-image: url("../images/patternCircles.png");
 }
 
 .optionsRounds{
-    background-color: #ffe966;
     text-align: center;
     height: 100%;
-    border-radius: 0 2vw 2vw 0;
-    background-image: url("../images/patternCircles.png");
 }
 
 .bgYellow{
@@ -524,7 +530,7 @@ body{
     justify-content: center;
     margin-top: 10px;
     margin-bottom: 3vw;
-    
+    padding: 1vw;
 }
 
 .bgPurple{
@@ -540,6 +546,7 @@ body{
     justify-content: center;
     margin-top: 10px;
     margin-bottom: 3vw;
+    padding: 1vw;
     
 }
 
@@ -591,10 +598,11 @@ body{
     background-position: center;
     width: 100%;
     margin-top: -15%;
-    font-size: 6vw;
+    font-size: 4vw;
     position: absolute;
     text-align: center;  
     color:#FFF;
+    padding: 1vw;
 }
 
 .bgpink{
@@ -626,7 +634,7 @@ body{
     text-align: center;
     padding: 1vw;
     font-size: 1.5vw;
-    color:#000000;
+    color:#184831;
 }
 
 .yogotarsSelecitons{
@@ -660,8 +668,24 @@ body{
 .playerName{
     width: 50%;
     font-size: 1vw;
+    color:#184831;
 }
 
 #StartButton{
     color: #FFF;
+}
+
+.lock .planetImage{
+    filter: brightness(20%) ;
+
+}
+
+.lock span{
+    position: absolute;
+    margin-left: 160px;
+    margin-top:180px;
+    z-index: 1;
+    
+}
+.lock span img{
 }
