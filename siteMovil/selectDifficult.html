@@ -41,123 +41,77 @@
     
 <body>
      
+    <section id="bgGradient"></section> 
+    
     <div class="container font-luckiest">
         
-        <div class="title-container">
-            <div class="center-text" style="transform: translateY(-35%);">DIFFICULTY</div>
-        </div>
+        <div class="banner">DIFFICULTY</div>
         
         <div class="dificult-container">
             
-            <div class="col-xs-3 sub-grid">
-                <button type="button" class="left-arrow"></button>
-            </div>
-
-            <div class="col-xs-6 sub-grid">
-                <div class="lvl-image"></div>
-                <div class="center-text" id="lvl-text">EASY</div>
-            </div>
-
-            <div class="col-xs-3 sub-grid">
-                <button type="button" class="right-arrow"></button>
-            </div>
-            
+            <div class="left-arrow"></div>
+            <div id="lvl-text" style="width: 80%">EASY</div>
+            <div class="right-arrow"></div>
+ 
         </div>
         
         <div class="menu-container">
-            <div class="small-blue-text">SET RULES</div>
             
-            <div class="grid-container">
+            <div class="subject-container">
                 
-                <div id="adition">
-                    
-                     <div class="col-xs-3 sub-grid">
-                        <div id="checkBox0" class="checkBlank">
-                            <img src="assets/images/blank_check.png"> 
-                            <img class="markCheck" src="assets/images/mark_check.png">
-                        </div>
-                    </div>
-                    
-                    <div class="col-xs-6 sub-grid">
-                        <div class="center-text">ADITION</div>
-                    </div>
-                    
-                    <div class="col-xs-3 sub-grid">
-                        <div class="vl"></div>
-                        <div class="plus-btn"><img src="assets/images/plus.png"></div>
-                    </div>
-                    
-                </div>
-                
-                <div id="substraction">
-                    
-                     <div class="col-xs-3 sub-grid">
-                        <div id="checkBox1" class="checkBlank">
-                            <img src="assets/images/blank_check.png"> 
-                            <img class="markCheck" src="assets/images/mark_check.png">
-                        </div>
-                    </div>
-                    
-                    <div class="col-xs-6 sub-grid">
-                        <div class="center-text">SUBSTRACTION</div>
-                    </div>
-                    
-                    <div class="col-xs-3 sub-grid">
-                        <div class="vl"></div>
-                        <div class="plus-btn"><img src="assets/images/plus.png"></div>
-                    </div>
-                    
-                </div>
-                
-                <div id="multiplcation">
-                    
-                     <div class="col-xs-3 sub-grid">
-                        <div id="checkBox2" class="checkBlank">
-                            <img src="assets/images/blank_check.png"> 
-                            <img class="markCheck" src="assets/images/mark_check.png">
-                        </div>
-                    </div>
-                    
-                    <div class="col-xs-6 sub-grid">
-                        <div class="center-text">MULTIPLICATION</div>
-                    </div>
-                    
-                    <div class="col-xs-3 sub-grid">
-                        <div class="vl"></div>
-                        <div class="plus-btn"><img src="assets/images/plus.png"></div>
-                    </div>
-                    
-                </div>  
-                
-                <div id="division">
-                    
-                    <div class="col-xs-3 sub-grid">
-                        <div id="checkBox3" class="checkBlank">
-                            <img src="assets/images/blank_check.png"> 
-                            <img class="markCheck" src="assets/images/mark_check.png">
-                        </div>
-                    </div>
-                    
-                    <div class="col-xs-6 sub-grid">
-                        <div class="center-text">DIVISION</div>
-                    </div>
-                    
-                    <div class="col-xs-3 sub-grid">
-                        <div class="vl"></div>
-                        <div class="plus-btn"><img src="assets/images/plus.png"></div>
-                    </div>
-                    
+                <div id="checkBox0" class="checkBlank">
+                    <img src="assets/images/blank_check.png"> 
+                    <img class="markCheck" src="assets/images/mark_check.png">
                 </div>
 
-            </div>        
+                <div id="adition">ADITION</div>
+
+                <div class="plus-btn" id="plusImg1"></div>
             
-            <div class="bottom-container">
-            <button class="menuBtn" style="background-image: url(assets/images/backButton.png);" type="button" onclick="window.location.href='selectSubject.html'"></button>
-            <button class="menuBtn" style="background-image: url(assets/images/nextButton.png);" type="button" onclick="window.location.href='winConditions.html'"></button>
-        </div>
+            </div>
+            
+            <div class="subject-container">
+                <div id="checkBox1" class="checkBlank">
+                    <img src="assets/images/blank_check.png"> 
+                    <img class="markCheck" src="assets/images/mark_check.png">
+                </div>
+
+                <div id="substraction">SUBSTRACTION</div>
+
+                <div class="plus-btn" id="plusImg2"></div>
+            </div>
+            
+            <div class="subject-container">
+                <div id="checkBox2" class="checkBlank">
+                    <img src="assets/images/blank_check.png"> 
+                    <img class="markCheck" src="assets/images/mark_check.png">
+                </div>
+
+                <div id="multiplcation">MULTIPLICATION</div>
+
+                <div class="plus-btn" id="plusImg3"></div>
+            </div>
+            
+            <div class="subject-container">
+                <div id="checkBox3" class="checkBlank">
+                    <img src="assets/images/blank_check.png"> 
+                    <img class="markCheck" src="assets/images/mark_check.png">
+                </div>
+
+                <div id="division">DIVISION</div>
+
+                <div class="plus-btn" id="plusImg4"></div>
+            </div>
             
         </div>
-        
+       
+        <div class="object-center">
+
+            <button class="menuBtn red-btn" type="button" onclick="window.location.href='selectSubject.html'">BACK</button>
+            
+            <button class="menuBtn green-btn" type="button" onclick="window.location.href='customize.html'">NEXT</button>
+
+        </div>
         
     </div>
 
@@ -218,6 +172,10 @@
         }
         $("#lvl-text").text(lvl[index]);
     });
+    
+    for(var r = 1; r <= 4; r++){
+        $("#plusImg"+r).css('background-image', "url('assets/images/plus" + r + ".png')");
+    }
     
     var aditionOptions = 
         [

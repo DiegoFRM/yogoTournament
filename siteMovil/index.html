@@ -10,6 +10,8 @@
     <!--  Bootstrap 3.0  -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+    
     <script type="text/javascript" src="assets/js/lib/greensock/TweenMax.min.js"></script>
     <script type="text/javascript" src="assets/js/lib/iscroll-probe.js"></script>
 
@@ -17,39 +19,38 @@
     
 <body>
      
-    <section id="bgGradient"></section> 
-    <section id="bgParallax"></section>      
+    <section id="bgGradient"></section>   
+    
     <div id="logo"><img class="logoTour img-responsive center-block" src="assets/images/logo.png"></div>
         
-    <div id="parallaxContainer">                                                           
-            <div class="floor"></div>
-            <div class="gradientfloor"></div>
-            <div class="sideRight"></div>
-            <div class="sideLeft"></div>
-            <div class="grassrim"></div>
-            <div class="grassrim2"></div>
-            <div class="grassRrim"></div>
-            <div class="grassRrim2"></div>            
-    </div> 
-    
-    <div class="container">
+    <div class="container font-luckiest" style="display: flex;">
         
-        <div class="object-left col-xs-4">
-            <div class="yogo-nao"></div>
+        <div class="yogo-oona col-xs-4">
+            </div> 
+        
+            <div class="object-center col-xs-6">
+                
+                <button id="createGame" class="menuBtn green-btn" type="button" onclick="window.location.href='selectSubject.html'">CREATE</button>
+                
+                <button id="joinGame" class="menuBtn pink-btn" type="button">JOIN</button>
             </div>
         
-            <div class="object-center col-xs-4">
-                
-                <button id="create" class="menuBtn" style="background-image: url(assets/images/createButton.png);" type="button" onclick="window.location.href='selectSubject.html'"></button>
-                
-                <button id="join" class="menuBtn" style="background-image: url(assets/images/joinButton.png);"></button>
-            </div>
-        
-        <div class="object-right col-xs-4">
-            <div class="yogo-estrella"></div>
+        <div class="yogo-arturius col-xs-4">
+            
             </div> 
         
     </div>
         
 </body>       
 </html>
+
+
+
+
+
+
+
+
+
+
+

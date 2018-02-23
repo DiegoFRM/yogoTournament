@@ -17,19 +17,17 @@
 }
 
 .dificult-container {
-    height: 15%;
-    width: 100%;
-    background-color: #367fce;
-}
-
-.menu-container{
-    
-    width: 100%;
-    height: 80%;
-    align-items: center;
-    background-color: #64d6f9;
-    background-image: url("../images/texture.png");
-    text-align: center;
+    width: 80%;
+    background-image: url("../images/difficultTitle.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 5% 10%;
+    font-size: 8vw;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2%;
+    margin-bottom: 0%;
 }
 
 .right-arrow{
@@ -40,9 +38,10 @@
     background-color: transparent;
     border-style: none;
     transform: scaleX(-1);
-    width: 60%;
-    height: 100%;
-    margin-left: 20%;
+    width: 50%;
+    margin: -3% 0%;
+    margin-left: 10%;
+    /*transform: translateX(-10%); */
 }
 
 .left-arrow{
@@ -52,18 +51,9 @@
     background-repeat: no-repeat;
     background-color: transparent;
     border-style: none;
-    width: 60%;
-    height: 100%;
-    margin-left: 20%;
-}
-
-.small-blue-text{
-    font-size: 5vw; 
-    text-align: left; 
-    padding-left: 15vw; 
-    color: #367fce;
-    line-height: 4vh;
-    padding-top: 1vw;
+    width: 50%;
+    margin: -3% 0%;
+    margin-right: 10%;
 }
 
 .bottom-container{
@@ -79,42 +69,81 @@
 
 .menuBtn {
     width: 45%;
-    height: 85%;
-    right: 0%;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 25% 25% 25% 25%;
-    /*grid-gap: 1%;*/
-    background-color: #ffffff;
-    height: 75%;
-    width: 90%;
-    margin-left: 5%;
+.banner{
+    margin: 5%;
+    height: 15%;
+    margin: 5% 10%;
+    padding-top: 7%;
 }
 
-.grid-container>div {
+.menu-container{
+    
+    width: 80%;
+    height: 59%;
+    align-items: center;
+    background-color: #00f9ff;
+    background-image: url("../images/dots.png");
     text-align: center;
-    margin: 1%;
-    font-size: 6vw; 
-    /*display: flex;*/
+    margin: 0% 10%;
+    margin-bottom: 2%;
+    border-radius: 6vw;
+}
+
+.subject-container{
+    
+    font-size: 7vw;    
+    height: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #adition{
-    background-color: #4E10F9;
+    background-image: url("../images/addition.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 3vw;
+    background-position: center;
+    width: 60%;
+    height: 50%;
+    text-align: left;
 }
 
 #substraction{
-    background-color: #f220f2;
+    background-image: url("../images/substraction.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 3vw;
+    background-position: center;
+    width: 60%;
+    height: 50%;
+    text-align: left;
+    font-size: 6vw;
 }
 
 #multiplcation{
-    background-color: #edaa24;
+    background-image: url("../images/multiplication.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 3vw;
+    background-position: center;
+    width: 60%;
+    height: 50%;
+    text-align: left;
+    font-size: 6vw;
 }
 
 #division{
-    background-color: #24ed5d;
+    background-image: url("../images/division.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 3vw;
+    background-position: center;
+    width: 60%;
+    height: 50%;
+    text-align: left;
 }
 
 .check-box{
@@ -132,42 +161,39 @@
 }
 
 .plus-btn{
-    
-    width: 60%;
-    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20%;
+    height: 50%;
 }
 
 .plus-btn img{
     
-    width: 100%;
+    width: 70%;
     height: 80%;
-    padding-top: 50%
-}
-
-.vl {
-    height: 75%;
-    width: 10%;
-    background-color: #ffffff;
-    opacity: 0.5;
-    border-radius: 2vh;
-    margin-right: 2vh;
-    margin-top: 17%;
+    margin: 10% 15%;
 }
 
 .checkBlank{
-    width: 100%;
+    
+    width: 20%;
+    height: 35%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .checkBlank img{
+    
     position: absolute;
-    width: 60%;
-    top: 30%;
+    width: 10%; 
 }
 
+
+
 .lvl-image{
+    
     background-image: url(../images/diff_easy.png);
     background-size: contain;
     background-position: left;

@@ -6,7 +6,7 @@
     <meta charset="UTF-8">   
     <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/dificulty.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/winConditions.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/customize.css" />
     <!-- Jquery   -->
     <script src="assets/js/lib/jquery.min.js" ></script>
     <!--  Bootstrap 3.0  -->
@@ -41,47 +41,49 @@
     
 <body>
      
+    <section id="bgGradient"></section>
+    
     <div class="container font-luckiest">
         
-        <div class="title-container">
-            <div class="center-text" style="transform: translateY(-35%);">WIN CONDITIONS</div>
-        </div>
+        <div class="banner">CUSTOMIZE</div>
         
         <div class="menu-container">
             
             <div class="condition-container">
                 
                 <div class="condition-header">
-                    <span>TIME</span>
+                    <span style="color: dimgrey">TIME</span>
                 </div>
                 
                 <div class="condition-body">
+                    
                     <div class="col-xs-3 sub-grid">
-                        <button class="pink-penta" id="less">-</button>
+                        <div class="less-time"></div>
                     </div>
 
                     <div class="col-xs-6 sub-grid" style="display: initial">
                         <div class="time-image"></div>
-                        <div id="time">3:00</div>
-                        <div style="font-size: 7vw">minutes</div>
+                        <div id="time" style="font-size: 9vw">3:00</div>
+                        <div style="font-size: 5vw">minutes</div>
                     </div>
 
                     <div class="col-xs-3 sub-grid">
-                        <button class="pink-penta" id="more">+</button>
+                        <div class="more-time"></div>
                     </div>
+                    
                 </div>
                 
             </div>
             
             <div class="condition-container">
                 
-                <div class="condition-header">
+                <div class="condition-header" style="background-image: url('assets/images/titleRound.png');">
                     <span>ROUNDS</span>
                 </div>
                 
                 <div class="condition-body">
                     <div class="col-xs-3 sub-grid">
-                        <button class="up-arrow"></button>
+                        <div class="less-rounds"></div>
                     </div>
 
                     <div class="col-xs-6 sub-grid">
@@ -89,7 +91,7 @@
                     </div>
 
                     <div class="col-xs-3 sub-grid">
-                        <button type="button" class="down-arrow"></button>
+                        <div class="more-rounds"></div>
                     </div>
                 </div>
                 
@@ -97,10 +99,14 @@
             
         </div>
         
-        <div class="bottom-container">
-            <button class="menuBtn" style="background-image: url(assets/images/backButton.png);" type="button" onclick="window.location.href='selectDifficult.html'"></button>
-            <button class="menuBtn" style="background-image: url(assets/images/nextButton.png);" type="button" onclick="window.location.href='lobby.html'"></button>
+        <div class="object-center">
+
+            <button class="menuBtn red-btn" type="button" onclick="window.location.href='selectDifficult.html'">BACK</button>
+            
+            <button class="menuBtn green-btn" type="button" onclick="window.location.href='lobby.html'" style="font-size: 5.5vw;">CREATE ROOM</button>
+
         </div>
+        
     </div>
 
 
@@ -108,7 +114,7 @@
     var round = 3
     var time = 3
 
-    $(".down-arrow").click(function(){
+    $(".less-rounds").click(function(){
 
         if(round > 1)
             round--
@@ -117,7 +123,7 @@
         $("#round").text(round);
     });
 
-    $(".up-arrow").click(function(){
+    $(".more-rounds").click(function(){
 
         if(round < 10)
             round++
@@ -127,7 +133,7 @@
     });
 
     
-    $("#less").click(function(){
+    $(".less-time").click(function(){
 
         if(time > 1)
             time--
@@ -136,7 +142,7 @@
         $("#time").text(time + ':00');
     });
 
-    $("#more").click(function(){
+    $(".more-time").click(function(){
 
         if(time < 10)
             time++
