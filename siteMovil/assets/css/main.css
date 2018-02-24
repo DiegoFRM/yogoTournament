@@ -202,9 +202,8 @@ body{
 
 
 .carousel-container {
-    height: 20%;
-    margin: 20% auto;
-    margin-bottom: 15%;
+    height: 55% !important;
+    margin-bottom: 20%;
 }
 
 .carousel-container ul {}
@@ -220,21 +219,22 @@ body{
 
 .selection-container{
     display: flex;
-    height: 15%;
-    margin: 15% 5%;
+    margin: 30% 5%;
     align-items: center;
     justify-content: center;
 }
 
 .left{
     cursor: pointer;
-    height: 65%;
+    width: 20%;
+    position: relative !important;
 }
 
 .right {
     cursor: pointer;
     transform: scaleX(-1);
-    height: 65%;
+    width: 20%;
+    position: relative !important;
 }
 
 .banner-selection{
@@ -328,8 +328,7 @@ body{
     }
 
     .carousel-container {
-        height: 20% !important;
-        margin: 10%;
+        height: 70% !important;
         margin-bottom: 4%;
     }
 
@@ -341,19 +340,18 @@ body{
     }
     
     .selection-container{
-    height: 30%;
-    margin: 3% 10%;
-    margin-bottom: 1%;
-}
+        margin: -5% 10%;
+    }
 
     .left,
     .right {
-        height: 65%;
+        width: 15%;
     }
 
     .banner-selection{
         font-size: 6vw;
         padding-top: 3.5%;
+        height: 100%;
     }
     
 }

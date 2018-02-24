@@ -278,16 +278,18 @@
                 $target.data('totalNum', totalNum);
                 initStyle($target);
 
-                $('.left').off('click').on('click', (function($target) {
+                $target.find('.left').off('click').on('click', (function($target) {
                     return function() {
                         scroll($target, 'left');
                     }
                 })($target));
-                $('.right').off('click').on('click',(function($target) {
+                $target.find('.right').off('click').on('click',(function($target) {
                     return function() {
                         scroll($target, 'right');
                     }
                 })($target));
+                
+                
 
                 (function($target) {
                     var autoPlay;
