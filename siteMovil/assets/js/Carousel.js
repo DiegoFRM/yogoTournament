@@ -278,12 +278,12 @@
                 $target.data('totalNum', totalNum);
                 initStyle($target);
 
-                $target.find('.left').off('click').on('click', (function($target) {
+                $('.left').off('click').on('click', (function($target) {
                     return function() {
                         scroll($target, 'left');
                     }
                 })($target));
-                $target.find('.right').off('click').on('click',(function($target) {
+                $('.right').off('click').on('click',(function($target) {
                     return function() {
                         scroll($target, 'right');
                     }

@@ -101,6 +101,12 @@
     margin-top: 5%;
 }
 
+.green-btn{
+    font-size: 5.5vw;
+    bottom: 1.5%;
+    padding-top: 1vw;
+ }
+
 .title-container{
      background-color: darkseagreen;
 }
@@ -109,50 +115,74 @@
      background-color: lightskyblue;
 }
 
+
+
+@media screen and (orientation: portrait) {
+    
+    #portrait {
+        display: block;
+    }
+
+    #landscape {
+        display: none;
+    }
+}
+
 /*-----Landscape-----*/
 
+@media screen and (orientation : landscape){
+    
+    #portrait {
+        display: none;
+    }
 
-.menu-container {
-    display: flex;
+    #landscape {
+        display: block;
+    }
+    
+        .menu-container {
+        display: flex;
+    }
+
+    .condition-container {
+        height: 100%;
+    }
+
+    .condition-header{
+        background-size: 80% 100%;
+        font-size: 4vw;
+    }
+
+    .more-time,
+    .less-time,
+    .more-rounds,
+    .less-rounds{
+        width: 100%;
+        margin-left: auto;
+    }
+
+    .round-image{
+        font-size: 9vw;
+    }
+
+    .round-image p{
+        margin-top: 10%;
+    }
+
+    .red-btn {
+        font-size: 4.5vw;
+        padding-top: 1.5vw;
+        bottom: 2%;
+    }
+
+    .green-btn{
+        
+        font-size: 2.2vw;
+        bottom: 8%;
+        padding-top: 1vw;
+     }
+
 }
 
-.condition-container {
-    height: 100%;
-}
 
-.condition-header{
-    background-size: 80% 100%;
-    font-size: 4vw;
-}
-
-.more-time,
-.less-time,
-.more-rounds,
-.less-rounds{
-    width: 100%;
-    margin-left: auto;
-}
-
-.round-image{
-    font-size: 9vw;
-}
-
-.round-image p{
-    margin-top: 10%;
-}
-
-.red-btn {
-    font-size: 4.5vw;
-    padding-top: 1.5vw;
-    bottom: 4%;
-}
-
-.green-btn{
-    font-size: 4vw;
-    height: 30%;
-    width: 45%;
-    bottom: 5%;
-    background-size: 100% 100%;
-    padding-top: 0;
-}
 

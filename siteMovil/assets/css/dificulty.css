@@ -265,91 +265,114 @@
     background-color: #a89df9;
 }
 
+@media screen and (orientation: portrait) {
+    
+    #portrait {
+        display: block;
+    }
+
+    #landscape {
+        display: none;
+    }
+}
+
 /*----- Landscape mode -----*/
 
-.banner{
+@media screen and (orientation : landscape){
+    
+    #portrait {
+        display: none;
+    }
+
+    #landscape {
+        display: block;
+    }
+    
+    .banner{
     margin: 2% 10%;
     padding-top: 1.5%;
     font-size: 5vw;
     margin-bottom: 1%;
-}
+    }
 
-.dificult-container{
-    margin: 0 10%;
-    padding-top: 0;
-    font-size: 5vw;
-}
+    .dificult-container{
+        margin: 0 10%;
+        padding-top: 0;
+        font-size: 5vw;
+    }
 
-.left-arrow{
-    margin: 0 0; 
-    margin-right: 0; 
-}
+    .left-arrow{
+        margin: 0 0; 
+        margin-right: 0; 
+    }
 
-.right-arrow{
-    margin: 0 0; 
-    margin-left: 0; 
-}
+    .right-arrow{
+        margin: 0 0; 
+        margin-left: 0; 
+    }
 
-.menu-container {
-    height: 50%;
-    margin-bottom: 0%;
-}
+    .menu-container {
+        height: 50%;
+        margin-bottom: 0%;
+    }
 
-.subject-container {
-    font-size: 5vw;
-    height: 25%;
-}
-    
-.checkBlank img {
-    width: 6%;
-}
+    .subject-container {
+        font-size: 5vw;
+        height: 25%;
+    }
 
-#adition{
-    height: 100%;
-    padding: 0.5vw;
-    padding-left: 3vw;
-}
+    .checkBlank img {
+        width: 6%;
+    }
 
-#multiplcation {
-    font-size: 5vw;
-    height: 100%;
-    padding: 0.5vw;
-    padding-left: 3vw;
-}
-
-#substraction{
-    font-size: 5vw;
-    height: 100%;
+    #adition{
+        height: 100%;
         padding: 0.5vw;
-    padding-left: 3vw;
-}
+        padding-left: 3vw;
+    }
 
-#division{
-    height: 100%;
-    padding: 0.5vw;
-    padding-left: 3vw;
-}
+    #multiplcation {
+        font-size: 5vw;
+        height: 100%;
+        padding: 0.5vw;
+        padding-left: 3vw;
+    }
 
-.plus-btn{
-    height: 100%;
-}
+    #substraction{
+        font-size: 5vw;
+        height: 100%;
+            padding: 0.5vw;
+        padding-left: 3vw;
+    }
 
-.object-center {
-    height: 65%;
-    margin-top: 1%;
-}
+    #division{
+        height: 100%;
+        padding: 0.5vw;
+        padding-left: 3vw;
+    }
 
-.green-btn {
-    font-size: 5vw;
-    bottom: 1%;
-}
+    .plus-btn{
+        height: 100%;
+    }
 
-.red-btn {
-    font-size: 5vw;
-}
+    .object-center {
+        height: 65%;
+        margin-top: 1%;
+    }
 
-.modal-body{
-    
+    .green-btn {
+        font-size: 5vw;
+        bottom: 1%;
+    }
+
+    .red-btn {
+        font-size: 5vw;
+    }
+
+    .modal-body{
+
+    }
+
 }
 
 

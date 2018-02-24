@@ -107,7 +107,7 @@ body{
     width: 100%;
     top: 20%;
     left: 10%;
-    transform: scale(1.3);
+    transform: scale(2);
 }
 
 .yogo-arturius{
@@ -121,6 +121,7 @@ body{
     width: 100%;
     top: 20%;
     right: 10%;
+    transform: scale(1.4);
 }
 
 .yogotar{
@@ -217,19 +218,36 @@ body{
 
 .carousel-container ul li img {}
 
+.selection-container{
+    display: flex;
+    height: 15%;
+    margin: 15% 5%;
+    align-items: center;
+    justify-content: center;
+}
+
 .left{
     cursor: pointer;
-    width: 15%;
-    left: -10%; 
-    padding-top: 60%;
+    height: 65%;
 }
 
 .right {
     cursor: pointer;
-    width: 15%;
     transform: scaleX(-1);
-    right: -10%; 
-    padding-top: 60%;
+    height: 65%;
+}
+
+.banner-selection{
+    background-image: url(../images/bannerBlue.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 70%;
+    width: 65%;
+    margin: 15% 0;
+    font-size: 9vw;
+    color: #345468;
+        padding-top: 5%;
 }
 
 .banner{
@@ -250,67 +268,102 @@ body{
     text-align: center;
 }
 
+@media screen and (orientation: portrait) {
+    
+    #portrait {
+        display: block;
+    }
+
+    #landscape {
+        display: none;
+    }
+}
+
+
 
 /*----- Landscape mode -----*/
 
+@media screen and (orientation : landscape){
+    
+    #portrait {
+        display: none;
+    }
 
+    #landscape {
+        display: block;
+    }
+    
+    .logoTour {
+        width: 60%;
+        padding-top: 5%;
+    }
 
-.logoTour {
-    width: 60%;
-    padding-top: 5%;
-}
+    .yogo-oona{
+        height: 30%;
+        transform: scale(1.5);
+    }
 
-.yogo-oona{
+    .yogo-arturius{
+        height: 43%;
+        transform: scale(1.1);
+    }
+
+    .object-center{
+        height: 100%;
+        top: 50%;
+        width: 70%;
+        margin: 0 15%;
+    }
+
+    .green-btn{
+        font-size: 6vw;
+    }
+
+    .pink-btn{
+        font-size: 6vw;
+    }
+
+    .red-btn{
+        font-size: 6vw;
+    }
+
+    .carousel-container {
+        height: 20% !important;
+        margin: 10%;
+        margin-bottom: 4%;
+    }
+
+    .banner{
+        font-size: 6vw;
+        padding-top: 3%;
+        margin: 7% 15%;
+        margin-bottom: 3%;
+    }
+    
+    .selection-container{
     height: 30%;
+    margin: 3% 10%;
+    margin-bottom: 1%;
 }
 
-.yogo-arturius{
-    height: 43%;
+    .left,
+    .right {
+        height: 65%;
+    }
+
+    .banner-selection{
+        font-size: 6vw;
+        padding-top: 3.5%;
+    }
+    
 }
 
-.object-center{
-    height: 100%;
-    top: 50%;
-}
 
-.green-btn{
-    font-size: 6vw;
-}
 
-.pink-btn{
-    font-size: 6vw;
-}
 
-.red-btn{
-    font-size: 6vw;
-}
 
-.carousel-container {
-    height: 20% !important;
-    margin: 10%;
-    margin-bottom: 0;
-}
-
-.banner{
-    font-size: 6vw;
-    padding-top: 3%;
-    margin: 7% 15%;
-    margin-bottom: 3%;
-}
-
-.left {
-    padding-top: 23%;
-}
-
-.right {
-    padding-top: 23%;
-}
-
-.object-center{
-    width: 70%;
-    margin: 0 15%;
-}
-
+    
+    
 
 
 
