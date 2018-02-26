@@ -23,7 +23,7 @@ function clearElements(section){
 
 //animation 1
 //TweenMax.to('html',2,{opacity:0,ease:Linear.easeNone});
-TweenMax.to($("body"),20,{backgroundPosition:"0% 100%",repeat:-1,ease:Linear.easeNone});
+TweenMax.to($("#bgGradient"),10,{backgroundPosition:"0% 100%",repeat:-1,ease:Linear.easeNone});
 TweenMax.set('#animation1',{'-webkit-filter':'brightness(0%)'});
 TweenMax.set('#naoMain',{'-webkit-filter':'brightness(100%)'});
 TweenMax.set('#estrellaMain',{'-webkit-filter':'brightness(100%)'});
@@ -65,14 +65,12 @@ function Next1(){
 
 function Next2(){
     $("#animation1").css("display","none");
-    $("#logo").css("display","none");
     $("#section2").css("display","block");    
     clearElements("#section1 div");
 }
 
 
 function backAnimate1(){
-    $("#logo").css("display","block");
     $("#animation1").css("display","block");
     $("#section2").css("display","none");
     scaleButtons();
