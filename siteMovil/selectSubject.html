@@ -21,6 +21,39 @@
     <script src="assets/js/Carousel.js"></script>
     
 </head>
+    <script>
+        function scalePlanets(){
+            if (window.matchMedia("(orientation: portrait)").matches) {
+               $(document).ready(function() {
+                    $('.carousel-container').carousel({
+                        num: 3,
+                        maxWidth: 450,
+                        maxHeight: 450,
+                        distance: 180,
+                        scale: 0.5,
+                        animationTime: 500,
+                        autoPlay: false,
+                    });
+                });
+            }
+            else{
+                $(document).ready(function() {
+                    $('.carousel-container').carousel({
+                        num: 3,
+                        maxWidth: 250,
+                        maxHeight: 250,
+                        distance: 180,
+                        scale: 0.6,
+                        animationTime: 500,
+                        autoPlay: false,
+                    });
+                });
+            }
+            console.log('cambio')
+        }
+        
+        scalePlanets()
+    </script>
     
 <body>
 
@@ -28,25 +61,11 @@
     
     <section id="portrait">
         
-        <script>
-            $(document).ready(function() {
-                $('.carousel-container').carousel({
-                    num: 3,
-                    maxWidth: 450,
-                    maxHeight: 450,
-                    distance: 180,
-                    scale: 0.4,
-                    animationTime: 500,
-                    autoPlay: false,
-                });
-            });
-        </script>
-        
         <div class="container font-luckiest">
 
             <div class="carousel-container">
                 <ul>
-                    <div id="load-planets"></div>
+                    <div class="load-planets"></div>
                     <li>
                         <img src="assets/images/planets/codus.png" alt="" />
                     </li>
@@ -68,13 +87,17 @@
                     <li>
                         <img src="assets/images/planets/science.png" alt="" />
                     </li>
-                    <img src="assets/images/arrowYellow.png" class="left">
-                    <img src="assets/images/arrowYellow.png" class="right">
                 </ul>
+            
+
+                <div class="selection-container">
+                    <img src="assets/images/arrowYellow.png" class="left" >
+                    <div class="banner-selection subject">CODING</div>
+                    <img src="assets/images/arrowYellow.png" class="right">
+                </div>
+                
             </div>
-
-            <div class="banner subject">CODING</div>
-
+            
             <div class="object-center" style="display: flex;">
 
                 <button class="menuBtn red-btn" type="button" onclick="window.location.href='index.html'">BACK</button>
@@ -89,25 +112,11 @@
     
     <section id="landscape">
         
-        <script>
-            $(document).ready(function() {
-                $('.carousel-container').carousel({
-                    num: 3,
-                    maxWidth: 250,
-                    maxHeight: 250,
-                    distance: 180,
-                    scale: 0.4,
-                    animationTime: 500,
-                    autoPlay: false,
-                });
-            });
-        </script>
-        
         <div class="container font-luckiest">
 
             <div class="carousel-container">
                 <ul>
-                    <div id="load-planets"></div>
+                    <div class="load-planets"></div>
                     <li>
                         <img src="assets/images/planets/codus.png" alt="" />
                     </li>
@@ -129,12 +138,15 @@
                     <li>
                         <img src="assets/images/planets/science.png" alt="" />
                     </li>
-                    <img src="assets/images/arrowYellow.png" class="left">
-                    <img src="assets/images/arrowYellow.png" class="right">
                 </ul>
+                
+                <div class="selection-container">
+                    <img src="assets/images/arrowYellow.png" class="left">
+                    <div class="banner-selection subject">CODING</div>
+                    <img src="assets/images/arrowYellow.png" class="right">
+                </div>
+                
             </div>
-
-            <div class="banner subject">CODING</div>
 
             <div class="object-center" style="display: flex;">
 
@@ -151,9 +163,11 @@
 </body> 
     
 <script>
-        
-    $("#portrait").css("display","none");
-    $("#landscape").css("display","block");
+    
+    $( window ).on( "orientationchange", function( event ) {
+        location.reload();
+        scalePlanets()
+    });
     
     var index = 0;
     
