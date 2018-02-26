@@ -23,14 +23,14 @@ function clearElements(section){
 
 //animation 1
 //TweenMax.to('html',2,{opacity:0,ease:Linear.easeNone});
-TweenMax.to($("#bgGradient"),20,{backgroundPosition:"0% 100%",repeat:-1,ease:Linear.easeNone});
-TweenMax.set('body',{'-webkit-filter':'brightness(0%)'});
+TweenMax.to($("body"),20,{backgroundPosition:"0% 100%",repeat:-1,ease:Linear.easeNone});
+TweenMax.set('#animation1',{'-webkit-filter':'brightness(0%)'});
 TweenMax.set('#naoMain',{'-webkit-filter':'brightness(100%)'});
 TweenMax.set('#estrellaMain',{'-webkit-filter':'brightness(100%)'});
 TweenMax.to({}, 2, {
      onUpdate: function(tl){
           var tlp = (tl.progress()*100) >> 0;
-          TweenMax.set('body',{
+          TweenMax.set('#animation1',{
                '-webkit-filter': 'brightness(' + tlp + '%)'
           });
      },
@@ -64,14 +64,16 @@ function Next1(){
 }
 
 function Next2(){
-    $("#section1").css("display","none");
+    $("#animation1").css("display","none");
+    $("#logo").css("display","none");
     $("#section2").css("display","block");    
     clearElements("#section1 div");
 }
 
 
 function backAnimate1(){
-    $("#section1").css("display","block");
+    $("#logo").css("display","block");
+    $("#animation1").css("display","block");
     $("#section2").css("display","none");
     scaleButtons();
 }

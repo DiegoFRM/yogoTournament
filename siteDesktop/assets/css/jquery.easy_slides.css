@@ -324,7 +324,7 @@ transform: scale(0.7);
 .prev_button {
   position: absolute;
   left: 65%  !important;
-  top: 55%  !important;
+  top: 115%  !important;
   width: 10%  !important;
   opacity: 0.8 !important;
   z-index: 5000 !important;
