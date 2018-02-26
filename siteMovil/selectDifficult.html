@@ -66,7 +66,7 @@
 
                 <div id="adition">ADITION</div>
 
-                <div class="plus-btn" id="plusImg1"></div>
+                <div class="plus-btn" id="plusImg1" data-type="SUM"></div>
             
             </div>
             
@@ -78,7 +78,7 @@
 
                 <div id="substraction">SUBSTRACTION</div>
 
-                <div class="plus-btn" id="plusImg2"></div>
+                <div class="plus-btn" id="plusImg2" data-type="SUB"></div>
             </div>
             
             <div class="subject-container">
@@ -89,7 +89,7 @@
 
                 <div id="multiplcation">MULTIPLICATION</div>
 
-                <div class="plus-btn" id="plusImg3"></div>
+                <div class="plus-btn" id="plusImg3" data-type="MUL"></div>
             </div>
             
             <div class="subject-container">
@@ -100,7 +100,7 @@
 
                 <div id="division">DIVISION</div>
 
-                <div class="plus-btn" id="plusImg4"></div>
+                <div class="plus-btn" id="plusImg4" data-type="DIV"></div>
             </div>
             
         </div>
@@ -131,8 +131,15 @@
     </div>
 
 
+<script type="text/javascript" src="../assets/js/operationGenerator.js"></script>
 <script type="text/javascript" src="assets/js/modal.js"></script>
 <script>
+
+	var current_set = "EASY"
+	var difficultSet = parent.ruleSet || operationGenerator.RULES_SET[current_set]
+	var ruleSet
+	var OPERATORS = ["SUM", "SUB", "MUL", "DIV"]
+	var operatorsObject = {}
 
     for(var i = 0; i < 4; i++){
         $("#checkBox" + i).attr("selection",1);
@@ -161,6 +168,8 @@
             index = lvl.length - 1
         }
         $("#lvl-text").text(lvl[index]);
+        current_set = lvl[index]
+		difficultSet = operationGenerator.RULES_SET[current_set]
     });
     
     $(".right-arrow").click(function(){
@@ -171,59 +180,148 @@
             index = 0
         }
         $("#lvl-text").text(lvl[index]);
+		current_set = lvl[index]
+		difficultSet = operationGenerator.RULES_SET[current_set]
     });
     
     for(var r = 1; r <= 4; r++){
         $("#plusImg"+r).css('background-image', "url('assets/images/plus" + r + ".png')");
     }
-    
-    var aditionOptions = 
-        [
-        "X+X=? Max Sum 9",
-        "X+?=X Max Sum 9",
-        "X+X=? Max Sum 19",
-        "10+X=? Max Sum 19",
-        "XX+X=? Max Sum 104",
-        "XX+?=X Max Sum 104",
-        "XX+X=? Min 11 Max Sum 108",
-        "XX+?=X Min 11 Max Sum 108 "    
-        ]
-    
-    for(var p = 0; p < aditionOptions.length; p++){
 
-        $(".modal-body").append(`<div id="operation`+p+`" class="menu-options">
-                                    <div>
-                                        <span>` + aditionOptions[p] + `</span>
-                                    </div>
 
-                                    <div>
-                                        <div class="checkChoice">
-                                            <img src="assets/images/blank_check.png">
-                                            <img class="markCheck" src="assets/images/mark_check.png">
-                                        </div>
-                                    </div>
-                                </div>`
-        );
+	function printRule(rule, operator){
+		var string = ""
 
-        if(p % 2 == 0){
-           $("#operation" + p).addClass("purple-back");
-        }
-    }
+		if(operator === "MUL")
+			string += "("
+		if(rule.paramToAnswer === operationGenerator.OPERATION_PARAMS.operand1)
+			string += "?"
+		else if(rule.operand1X) {
 
-    for(var i = 0; i < aditionOptions.length; i++){
-        $("#operation" + i).attr("selection",1);
+			for (var index = 0; index < rule.operand1X; index++){
+				string += "X"
+			}
 
-        $("#operation" + i).click(function(){
+		}else if(rule.operand1Const){
+			string += rule.operand1Const
+		}
+		if(operator === "MUL")
+			string += ")"
 
-             if($(this).attr("selection") == 1){
-                 $(this).find(".markCheck").css("display","none");
-                 $(this).attr("selection",0)
-             }else{
-                 $(this).find(".markCheck").css("display","block");
-                 $(this).attr("selection",1)
-             }
-        });
-    }
+		switch (operator){
+			case "SUM":
+				string+="+"
+				$(".headerDifficulty").find("p").text("ADDITION")
+				break
+			case "SUB":
+				string+="-"
+				$(".headerDifficulty").find("p").text("SUBSTRACTION")
+				break
+			case "MUL":
+				string+=""
+				$(".headerDifficulty").find("p").text("MULTIPLICATION")
+				break
+			case "DIV":
+				string+="÷"
+				$(".headerDifficulty").find("p").text("DIVISION")
+				break
+		}
+
+		if(operator === "MUL")
+			string += "("
+		if(rule.paramToAnswer === operationGenerator.OPERATION_PARAMS.operand2)
+			string += "?"
+		else if(rule.operand2X) {
+
+			for (var index = 0; index < rule.operand2X; index++){
+				string += "X"
+			}
+		}else if(rule.operand2Const){
+			string += rule.operand2Const
+		}
+		if(operator === "MUL")
+			string += ")"
+
+		if(rule.paramToAnswer === operationGenerator.OPERATION_PARAMS.result)
+			string += "=?"
+		else {
+			string += "=X"
+		}
+
+		if(rule.minRange) {
+			string += " Min " + rule.minRange
+		}
+
+		if(rule.maxRange) {
+			switch (operator){
+				case "SUM":
+					string += " Max Sum " + rule.maxRange
+					break
+				case "SUB":
+					string += " Max Difference " + rule.maxRange
+					break
+				case "MUL":
+					string += " Max Product " + rule.maxRange
+					break
+				case "DIV":
+					string += " " + rule.maxRange
+					break
+			}
+		}
+
+		return string
+	}
+
+	function getRules(operator) {
+
+		$(".modal-body").html("")
+
+		ruleSet = difficultSet[operator]
+		for (var p = 0; p <= ruleSet.length - 1; p++) {
+			var rule = ruleSet[p]
+
+			$(".modal-body")
+				.append(' <div id="operation' + p + '" class="menu-options">' +
+					'<div><span>' + printRule(rule, operator) + '</span></div>' +
+					'<div id="checkChoice' + p + '"  class="checkChoice" data-num="' + p +'">' +
+					'<img src="assets/images/blank_check.png"> ' +
+					'<img class="markCheck" src="assets/images/mark_check.png"> ' +
+					'</div> ' +
+					'</div>');
+
+			if(!rule.disable)
+				$("#checkChoice" + p).attr("selection",1);
+			else {
+				console.log("disable rule")
+				$("#checkChoice" + p).find(".markCheck").css("display","none");
+				$("#checkChoice" + p).attr("selection", 0);
+			}
+
+
+			$("#checkChoice" + p).click(function(){
+
+				if($(this).attr("selection") == 1){
+					$(this).find(".markCheck").css("display","none");
+					$(this).attr("selection",0)
+					var num = $(this).data("num")
+					ruleSet[num].disable = true
+					//aqui para guardar el deseleccionado
+				}else{
+					$(this).find(".markCheck").css("display","block");
+					$(this).attr("selection",1)
+					$(this).data("num")
+					var num = $(this).data("num")
+					ruleSet[num].disable = false
+					//aqui para guardar el seleccionado
+				}
+			});
+
+
+			if (p % 2 === 0) {
+				$("#operation" + p).addClass("purple-back");
+			}
+		}
+	}
     
 </script>
     

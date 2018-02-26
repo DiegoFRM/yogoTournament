@@ -4,6 +4,9 @@ var modal = document.getElementById('modal');
 // When the user clicks the button, open the modal 
 $(".plus-btn").click(function() {
     modal.style.display = "block";
+	var operator = $(this).data("type")
+	getRules(operator)
+    console.log(operator)
 });
 
 $(".close-btn").click(function() {

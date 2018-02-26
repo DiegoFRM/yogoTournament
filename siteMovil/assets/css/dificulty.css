@@ -206,9 +206,12 @@
 }
 
 .close-btn{
-    text-align: left;
-    width: 15%;
+    /* text-align: left; */
+    width: 10%;
+    /* height:  inherit; */
     transform: translateX(50%);
+    position: absolute;
+    right: 11%;
 }
 
 .center-text{
@@ -217,18 +220,19 @@
     transform: translateY(-10%);
 }
 
-.modal-title{
+.modal-title {
     position: absolute;
-    background-image: url("../images/headerModalDifficulty.png");
+    background-image: url(../images/headerModalDifficulty.png);
     background-color: transparent;
     width: 100%;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     top: -7%;
     left: -0.5%;
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
+    min-height: 100px;
 }
 
 .modal-title span{
