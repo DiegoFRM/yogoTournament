@@ -1,30 +1,26 @@
 
 .menu-container{
-    height: 60%;
     background-color: #cc00ff;
+    padding: 1% 0;
+    height: 65%;
 }
 
-.condition-container{
-
-    height: 50%;
-    width: 100%;
+.banner{
+    margin: 0 1%;
+    margin-top: 3%;
 }
 
 .condition-header{
-    background-image: url("../images/titleTime.png");
-    background-repeat: no-repeat;
-    background-size: 60% 100%;
-    padding: 1vw;
-    background-position: center;
-    height: 20%;
     text-align: center;
-    margin: 0% 10%;
-    font-size: 7vw;
+    margin: 0 10%;
+    font-size: 9vw;
+    margin-top: 5%;
 }
 
 .condition-body{
-    width: 100%;
-    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .more-time{
@@ -34,9 +30,8 @@
     background-repeat: no-repeat;
     background-color: transparent;
     border-style: none;
-    width: 70%;
-    height: 100%;
-    margin-left: 20%;
+    margin: 0 10%;
+    padding: 10%;
 }
 
 .less-time{
@@ -46,9 +41,8 @@
     background-repeat: no-repeat;
     background-color: transparent;
     border-style: none;
-    width: 70%;
-    height: 100%;
-    margin-left: 20%;
+    margin: 0 10%;
+    padding: 10%;
 }
 
 .more-rounds{
@@ -58,9 +52,8 @@
     background-repeat: no-repeat;
     background-color: transparent;
     border-style: none;
-    width: 70%;
-    height: 100%;
-    margin-left: 20%;
+    margin: 0 10%;
+    padding: 10%;
     transform: scaleX(-1);
 }
 
@@ -71,9 +64,8 @@
     background-repeat: no-repeat;
     background-color: transparent;
     border-style: none;
-    width: 70%;
-    height: 100%;
-    margin-left: 20%;
+    margin: 0 10%;
+    padding: 10%;
 }
 
 .round-image{
@@ -83,10 +75,12 @@
     background-repeat: no-repeat;
     background-color: transparent;
     border-style: none;
-    width: 100%;
-    height: 50%;
-    margin-top: 30%;
-    font-size: 20vw;
+    font-size: 15vw;
+    padding: 0 10%;
+}
+
+.round-image span{
+    transform: translateY(5%);
 }
 
 .time-image{
@@ -96,16 +90,12 @@
     background-repeat: no-repeat;
     background-color: transparent;
     border-style: none;
-    width: 100%;
-    height: 40%;
-    margin-top: 5%;
+    padding: 50%
 }
 
-.green-btn{
-    font-size: 5.5vw;
-    bottom: 1.5%;
-    padding-top: 1vw;
- }
+.object-center{
+    margin:  0;
+}
 
 .title-container{
      background-color: darkseagreen;
@@ -140,47 +130,42 @@
         display: block;
     }
     
-        .menu-container {
+    .menu-container {
         display: flex;
+        height: auto;
+        margin-top: 0;
     }
 
-    .condition-container {
-        height: 100%;
+    .less-time{
+        padding: 10%;
     }
 
     .condition-header{
-        background-size: 80% 100%;
         font-size: 4vw;
     }
 
-    .more-time,
-    .less-time,
-    .more-rounds,
-    .less-rounds{
-        width: 100%;
-        margin-left: auto;
+    .green-btn, .red-btn {
+        margin: 0 5%;
     }
 
+    .time-image{
+        padding: 25%;
+    }
+    
     .round-image{
-        font-size: 9vw;
+        font-size: 7vw;
+        padding: 10%;
+        transform: scale(1.4);
     }
-
+    
     .round-image p{
-        margin-top: 10%;
+        margin: 0;
+        transform: translateY(11%);
     }
-
-    .red-btn {
-        font-size: 4.5vw;
-        padding-top: 1.5vw;
-        bottom: 2%;
+    
+    .object-center{
+        margin-left: 15%;
     }
-
-    .green-btn{
-        
-        font-size: 2.2vw;
-        bottom: 8%;
-        padding-top: 1vw;
-     }
 
 }
 

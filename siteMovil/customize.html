@@ -20,23 +20,6 @@
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
     
-    <script src="assets/js/Carousel.js"></script>
-    
-    <script>
-    $(document).ready(function() {
-        $('.carousel-container').carousel({
-            num: 1,
-            maxWidth: 450,
-            maxHeight: 450,
-            distance: 100,
-            scale: 0.6,
-            animationTime: 500,
-            autoPlay: false,
-            distance: 100
-        });
-    });
-    </script>
-    
 </head>
     
 <body>
@@ -51,61 +34,48 @@
 
             <div class="menu-container">
 
-                <div class="condition-container">
-
-                    <div class="condition-header">
-                        <span style="color: dimgrey">TIME</span>
-                    </div>
+                <div>
+                    <div class="condition-header">TIME</div>
 
                     <div class="condition-body">
 
-                        <div class="col-xs-3 sub-grid">
-                            <div class="less-time"></div>
-                        </div>
+                        <div class="less-time"></div>
 
-                        <div class="col-xs-6 sub-grid" style="display: initial">
+                        <div style="display: initial">
                             <div class="time-image"></div>
                             <div class="time" style="font-size: 9vw">3:00</div>
                             <div style="font-size: 5vw">minutes</div>
                         </div>
 
-                        <div class="col-xs-3 sub-grid">
-                            <div class="more-time"></div>
-                        </div>
-
+                        <div class="more-time"></div>
                     </div>
 
                 </div>
 
-                <div class="condition-container">
-
-                    <div class="condition-header" style="background-image: url('assets/images/titleRound.png');">
-                        <span>ROUNDS</span>
-                    </div>
+                <div>
+                    <div class="condition-header">ROUNDS</div>
 
                     <div class="condition-body">
-                        <div class="col-xs-3 sub-grid">
-                            <div class="less-rounds"></div>
+                        
+                        <div class="less-rounds"></div>
+                
+                        <div class="round-image round">
+                            <span>3</span>
                         </div>
 
-                        <div class="col-xs-6 sub-grid">
-                            <div class="round-image round"><span>3</span></div>
-                        </div>
+                        <div class="more-rounds"></div>
 
-                        <div class="col-xs-3 sub-grid">
-                            <div class="more-rounds"></div>
-                        </div>
                     </div>
 
                 </div>
-
+                
             </div>
 
             <div class="object-center">
 
-                <button class="menuBtn red-btn" type="button" onclick="window.location.href='selectDifficult.html'">BACK</button>
+                <button class="red-btn" type="button" onclick="window.location.href='selectDifficult.html'">BACK</button>
 
-                <button class="menuBtn green-btn" type="button" onclick="window.location.href='lobby.html'">CREATE ROOM</button>
+                <button class="green-btn" type="button" style="font-size: 5.5vw;" onclick="window.location.href='lobby.html'">CREATE ROOM</button>
 
             </div>
 
@@ -121,61 +91,48 @@
 
             <div class="menu-container">
 
-                <div class="condition-container">
-
-                    <div class="condition-header">
-                        <span style="color: dimgrey">TIME</span>
-                    </div>
+                <div class="col-xs-6">
+                    <div class="condition-header">TIME</div>
 
                     <div class="condition-body">
 
-                        <div class="col-xs-3 sub-grid">
-                            <div class="less-time"></div>
-                        </div>
+                        <div class="less-time"></div>
 
-                        <div class="col-xs-6 sub-grid" style="display: initial">
+                        <div>
                             <div class="time-image"></div>
-                            <div class="time" style="font-size: 6vw">3:00</div>
-                            <div style="font-size: 4vw">minutes</div>
+                            <div class="time" style="font-size: 5vw">3:00</div>
+                            <div style="font-size: 3vw">minutes</div>
                         </div>
 
-                        <div class="col-xs-3 sub-grid">
-                            <div class="more-time"></div>
-                        </div>
-
+                        <div class="more-time"></div>
                     </div>
 
                 </div>
 
-                <div class="condition-container">
-
-                    <div class="condition-header" style="background-image: url('assets/images/titleRound.png');">
-                        <span>ROUNDS</span>
-                    </div>
+                <div class="col-xs-6">
+                    <div class="condition-header">ROUNDS</div>
 
                     <div class="condition-body">
-                        <div class="col-xs-3 sub-grid">
-                            <div class="less-rounds"></div>
+                        
+                        <div class="less-rounds"></div>
+                
+                        <div class="round-image round">
+                            <p>3</p>
                         </div>
 
-                        <div class="col-xs-6 sub-grid">
-                            <div class="round-image"><p class="round">3</p></div>
-                        </div>
+                        <div class="more-rounds"></div>
 
-                        <div class="col-xs-3 sub-grid">
-                            <div class="more-rounds"></div>
-                        </div>
                     </div>
 
                 </div>
-
+                
             </div>
 
             <div class="object-center">
 
-                <button class="menuBtn red-btn" type="button" onclick="window.location.href='selectDifficult.html'">BACK</button>
+                <button class="red-btn" type="button" onclick="window.location.href='selectDifficult.html'">BACK</button>
 
-                <button class="menuBtn green-btn" type="button" onclick="window.location.href='lobby.html'">CREATE <br> ROOM</button>
+                <button class="green-btn" type="button" style="font-size:  3.2vw;" onclick="window.location.href='lobby.html'">CREATE ROOM</button>
 
             </div>
 
