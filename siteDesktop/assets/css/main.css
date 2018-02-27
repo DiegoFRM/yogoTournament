@@ -395,9 +395,10 @@ body{
 
 .containerRules{
     position: absolute;
-    height: 50%;
-    width: 50%;
+    height: 60%;
+    width: 60%;
     left:50%;
+    z-index: 1;
     transform: translate(-50%,10%);
 }
 
@@ -498,6 +499,7 @@ body{
     top: 20%;
 }
 
+#modalCancel,
 #modalDifficulty{
     position: absolute;
     width: 100%;
@@ -517,6 +519,7 @@ body{
     left:50%;
     transform: translate(-50%,-50%);
 }
+
 
 .headerDifficulty{
     position: absolute;
@@ -601,7 +604,6 @@ body{
     width: 100%;
     height: 100%;
     top:0;
-    display: none;
 }
 
 .containerCustomize{
@@ -684,16 +686,18 @@ body{
 
 #section5{
     position: absolute;
-    width: 80%;
-    left:10%;
+    width: 100%;
+    left:0%;
     height: 100%;
+    display: none;
 }
 
 .containerPin{
     position: absolute;
     width: 100%;
     height: 100%;
-    top:50%;
+    top:38%;
+    z-index: 1234123;
     background-color: #00ff78;
     background-image: url("../images/patternCircles.png");
     border-radius:  0 0vw 2vw 2vw;
@@ -726,6 +730,10 @@ body{
     color:#FFF;
 }
 
+.bglooby{
+    width: 40%;
+}
+
 #pin{
     background-color: #FFF;
     color:#006837;
@@ -745,32 +753,70 @@ body{
     color:#184831;
 }
 
-.yogotarsSelecitons{
+.yogotarsSelections{
     position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0%;
+    margin: 0px !important;
+    padding: 0 !important;
+    
+}
+
+.yogotarNameSelect{
+    width: 100%;
+    height: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+}
+
+.yogotarNameSelect .imageYogotar{
+    width: 50%;
+    height: 20%;
+    left:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#NameYogotarplayer1 {
+    width: 30%;
+    transform: translate(-65%,0%);
+}
+
+#NameYogotarplayer2 {
+    width: 30%;
+    transform: translate(65%,0%);
+}
+
+#playerName1{
+    width: 40%;
+    font-size: 3vw;
+    transform: translate(-23%,0%);
+}
+
+#playerName2{
+    width: 40%;
+    font-size: 3vw;
+    transform: translate(23%,0%);
 }
 
 .yogotarSelect{
-    text-align: center;
     width: 100%;
-    margin-left:20%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .yogotarSelect .imageYogotar{
-    text-align: center;
     width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 20%;
-    background-color:#FFF;  
 }
 
 .imageYogotar img{
-    width: 100%;
+    width: 50%;
 }
 
 .playerName{
@@ -779,10 +825,17 @@ body{
     color:#184831;
 }
 
+#player1{
+    left:0%;
+}
+
+#player2{
+    left:0%;
+    transform: scale(-1,1);
+}
+
 #StartButton{
     color: #FFF;
-    background-size: contain;
-    background-position: bottom;
 }
 
 .lock .planetImage{
@@ -806,6 +859,7 @@ body{
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+    color:#FFF;
 }
 
 .showModal{
@@ -823,6 +877,56 @@ body{
 }
 
 .showModal img{
-    transform: translate(-40%,-30%);
+    transform: translate(-45%,-30%);
     width: 70%;
+}
+
+#cancelLooby{
+    width: 100%;
+    z-index: 1;
+    
+}
+#cancelLooby img{
+    width: 50%;
+    margin-top: -10%;
+    
+}
+
+.m-containerCancel{
+    position: absolute;
+    background: #ff9c9e;
+    background-size: 30%;
+    width: 50%;
+    height: 50%;
+    border-radius: 3vw;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.headerClose{
+    height: 20%;
+    position: absolute;
+    left: 10%;
+}
+
+.textModalCancel{
+    position: relative;
+    color:#c20009;
+    width: 80%;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-80%);
+    font-size: 4vh;
+    text-align: center;
+}
+
+#cancelButton{
+    width: 100%;
+    background-size: contain;
+    position: absolute;
+    text-align: center;
+    background-position: center;
+    top:80%;
+    font-size: 3vh;
 }
