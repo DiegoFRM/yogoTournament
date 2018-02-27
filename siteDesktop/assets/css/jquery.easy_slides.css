@@ -331,6 +331,7 @@ transform: scale(0.7);
   cursor: pointer;
   text-align: center;
   line-height: 30px;
+    z-index: 1234;
 }
 
 .next_button{

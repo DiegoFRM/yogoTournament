@@ -35,10 +35,10 @@
                 <div class="row objectsmain">
                 <div class="object-left col-xs-4">
                 </div>  
-                <div class="object-center col-xs-4 row">
+                <div class="object-center col-xs-4">
 
-                        <div id="createGame" class="greenBtn scaleButton col-xs-6">Create</div>
-                        <div id="joinGame" class="greenpink scaleButton col-xs-6">JOIN</div>
+                        <div id="createGame" class="greenBtn scaleButton">CREATE</div>
+                        <div id="joinGame" class="greenpink scaleButton">JOIN</div>
                 </div>
                     
                 <div class="object-right col-xs-4">
@@ -86,12 +86,11 @@
             <div class="textSubject titlered"><p>MATH</p></div>
             
 
-            <div class="navButtons">
-<!--            <img id="backButton1" src="assets/images/backButton.png">
-                <img id="nextButton1" src="assets/images/nextButton.png">
--->
-                <div id="backButton1" class="greenpink scaleButton col-xs-6">BACK</div>
-                    <div id="nextButton1" class="greenBtn scaleButton col-xs-6">NEXT</div>
+        
+            
+            <div class="object-center col-xs-4 col-xs-offset-4" style="top:80%;">
+                <div id="backButton1" class="redBtn scaleButton">BACK</div>
+                    <div id="nextButton1" class="greenBtn scaleButton">NEXT</div>
                 
             </div>
             
@@ -99,49 +98,49 @@
         
         <section id="section3">
             <div class="containerRules">
-                <div class="titlered">Difficulty</div>
+                <div class="bgtitle">Difficulty</div>
                 <div class="rules">
                     <div class="prevDifficulty"><img src="assets/images/arrow_side.png"></div>  
-                    <div id="difficultyName">EASY</div>
+                    <div id="difficultyName"><p></p><span>EASY</span></div>
                     <div class="nextDifficulty"><img src="assets/images/arrow_side.png"></div>  
                 </div>
                 <div class="col-xs-8 col-xs-offset-2 optionsDifficulty">
-                    <div class="col-xs-12 optionChoice">
+                    <div class="col-xs-12 optionChoice option1">
                         <div id="checkBox1" class="checkBlank">
                             <img src="assets/images/blank_check.png"> 
                             <img class="markCheck" src="assets/images/mark_check.png">
                         </div>
-                        <div class="option1">Addition</div>
+                        <div class="operationType">Addition</div>
                         <div class="divisionShape"></div>
-                        <div class="showModal" data-type="SUM"><img src="assets/images/plus1.png"></div>
+                        <div class="showModal" data-type="SUM"><span>custom</span><img src="assets/images/adition_custom.png"></div>
                     </div>
-                    <div class="col-xs-12 optionChoice">
+                    <div class="col-xs-12 optionChoice option2">
                         <div id="checkBox2" class="checkBlank">
                             <img src="assets/images/blank_check.png"> 
                             <img class="markCheck" src="assets/images/mark_check.png">
                         </div>
-                        <div class="option2">Substraction</div>
+                        <div class="operationType">Substraction</div>
                         <div class="divisionShape"></div>
-                        <div class="showModal" data-type="SUB"><img src="assets/images/plus2.png"></div>
+                        <div class="showModal" data-type="SUB"><span>custom</span><img src="assets/images/subst_custom.png"></div>
                         
                     </div>
-                    <div class="col-xs-12 optionChoice">
+                    <div class="col-xs-12 optionChoice option3">
                         <div id="checkBox3" class="checkBlank">
                             <img src="assets/images/blank_check.png">
                             <img class="markCheck" src="assets/images/mark_check.png">
                         </div>
-                        <div class="option3">MULTIPLICATION</div>
+                        <div class="operationType">MULTIPLICATION</div>
                         <div class="divisionShape"></div>
-                        <div class="showModal" data-type="MUL"><img src="assets/images/plus3.png"></div>
+                        <div class="showModal" data-type="MUL"><span>custom</span><img src="assets/images/multi_custom.png"></div>
                     </div>
-                    <div class="col-xs-12 optionChoice">
+                    <div class="col-xs-12 optionChoice option4">
                         <div id="checkBox4" class="checkBlank">
                             <img src="assets/images/blank_check.png"> 
                             <img class="markCheck" src="assets/images/mark_check.png">
                         </div>
-                        <div class="option4">DIVISION</div>
+                        <div class="operationType">DIVISION</div>
                         <div class="divisionShape"></div>
-                        <div class="showModal" data-type="DIV"><img src="assets/images/plus4.png"></div>
+                        <div class="showModal" data-type="DIV"><span>custom</span><img src="assets/images/divi_custom.png"></div>
                         
                     </div>
                 </div>
@@ -163,8 +162,8 @@
             </div>
             
             
-            <div class="navButtons">
-                <div id="backButton2" class="greenpink scaleButton col-xs-6">BACK</div>
+            <div class="object-center col-xs-4 col-xs-offset-4" style="top:80%;">
+                <div id="backButton2" class="redBtn scaleButton col-xs-6">BACK</div>
                     <div id="nextButton2" class="greenBtn scaleButton col-xs-6">NEXT</div>
             </div>
             
@@ -173,7 +172,7 @@
         
         <section  id="section4">
             <div class="containerRules">
-            <div class="titlered">Customize</div>
+            <div class="bgtitle">Customize</div>
                 <div class="row containerCustomize">
                 <div class="col-xs-6 optionsTime">
                     <div class="bgYellow">
@@ -184,7 +183,7 @@
                             <div class="col-xs-12">
                                 <img src="assets/images/clockImage.png">
                             </div>
-                            <div class="row timeOptions">
+                            <div class="row timeOptions col-xs-12">
                                 <div id="restTime" class="col-xs-4"><img src="assets/images/restButton.png"></div>
                                 <div id="timeClock" class="col-xs-4"> <span>1</span>:00</div>
                                 <div id="sumTime" class="col-xs-4"><img src="assets/images/sumButton.png"></div>
@@ -195,7 +194,7 @@
                 </div>
                 
                 <div class="col-xs-6 optionsRounds">
-                    <div class="bgPurple">
+                    <div class="bgYellow">
                         Rounds
                     </div>
                         <div class="row">
@@ -214,10 +213,11 @@
                 </div>
             </div>
             
+   
             
-            <div class="navButtons">
-                <div id="backButton3" class="redBtn scaleButton col-xs-6" >BACK</div>
-                <div id="nextButton3" class="greenBtn scaleButton col-xs-6">SET UP</div>
+            <div class="object-center col-xs-4 col-xs-offset-4" style="top:80%;">
+                <div id="backButton3" class="redBtn scaleButton" >BACK</div>
+                <div id="nextButton3" class="greenBtn scaleButton">CREATE</div>
             </div>
             
         </section>
@@ -243,7 +243,7 @@
                 </div>
             </div>
             </div>
-            <div class="navButtons">
+            <div class="object-center col-xs-4 col-xs-offset-4" style="top:80%;">
                 <div id="StartButton" class="greenBtn scaleButton">START</div>
             </div>
             

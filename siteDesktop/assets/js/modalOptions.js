@@ -197,19 +197,19 @@ var difficultyNameLevel = 0;
     function levelDifficulty(difficultyNameLevel){
         switch(difficultyNameLevel){
             case 0:
-               $("#difficultyName").text("EASY");
+               $("#difficultyName").find("span").text("EASY");
                 current_set = "EASY"
             break; 
             case 1:
-               $("#difficultyName").text("MEDIUM");
+               $("#difficultyName").find("span").text("MEDIUM");
                 current_set = "MEDIUM"
             break;
             case 2:
-               $("#difficultyName").text("HARD");
+               $("#difficultyName").find("span").text("HARD");
                 current_set = "HARD"
             break;
             case 3:
-               $("#difficultyName").text("MASTER");
+               $("#difficultyName").find("span").text("MASTER");
                 current_set = "MASTER"
             break;
                 

@@ -35,7 +35,7 @@ TweenMax.to({}, 2, {
           });
      },
      onUpdateParams: ["{self}"], // references the tweens timeline
-    delay:2,
+    delay:0,
     onComplete: scaleButtons
 });
 
@@ -48,6 +48,7 @@ function scaleButtons(){
 function animation1(){
         TweenMax.to($("#createGame"),1,{x:"50%",ease:Back.easeOut,onComplete:Next1});
         TweenMax.to($("#joinGame"),0.5,{scale:0,ease:Linear.easeNone});
+        TweenMax.to($(".containerMainText"),0.5,{scale:0,ease:Back.easeIn});
 }
 
 function Next1(){
