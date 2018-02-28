@@ -195,17 +195,20 @@
 }
 
 .modal-title{
-    position: absolute;
+/*    position: absolute;*/
     background-image: url("../images/addition.png");
     background-color: transparent;
     background-size: 100% 100%;
     width: 100%;
     background-repeat: no-repeat;
-    top: -12%;
+    top: 0%;
     display: flex;
     justify-content:space-around;
     align-items: center;
     left: -1vw;
+        position: fixed;
+    z-index: 1;
+
 }
 
 .modal-title span{
@@ -244,6 +247,9 @@
 }
 
 
+
+
+
 @media screen and (orientation: portrait) {
     
     #portrait {
@@ -253,6 +259,8 @@
     #landscape {
         display: none;
     }
+    
+    
 }
 
 /*----- Landscape mode -----*/
@@ -337,6 +345,44 @@
     .modal-body{
 
     }
+    
+.modal-content {
+    position: fixed !important;
+    -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    width: 10%;
+    height: 90%;
+    font-size: 1vh !important;
+    overflow-y: scroll;
+    top: 30% !important;
+    left: 4% !important;
+    
+}    
+    
+.modal-title span{
+    font-size: 3vw;
+    padding-top: 1%;
+}
+
+.modal-body{
+        top: 24%;
+
+}    
+    
+.modal-body span{
+    font-size: 3vw;
+}    
+    
+.close-btn {
+    text-align: right;
+    width: 14%;
+    transform: translate;
+    /* right: 0%; */
+    left: 10%;
+    background-color: #80060600;
+    position: relative;
+}    
+    
 
 }
 
