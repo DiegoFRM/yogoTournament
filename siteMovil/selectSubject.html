@@ -169,9 +169,13 @@
                 </ul>
                 
                 <div class="selection-container">
-                    <img src="assets/images/arrowYellow.png" class="left">
+                    <div class="left">
+                        <img src="assets/images/arrowYellow.png">
+                    </div>
                     <div class="banner-selection subject">MATH</div>
-                    <img src="assets/images/arrowYellow.png" class="right">
+                    <div class="right">
+                        <img src="assets/images/arrowYellow.png">
+                    </div>
                 </div>
                 
             </div>
@@ -203,28 +207,61 @@
     });
     
     var index = 0;
+    var canClick = true;
     
     var subjectList = ['MATH', 'CREATIVITY', 'HEALTH', 'GEOGRAPHY', 'LANGUAGE', 'CODING', 'SCIENCE']
     
     $(".left").on('touchstart', function(){
-        if(index > 0){
-            index--
+        
+        if(canClick){
+            canClick = false
+            
+            if(index > 0){
+                index--
+            }
+            else{
+                index = subjectList.length - 1
+            }
+            $(".subject").text(subjectList[index]);
+            
+            setTimeout(delayToClick, 500);
         }
-        else{
-            index = subjectList.length - 1
-        }
-        $(".subject").text(subjectList[index]);
+        
     });
     
     $(".right").on('touchstart', function(){
-        if(index < subjectList.length -1){
-            index++
+        
+        if(canClick){
+            canClick = false
+            
+            if(index < subjectList.length -1){
+                index++
+            }
+            else{
+                index = 0
+            }
+            $(".subject").text(subjectList[index]);
+            
+            setTimeout(delayToClick, 500);
         }
-        else{
-            index = 0
-        }
-        $(".subject").text(subjectList[index]);
     });
+    
+    function delayToClick(){
+        canClick = true
+    }
         
 </script>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
