@@ -211,7 +211,7 @@
         <div class="modal-content font-luckiest" >
             <div class="modal-header">
                 <div class="title-modal">
-                    <span>ADITION</span>
+                    <p>ADITION</p>
                     <div class="close-btn">
                         <img  src="assets/images/closeButton.png">
                     </div>
@@ -223,7 +223,6 @@
             </div>
             
             <div class="modal-footer">
-                
             </div>
         </div>
             
@@ -283,9 +282,6 @@
 		difficultSet = operationGenerator.RULES_SET[current_set]
     });
     
-    $(".plus-btn").click(function(){
-        console.log()
-    });
 
 	function printRule(rule, operator){
 		var string = ""
@@ -309,19 +305,19 @@
 		switch (operator){
 			case "SUM":
 				string+="+"
-				$(".headerDifficulty").find("p").text("ADDITION")
+				$(".title-modal").find("p").text("ADDITION")
 				break
 			case "SUB":
 				string+="-"
-				$(".headerDifficulty").find("p").text("SUBSTRACTION")
+				$(".title-modal").find("p").text("SUBSTRACTION")
 				break
 			case "MUL":
 				string+=""
-				$(".headerDifficulty").find("p").text("MULTIPLICATION")
+				$(".title-modal").find("p").text("MULTIPLICATION")
 				break
 			case "DIV":
 				string+="÷"
-				$(".headerDifficulty").find("p").text("DIVISION")
+				$(".title-modal").find("p").text("DIVISION")
 				break
 		}
 

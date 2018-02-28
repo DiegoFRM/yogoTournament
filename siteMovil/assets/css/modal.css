@@ -52,7 +52,7 @@
     text-align: center;
     background: #c0b4fc;
     background-image: url("../images/patternoptions.png");
-    max-height: 40%;
+    max-height: 66%;
     overflow-y: auto;
 }
 
@@ -61,7 +61,7 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
     text-align: center;
-    padding: 7% !important;
+    padding: 5% !important;
     background-position: center;
     background-color: purple;
     background-blend-mode: multiply;
