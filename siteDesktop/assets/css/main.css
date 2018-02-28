@@ -513,10 +513,11 @@ body{
     background: #c0b4fc;
     background-image: url("../images/patternCircles.png");
     background-size: 30%;
-    width: 40%;
-    height: 70%;
+    width: 50%;
+    height: 80%;
     top:50%;
     left:50%;
+    
     transform: translate(-50%,-50%);
 }
 
