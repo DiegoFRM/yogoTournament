@@ -728,22 +728,6 @@ body{
 }
 
 
-
-#roundOptions{
-    position: relative;
-    background-image: url("../images/hexapurple.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    font-size: 4vw;
-    margin-top: -8%;
-    height: 25%;
-    padding-top: 1vw;
-}
-
-#roundOptions span{
-}
-
 #restRound{
     transform: scale(-1,1);
 }
@@ -1001,4 +985,27 @@ body{
 
 #animation1{
     height: 100%;
+}
+
+.planetImage{
+    
+}
+#roundOptions,
+#timeClock{
+    font-size: 2.5vw;
+    padding: 3vw;
+}
+
+#roundOptions img,
+#timeClock img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-55%);
+    width: 28%;
+}
+
+.timeOptions img{
+    width: 100%;
+    min-width: 20px;
 }
