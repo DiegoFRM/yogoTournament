@@ -17,7 +17,7 @@
     
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/jquerysctipttop.css" />
+    
     
     <script src="assets/js/Carousel.js"></script>
     
@@ -114,7 +114,7 @@
             
             <div class="object-center">
 
-                <div class="red-btn" type="button" onclick="window.location.href='index.html'">BACK</div>
+                <div class="red-btn goBack" type="button">BACK</div>
 
                 <div class="green-btn" type="button" onclick="window.location.href='selectDifficult.html'">NEXT</div>
 
@@ -178,9 +178,9 @@
 
             <div class="object-center" style="width: 70%; margin-top: 6.5%; margin-left: 15%; display: flex; justify-content: center;">
 
-                <button class="menuBtn red-btn" style="margin: 0; font-size: 4vw;" type="button" type="button" onclick="window.location.href='index.html'">BACK</button>
+                <button class="red-btn goBack" style="margin: 0; font-size: 4vw;" type="button">BACK</button>
 
-                <button class="menuBtn green-btn" style="margin: 0; font-size: 4vw;" type="button" onclick="window.location.href='selectDifficult.html'">NEXT</button>
+                <button class="green-btn" style="margin: 0; font-size: 4vw;" type="button" onclick="window.location.href='selectDifficult.html'">NEXT</button>
 
             </div>
 
@@ -190,11 +190,16 @@
     
 </body> 
     
+    <script src="assets/js/animations.js"></script>
 <script>
     
     $( window ).on( "orientationchange", function( event ) {
         location.reload();
         scalePlanets()
+    });
+    
+    $(".goBack").click(function(){
+        backAnimate1();
     });
     
     var index = 0;

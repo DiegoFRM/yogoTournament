@@ -246,7 +246,20 @@
     background-color: #a89df9;
 }
 
-
+.ok-btn{
+    background-image: url(../images/greenButton.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: transparent;
+    border-style: none;
+    padding-top: 1vh;
+    cursor: pointer;
+    color: #FFF;
+    font-size: 4vh;
+    z-index: 10;
+    margin: 1% 36%;
+}
 
 
 

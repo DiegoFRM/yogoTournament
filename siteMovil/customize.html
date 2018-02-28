@@ -52,7 +52,7 @@
 
                 </div>
 
-                <div>
+                <div style="margin-bottom: 10%;">
                     <div class="condition-header">ROUNDS</div>
 
                     <div class="condition-body">
@@ -75,7 +75,7 @@
 
                 <button class="red-btn" type="button" onclick="window.location.href='selectDifficult.html'">BACK</button>
 
-                <button class="green-btn" type="button" style="font-size: 5.5vw;" onclick="window.location.href='lobby.html'">CREATE ROOM</button>
+                <button class="green-btn" type="button" onclick="window.location.href='lobby.html'">CREATE</button>
 
             </div>
 
@@ -125,14 +125,14 @@
                     </div>
 
                 </div>
-                
             </div>
+            
 
             <div class="object-center">
 
                 <button class="red-btn" type="button" onclick="window.location.href='selectDifficult.html'">BACK</button>
 
-                <button class="green-btn" type="button" style="font-size:  3.2vw;" onclick="window.location.href='lobby.html'">CREATE ROOM</button>
+                <button class="green-btn" type="button" style="font-size: 3.5vw;" onclick="window.location.href='lobby.html'">CREATE</button>
 
             </div>
 
@@ -182,6 +182,8 @@
         $(".time").text(time + ':00');
     });
     
+    TweenMax.to($("#bgGradient"),10,{backgroundPosition:"0% 100%",repeat:-1,ease:Linear.easeNone});
+
 </script>
     
 </body>       
