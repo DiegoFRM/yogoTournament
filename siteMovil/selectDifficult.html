@@ -208,13 +208,22 @@
     
     <!-- modal -->
     <div id="modal" class="modal ">
-        <div class="modal-content font-luckiest">
-            <div class="modal-title">
-                <span>ADITION</span>
-                <img class="close-btn" src="assets/images/closeButton.png">
+        <div class="modal-content font-luckiest" >
+            <div class="modal-header">
+                <div class="title-modal">
+                    <span>ADITION</span>
+                    <div class="close-btn">
+                        <img  src="assets/images/closeButton.png">
+                    </div>
+                </div>
+                
             </div>
             
             <div class="modal-body">
+            </div>
+            
+            <div class="modal-footer">
+                
             </div>
         </div>
             
@@ -274,6 +283,9 @@
 		difficultSet = operationGenerator.RULES_SET[current_set]
     });
     
+    $(".plus-btn").click(function(){
+        console.log()
+    });
 
 	function printRule(rule, operator){
 		var string = ""

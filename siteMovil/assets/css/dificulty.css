@@ -121,15 +121,6 @@
     height: 100%;
 }
 
-.sub-grid{
-    height: 100%;
-    display: flex;
-    text-align: center;
-}
-
-.sub-grid span{
-    padding-top: 5%;
-}
 
 .plus-btn{
     width: 20%;
@@ -176,10 +167,25 @@
     margin-top: 10%;
 }
 
+.title-modal{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 9vw;
+}
+
+.title-modal span{
+    transform: translateY(8%);
+}
+
 .close-btn{
     text-align: left;
     width: 15%;
     transform: translateX(50%);
+}
+
+.close-btn img{
+    width: 100%;
 }
 
 .center-text{
