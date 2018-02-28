@@ -603,6 +603,7 @@ body{
     padding: 0.5vw;
     top:0%;
     font-size: 3vw;
+    left:0;
 }
 
 .closeButton{
@@ -620,6 +621,8 @@ body{
     font-size: 2vw;
     text-align: center;
     width: 100%;
+    z-index: 20000;
+    left:0;
 }
 .choiceOptions{
     top:10%;
