@@ -2,9 +2,43 @@ html{
     height: 100%;
 }
 
+::-webkit-scrollbar {
+  width: 2%;
+  height: 7px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #e1e1e1;
+  border: 0px solid #ffffff;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #b8b8b8;
+}
+::-webkit-scrollbar-track {
+  background: #666666;
+  border: 0px dotted #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #666666;
+}
+::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
 @font-face{
 	font-family: 'VAGRounded';
-	src: url('../fonts/VAGRoundedStd-Bold.otf');
+	src: url('../../fonts/VAGRoundedStd-Bold.otf');
 }
 
 .vagrounded-font{
@@ -514,7 +548,7 @@ body{
     background-image: url("../images/patternCircles.png");
     background-size: 30%;
     width: 50%;
-    height: 80%;
+    height: 70%;
     top:50%;
     left:50%;
     
@@ -524,7 +558,9 @@ body{
 
 .headerDifficulty{
     position: absolute;
-    background-image: url("../images/bgpurple.png");
+    background-image: url("../images/bgtransparent.png");
+    background-color: rgb(89,0,128);
+    background-blend-mode: multiply;
     width: 100%;
     left:50%;
     height: 15%;
@@ -537,6 +573,36 @@ body{
     align-content: center;
     justify-content:space-around;
     
+}
+
+.confirmOptions{
+    position: absolute;
+    background-image: url("../images/bgtransparent.png");
+    background-color: rgb(89,0,128);
+    background-blend-mode: multiply;
+    width: 100%;
+    left:50%;
+    height: 15%;
+    transform: translate(-50%,0%);
+    background-position: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    bottom:-15%;
+    display: flex;
+    align-content: center;
+    justify-content:space-around;    
+}
+
+.confirmOptions .greenBtn{
+
+    width: 100%;
+    background-size: contain;
+    position: absolute;
+    text-align: center;
+    background-position: center;
+    padding: 0.5vw;
+    top:0%;
+    font-size: 3vw;
 }
 
 .closeButton{
@@ -560,7 +626,7 @@ body{
     position: absolute;
     width: 100%;
     height: 90%;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 .optionOperations{
@@ -872,7 +938,7 @@ body{
 
 .showModal span{
     position: absolute;
-    font-size: 2vh;
+    font-size: 1.2vw;
     display: flex;
     text-align: center;
     justify-content: center;   
@@ -932,4 +998,8 @@ body{
     background-position: center;
     top:80%;
     font-size: 3vh;
+}
+
+#animation1{
+    height: 100%;
 }
