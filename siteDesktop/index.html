@@ -363,8 +363,10 @@
 
 		console.log("showYogotar")
 		var numPlayer = event.numPlayer, player = event.player
-		$("#yogotar" + numPlayer).find(".imageYogotar").html("<img src=\"assets/yogotars/" + player.avatar +".png\">")
-		$("#yogotar" + numPlayer).find(".playerName").html(player.nickname)
+		$("#player" + numPlayer).find("img").attr("src", 'img/yogotars/' + player.avatar +'.png')
+		$("#NameYogotarplayer" + numPlayer).find("img").attr("src", 'img/names/name_' + player.avatar +'.png')
+		$("#NameYogotarplayer" + numPlayer).css("opacity", 1)
+		$("#playerName" + numPlayer).html(player.nickname)
 
 	}
 

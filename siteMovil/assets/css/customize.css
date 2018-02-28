@@ -2,7 +2,6 @@
 .menu-container{
     background-color: #cc00ff;
     padding: 1% 0;
-    height: 65%;
 }
 
 .banner{
@@ -14,7 +13,6 @@
     text-align: center;
     margin: 0 10%;
     font-size: 9vw;
-    margin-top: 5%;
 }
 
 .condition-body{
@@ -100,6 +98,8 @@
 
 .object-center{
     margin:  0;
+    position: absolute;
+    bottom: 0;
 }
 
 .title-container{
@@ -136,7 +136,7 @@
     }
     
     .menu-container {
-        height: 50%;
+        height: 55%;
         margin-top: 0;
     }
 
@@ -170,6 +170,7 @@
     
     .object-center{
         margin-left: 15%;
+        bottom: 1%
     }
     
     .banner{

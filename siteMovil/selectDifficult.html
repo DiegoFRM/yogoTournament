@@ -208,13 +208,22 @@
     
     <!-- modal -->
     <div id="modal" class="modal ">
-        <div class="modal-content font-luckiest">
-            <div class="modal-title">
-                <span>ADITION</span>
-                <img class="close-btn" src="assets/images/closeButton.png">
+        <div class="modal-content font-luckiest" >
+            <div class="modal-header">
+                <div class="title-modal">
+                    <p>ADITION</p>
+                    <div class="close-btn">
+                        <img  src="assets/images/closeButton.png">
+                    </div>
+                </div>
+                
             </div>
             
             <div class="modal-body">
+            </div>
+            
+            <div class="modal-footer">
+                <div class="ok-btn" type="button">OK</div>
             </div>
         </div>
             
@@ -297,19 +306,19 @@
 		switch (operator){
 			case "SUM":
 				string+="+"
-				$(".headerDifficulty").find("p").text("ADDITION")
+				$(".title-modal").find("p").text("ADDITION")
 				break
 			case "SUB":
 				string+="-"
-				$(".headerDifficulty").find("p").text("SUBSTRACTION")
+				$(".title-modal").find("p").text("SUBSTRACTION")
 				break
 			case "MUL":
 				string+=""
-				$(".headerDifficulty").find("p").text("MULTIPLICATION")
+				$(".title-modal").find("p").text("MULTIPLICATION")
 				break
 			case "DIV":
 				string+="÷"
-				$(".headerDifficulty").find("p").text("DIVISION")
+				$(".title-modal").find("p").text("DIVISION")
 				break
 		}
 
@@ -408,6 +417,9 @@
 			}
 		}
 	}
+    
+    TweenMax.to($("#bgGradient"),10,{backgroundPosition:"0% 100%",repeat:-1,ease:Linear.easeNone});
+
     
 </script>
     

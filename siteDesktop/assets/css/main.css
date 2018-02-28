@@ -88,7 +88,7 @@ body{
 }
 
 .option1{
-    
+
     background-color: #4719ac;
     padding: 0.4vw;
     width: 100%;
@@ -162,7 +162,7 @@ body{
     padding: 2vh;
     width: 70%;
     max-width: 600px !important;
-    
+
 }
 
 .objectsmain{
@@ -174,7 +174,7 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
+
 }
 
 
@@ -185,9 +185,9 @@ body{
     width: 100%;
     justify-content:center;
     align-content: center;
-    color:#FFF; 
+    color:#FFF;
     top:30%;
-    
+
 }
 
 .object-center div{
@@ -222,12 +222,12 @@ body{
 #mainText h1{
     color:#033d68;
     font-size: 4vh;
-        
+
 }
 #mainText p{
     color:#00897f;
     font-size: 2.5vh;
-    font-family: "VAGRounded";    
+    font-family: "VAGRounded";
 }
 
 #naoMain{
@@ -322,7 +322,7 @@ body{
 
 
 .textSubject p{
-    margin-top: 5% !important; 
+    margin-top: 5% !important;
     font-family: 'VAGRounded';
 }
 
@@ -382,7 +382,7 @@ body{
     background-image: url("../images/bgdifficulty.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;   
+    background-position: center;
     width:60%;
     text-align: center;
     font-size: 6vh;
@@ -452,7 +452,7 @@ body{
     background-color: #00f9ff;
     background-image: url("../images/patternCircles.png");
     background-repeat:repeat;
-    background-position: center;    
+    background-position: center;
     height: 80%;
     border-radius: 0vw 0vw 3vw 3vw;
 }
@@ -483,7 +483,7 @@ body{
 
 .optionChoice{
     margin: 0 !important;
-    font-size: 2vw;    
+    font-size: 2vw;
     height: 20%;
     display: flex;
     justify-content: space-between;
@@ -497,7 +497,7 @@ body{
     height: 20%;
     display: flex;
     justify-content: space-between;
-    align-items: center;    
+    align-items: center;
 }
 
 .optionYellow{
@@ -507,7 +507,7 @@ body{
     height: 20%;
     display: flex;
     justify-content: space-between;
-    align-items: center; 
+    align-items: center;
 }
 
 .optionGreen{
@@ -517,7 +517,7 @@ body{
     height: 20%;
     display: flex;
     justify-content:space-between;
-    align-items: center; 
+    align-items: center;
 }
 
 
@@ -551,7 +551,6 @@ body{
     height: 70%;
     top:50%;
     left:50%;
-    
     transform: translate(-50%,-50%);
 }
 
@@ -572,7 +571,7 @@ body{
     display: flex;
     align-content: center;
     justify-content:space-around;
-    
+
 }
 
 .confirmOptions{
@@ -636,7 +635,7 @@ body{
     justify-content:space-between;
     align-items: center;
     padding: 1vw;
-    
+
 }
 
 .operation{
@@ -681,7 +680,7 @@ body{
 }
 
 .optionsTime{
-    
+
     text-align: center;
     height: 100%;
 }
@@ -693,7 +692,7 @@ body{
 
 .bgYellow{
 /*    background-image: url("../images/bgyellow.png");*/
-    
+
     width: 100%;
     background-repeat: no-repeat;
     font-size: 5vw;
@@ -721,7 +720,7 @@ body{
     margin-top: 10px;
     margin-bottom: 3vw;
     padding: 1vw;
-    
+
 }
 
 .timeOptions{
@@ -779,7 +778,7 @@ body{
     margin-top: -15%;
     font-size: 4vw;
     position: absolute;
-    text-align: center;  
+    text-align: center;
     color:#FFF;
     padding: 1vw;
 }
@@ -793,7 +792,7 @@ body{
     margin-top: -15%;
     font-size: 2vw;
     position: absolute;
-    text-align: center;  
+    text-align: center;
     color:#FFF;
 }
 
@@ -827,7 +826,7 @@ body{
     top:0%;
     margin: 0px !important;
     padding: 0 !important;
-    
+
 }
 
 .yogotarNameSelect{

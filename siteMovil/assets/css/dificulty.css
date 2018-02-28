@@ -121,15 +121,6 @@
     height: 100%;
 }
 
-.sub-grid{
-    height: 100%;
-    display: flex;
-    text-align: center;
-}
-
-.sub-grid span{
-    padding-top: 5%;
-}
 
 .plus-btn{
     width: 20%;
@@ -176,10 +167,25 @@
     margin-top: 10%;
 }
 
+.title-modal{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 9vw;
+}
+
+.title-modal p{
+    transform: translateY(8%);
+}
+
 .close-btn{
     text-align: left;
     width: 15%;
     transform: translateX(50%);
+}
+
+.close-btn img{
+    width: 100%;
 }
 
 .center-text{
@@ -240,7 +246,20 @@
     background-color: #a89df9;
 }
 
-
+.ok-btn{
+    background-image: url(../images/greenButton.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: transparent;
+    border-style: none;
+    padding-top: 1vh;
+    cursor: pointer;
+    color: #FFF;
+    font-size: 4vh;
+    z-index: 10;
+    margin: 1% 36%;
+}
 
 
 
@@ -335,49 +354,50 @@
         padding-top: 1vw;
         padding-bottom: 0;
     }
+    
+    .modal-content {
+        position: fixed !important;
+        -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+        box-shadow: 0 5px 15px rgba(0,0,0,.5);
+        width: 10%;
+        height: 90%;
+        font-size: 1vh !important;
+        overflow-y: scroll;
+        top: 30% !important;
+        left: 4% !important;
+
+    }    
 
     .modal-body{
+  
+    }    
 
+    .modal-body span{
+        font-size: 3vw;
+    }    
+
+    .close-btn {
+        text-align: right;
+        width: 14%;
+        transform: translate;
+        /* right: 0%; */
+        left: 10%;
+        background-color: #80060600;
+        position: relative;
+    }    
+    
+    .close-btn img {
+        width: 60%;
     }
     
-.modal-content {
-    position: fixed !important;
-    -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
-    box-shadow: 0 5px 15px rgba(0,0,0,.5);
-    width: 10%;
-    height: 90%;
-    font-size: 1vh !important;
-    overflow-y: scroll;
-    top: 30% !important;
-    left: 4% !important;
+    .title-modal{
+        width: 85%;
+        font-size: 5vw;
+    }
     
-}    
-    
-.modal-title span{
-    font-size: 3vw;
-    padding-top: 1%;
-}
-
-.modal-body{
-        top: 24%;
-
-}    
-    
-.modal-body span{
-    font-size: 3vw;
-}    
-    
-.close-btn {
-    text-align: right;
-    width: 14%;
-    transform: translate;
-    /* right: 0%; */
-    left: 10%;
-    background-color: #80060600;
-    position: relative;
-}    
-    
-
+    .title-modal p {
+        transform: translateY(18%);
+    }
 }
 
 
