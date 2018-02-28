@@ -68,7 +68,7 @@ function printRule(rule, operator){
 			break
 		case "SUB":
 			string+=" - "
-            $(".headerDifficulty").find("p").text("SUBSTRACTION")
+            $(".headerDifficulty").find("p").text("SUBTRACTION")
 			break
 		case "MUL":
 			string+=" x "
