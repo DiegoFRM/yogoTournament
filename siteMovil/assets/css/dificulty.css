@@ -29,8 +29,8 @@
     margin-bottom: 0%;
 }
 
-.right-arrow{
-    background-image: url(../images/arrowSide.png);
+.left-arrow{
+    background-image: url(../images/arrowYellow.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -42,8 +42,8 @@
     /*transform: translateX(-10%); */
 }
 
-.left-arrow{
-    background-image: url(../images/arrowSide.png);
+.right-arrow{
+    background-image: url(../images/arrowYellow.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -83,7 +83,6 @@
     
     align-items: center;
     background-color: #00f9ff;
-    background-image: url("../images/dots.png");
     text-align: center;
     margin: 0% 10%;
     border-radius: 6vw;
@@ -335,7 +334,6 @@
     .plus-btn{
         width: 10%;
         margin-right: 10%;
-        transform: translateY(12%);
     }
     
     .plus-btn span {

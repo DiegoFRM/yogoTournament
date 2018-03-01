@@ -28,7 +28,6 @@
     background-repeat: no-repeat;
     background-color: transparent;
     border-style: none;
-    margin: 0 10%;
     padding: 10%;
 }
 
@@ -39,30 +38,27 @@
     background-repeat: no-repeat;
     background-color: transparent;
     border-style: none;
-    margin: 0 10%;
     padding: 10%;
 }
 
-.more-rounds{
-    background-image: url(../images/round_arrow.png);
+.less-rounds{
+    background-image: url(../images/arrowYellow.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     background-color: transparent;
     border-style: none;
-    margin: 0 6%;
     padding: 10%;
     transform: scaleX(-1);
 }
 
-.less-rounds{
-    background-image: url(../images/round_arrow.png);
+.more-rounds{
+    background-image: url(../images/arrowYellow.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     background-color: transparent;
     border-style: none;
-    margin: 0 6%;
     padding: 10%;
 }
 
@@ -73,8 +69,8 @@
     background-repeat: no-repeat;
     background-color: transparent;
     border-style: none;
-    font-size: 15vw;
-    padding: 0 10%;
+    font-size: 8vh;
+    padding: 4%;
 }
 
 .round-image p{
@@ -93,7 +89,13 @@
     background-repeat: no-repeat;
     background-color: transparent;
     border-style: none;
-    padding: 50%
+    padding: 15%;
+    font-size: 4vh;
+}
+
+.time-image p{
+    margin: 0;
+    transform: translateY(25%);
 }
 
 .title-container{
@@ -130,7 +132,7 @@
     }
     
     .menu-container {
-        height: 55%;
+        height: 65%;
         margin-top: 0;
     }
 
@@ -148,13 +150,19 @@
     }
 
     .time-image{
-        padding: 25%;
+        padding: 17%;
+        font-size: 6vh;
+        margin: 0 0%;
+    }
+    
+    .more-rounds,
+    .less-rounds{
+        margin: 0;
     }
     
     .round-image{
         font-size: 7vw;
-        padding: 11% 10%;
-        transform: scale(1.4);
+        padding: 9% 15%;
     }
     
     .round-image p{
