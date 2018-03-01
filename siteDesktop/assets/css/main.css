@@ -611,7 +611,7 @@ body{
     position: absolute;
     top:10%;
     right: 0%;
-    z-index: 12312;
+    z-index: 30000;
 }
 
 .headerDifficulty p{
@@ -1012,4 +1012,8 @@ body{
 .timeOptions img{
     width: 100%;
     min-width: 20px;
+}
+
+.scaleButton{
+    cursor:pointer;
 }
