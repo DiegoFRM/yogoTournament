@@ -48,7 +48,7 @@
 
 .modal-body {
     text-align: center;
-    max-height: 66%;
+    max-height: 65vh !important;
     overflow-y: auto;
 }
 
