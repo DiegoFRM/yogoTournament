@@ -334,7 +334,7 @@ transform: scale(0.7);
     z-index: 1234;
 }
 
-.next_button{
+.prev_button{
     transform: scale(-1,1);
 }
 
