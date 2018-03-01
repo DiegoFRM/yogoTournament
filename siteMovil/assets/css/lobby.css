@@ -50,7 +50,7 @@
 }
 
 .share-style{
-    font-size: 3vh; 
+    font-size: 3vh;
     margin: 5%;
     margin-bottom: 0;
     color: #184831;
@@ -62,10 +62,12 @@
     font-size: 3vh;
 }
 
-
+.yogotarImg{
+    display: inline-flex;
+}
 
 @media screen and (orientation: portrait) {
-    
+
     #portrait {
         display: block;
     }
@@ -73,13 +75,27 @@
     #landscape {
         display: none;
     }
+
+    .yogotarImg{
+        align-items: center;
+        max-height: 30vh;
+        height: 30vh;
+        /* vertical-align: middle; */
+    }
+
+    .yogotarImg img{
+        /* height: inherit; */
+        max-height: inherit;
+        max-width: 100%;
+        /* vertical-align: middle; */
+    }
 }
 
 
 /*-----Landscape-----*/
 
 @media screen and (orientation : landscape){
-    
+
     #portrait {
         display: none;
     }
@@ -95,7 +111,7 @@
     }
 
     .pin-body{
-       margin: 0 25%;
+        margin: 0 25%;
     }
 
     .pin-style{
@@ -107,26 +123,54 @@
         font-size: 6vh;
     }
 
-   
-    
     .warning img {
         transform: scale(1);
     }
-    
+
     .yogo-container{
-        margin-top: 10%;
-        font-size: 5vh;
+        font-size: 2vh;
     }
-    
-    .yogo-oona, 
-    .yogo-arturius {
+
+    .yogo1,
+    .yogo2 {
         width: 25%;
     }
-    
-    .yogo-arturius,
-    .yogo-oona{
+
+    .yogo1,
+    .yogo2{
         transform: translateX(0);
     }
+
+    /*.yogotarImg img{*/
+    /*width: 101%;*/
+    /*}*/
+    .yogotarImg{
+        min-height: 50vh;
+        align-items: center;
+    }
+
+    .yogotarImg img{
+        width: 101%;
+    }
+
+}
+
+
+.yogo2 .yogotarImg{
+    transform: scaleX(-1);
+}
+
+.yogotarLogo img{
+    width: 65%;
+    opacity: 0;
+}
+
+.yogotarNickname {
+    font-size: 4vw;
+}
+
+.startButton{
+    opacity: 0.5;
 }
 
 
