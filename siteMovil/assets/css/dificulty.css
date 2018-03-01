@@ -261,8 +261,6 @@
     margin: 1% 36%;
 }
 
-
-
 @media screen and (orientation: portrait) {
     
     #portrait {
@@ -345,9 +343,7 @@
         padding-top: 1.5vw;
     }
 
-    .object-center{
-        margin-top: 1.5%;
-    }
+    
     
     .green-btn,
     .red-btn{

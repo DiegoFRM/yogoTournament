@@ -73,7 +73,9 @@ body{
     width: 100%;
     text-align: center;
     margin: 5% 0;
-     display: flex;
+    display: flex;
+    position: absolute; 
+    bottom: 1%;
 }
 
 .yogo-container{
@@ -372,6 +374,12 @@ body{
             width: 30%;
     }
 
+    .green-btn, 
+    .red-btn {
+        padding-top: 1vw;
+        padding-bottom: 0;
+    }
+    
     .carousel-container {
         height: 65% !important;
         margin-bottom: 0;

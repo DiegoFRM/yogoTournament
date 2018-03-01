@@ -96,12 +96,6 @@
     padding: 50%
 }
 
-.object-center{
-    margin:  0;
-    position: absolute;
-    bottom: 0;
-}
-
 .title-container{
      background-color: darkseagreen;
 }
@@ -150,7 +144,7 @@
     }
 
     .green-btn, .red-btn {
-        margin: 0 5%;
+        
     }
 
     .time-image{
