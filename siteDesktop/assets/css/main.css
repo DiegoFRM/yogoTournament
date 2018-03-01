@@ -387,7 +387,7 @@ body{
     left:20%;
     text-align: center;
     font-size: 6vh;
-
+    top: -10%;
 }
 
 
@@ -407,8 +407,7 @@ body{
 }
 .nextDifficulty img,
 .prevDifficulty img{
-    top:10%;
-    width: 100% !important;
+    width: 70% !important;
 }
 
 .titlered{
@@ -454,7 +453,7 @@ body{
     background-image: url("../images/patternCircles.png");
     background-repeat:repeat;
     background-position: center;
-    height: 80%;
+    height: 80% !important;
     border-radius: 0vw 0vw 3vw 3vw;
 }
 
