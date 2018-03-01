@@ -45,6 +45,7 @@ var printOperators = function() {
 printOperators()
 
 //var totalSum =  easy.sum
+var operationColor;
 
 function printRule(rule, operator){
 	var string = ""
@@ -60,6 +61,43 @@ function printRule(rule, operator){
 	}else if(rule.operand1Const){
 		string += rule.operand1Const
 	}
+    
+
+		switch (operator){
+			case "SUM":
+				string+=" + "
+				$(".headerDifficulty").find("p").text("ADDITION")
+				$(".headerDifficulty").css('background-color', '#912e99')
+				$(".confirmOptions").css('background-color', '#912e99')
+				$(".modal-body").css('background-color', '#c0b4fc')
+                operationColor = '#8b7bdb'
+				break
+			case "SUB":
+				string+=" - "
+				$(".headerDifficulty").find("p").text("SUBTRACTION")
+                $(".headerDifficulty").css('background-color', '#4595c0')
+				$(".confirmOptions").css('background-color', '#4595c0')
+                $(".modal-body").css('background-color', '#b6e9ff')
+                operationColor = '#7dc1de'
+				break
+			case "MUL":
+				string+=" x "
+				$(".headerDifficulty").find("p").text("MULTIPLICATION")
+                $(".headerDifficulty").css('background-color', '#c93585')
+				$(".confirmOptions").css('background-color', '#c93585')
+                $(".modal-body").css('background-color', '#ffb6e0')
+                operationColor = '#de7db5'
+				break
+			case "DIV":
+				string+=" ÷ "
+				$(".headerDifficulty").find("p").text("DIVISION")
+                $(".headerDifficulty").css('background-color', '#e6bd5f')
+				$(".confirmOptions").css('background-color', '#e6bd5f')
+                $(".modal-body").css('background-color', '#ffecae')
+                operationColor = '#dec576'
+				break
+		}    
+    
 
 	string += "<span class='highlight'>"
 	switch (operator){
@@ -170,6 +208,10 @@ function getRules(operator) {
 	});
 
 
+        if (p % 2 === 0) {
+				$("#operation" + p).css('background-color', operationColor);
+        }
+        
 		if (p % 2 === 0) {
 			console.log(p)
 			$("#operation" + p).addClass("optionPar");
