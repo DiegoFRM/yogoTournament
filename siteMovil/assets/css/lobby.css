@@ -33,10 +33,9 @@
 
 .pin-body{
     align-items: center;
-    background-color: #00ff78;
+    background-color: #53986e;
     text-align: center;
     margin: 0 10%;
-    border-radius: 6vh;
 }
 
 .pin-style{
@@ -53,7 +52,7 @@
     font-size: 3vh;
     margin: 5%;
     margin-bottom: 0;
-    color: #184831;
+    /*color: #184831;*/
 }
 
 
