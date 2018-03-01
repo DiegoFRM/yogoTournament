@@ -248,16 +248,15 @@ body{
 }
 
 .banner-selection{
-    background-image: url(../images/bannerBlue.png);
+    background-image: url(../images/selectionTitle.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    height: 70%;
-    width: 65%;
+    width: 100%;
     margin: 15% 0;
-    font-size: 9vw;
-    color: #345468;
-    padding-top: 5%;
+    font-size: 8vw;
+    padding-top: 2.5%;
+    transform: scale(1.2);
 }
 
 
@@ -280,9 +279,16 @@ body{
     color:#491f9f;
     font-size: 4vh
 }
+
+@font-face{
+	font-family: 'VAGRounded';
+	src: url('../fonts/VAGRoundedStd-Bold.otf');
+}
+
 #mainText p{
     color:#326a97;
-    font-size: 2vh
+    font-size: 2.5vh;
+    font-family: "VAGRounded";
 }
 
 @media screen and (orientation: portrait) {
@@ -399,11 +405,22 @@ body{
     .right {
         width: 15%;
     }
+    
+    .right{
+       
+        right: 10%;
+    }
+
+    .left {
+        
+        left: 10%;
+    }
 
     .banner-selection{
         font-size: 6vw;
         padding-top: 3.5%;
         margin: 7% 0;
+        transform: scale(1);
     }
     
     .carousel-container ul {
@@ -418,7 +435,7 @@ body{
         font-size: 7vh
     }
     #mainText p{
-        font-size: 4vh
+        font-size: 3.5vh
     }
     
 }
