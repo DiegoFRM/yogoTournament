@@ -67,7 +67,7 @@
         
         <section id="section2">
             <div class="slider slider_circle_10">
-                <div id="planet1" class="planets"><img src="assets/images/planets/mathdromeda.png"></div>
+                <div id="planet1" class="planets"><img class="planetImage" src="assets/images/planets/mathdromeda.png"></div>
                 <div id="planet2" class="planets lock">
                     <span><img src="assets/images/lock.png"></span>
                     <img class="planetImage" src="assets/images/planets/codus.png">
@@ -112,7 +112,7 @@
                         </div>
                         <div class="operationType">Addition</div>
                         <div class="divisionShape"></div>
-                        <div class="showModal" data-type="SUM"><span>custom</span><img src="assets/images/adition_custom.png"></div>
+                        <div class="showModal scaleButton" data-type="SUM"><span>custom</span><img src="assets/images/adition_custom.png"></div>
                     </div>
                     <div class="col-xs-12 optionChoice option2">
                         <div id="checkBox2" class="checkBlank">
@@ -121,7 +121,7 @@
                         </div>
                         <div class="operationType">Subtraction</div>
                         <div class="divisionShape"></div>
-                        <div class="showModal" data-type="SUB"><span>custom</span><img src="assets/images/subst_custom.png"></div>
+                        <div class="showModal scaleButton" data-type="SUB"><span>custom</span><img src="assets/images/subst_custom.png"></div>
                         
                     </div>
                     <div class="col-xs-12 optionChoice option3">
@@ -131,7 +131,7 @@
                         </div>
                         <div class="operationType">MULTIPLICATION</div>
                         <div class="divisionShape"></div>
-                        <div class="showModal" data-type="MUL"><span>custom</span><img src="assets/images/multi_custom.png"></div>
+                        <div class="showModal scaleButton" data-type="MUL"><span>custom</span><img src="assets/images/multi_custom.png"></div>
                     </div>
                     <div class="col-xs-12 optionChoice option4">
                         <div id="checkBox4" class="checkBlank">
@@ -140,7 +140,7 @@
                         </div>
                         <div class="operationType">DIVISION</div>
                         <div class="divisionShape"></div>
-                        <div class="showModal" data-type="DIV"><span>custom</span><img src="assets/images/divi_custom.png"></div>
+                        <div class="showModal scaleButton" data-type="DIV"><span>custom</span><img src="assets/images/divi_custom.png"></div>
                         
                     </div>
                 </div>
@@ -151,12 +151,15 @@
                 <div class="m-containerDifficulty">
                     <div class="headerDifficulty">
                         <p>MULTIPLICATION</p>
-                        <img class="closeButton" src="assets/images/closeButton.png">
+                        <img class="closeButton scaleButton" src="assets/images/closeButton.png">
                     </div>
                     <div class="choiceOptions">
                         
                     </div>
-                
+                    <div class="confirmOptions">
+                        <div class="greenBtn scaleButton">OK</div>
+                        
+                    </div>
                 </div>
             
             </div>
@@ -180,14 +183,14 @@
                     </div>
                     
                         <div class="row">
-                            <div class="col-xs-12">
-                                <img src="assets/images/clockImage.png">
+                            <div id="timeClock" class="col-xs-12 vcenter">
+                                <span>1</span>:00
+                                <img src="assets/images/clock_custom.png">
                             </div>
-                            <div class="row timeOptions col-xs-12">
-                                <div id="restTime" class="col-xs-4"><img src="assets/images/restButton.png"></div>
-                                <div id="timeClock" class="col-xs-4"> <span>1</span>:00</div>
-                                <div id="sumTime" class="col-xs-4"><img src="assets/images/sumButton.png"></div>
-                                <div class="col-xs-12">Minutes</div>
+                            <div class="timeOptions col-xs-12">
+                                <div id="restTime" class="col-xs-2 col-xs-offset-1"><img src="assets/images/restButton.png"></div>
+                                <div class="col-xs-6 textCustomize"> Minutes</div>
+                                <div id="sumTime" class="col-xs-2"><img src="assets/images/sumButton.png"></div>
                             </div>
                             
                         </div>
@@ -198,14 +201,14 @@
                         Rounds
                     </div>
                         <div class="row">
-                            
-                            <div class="col-xs-12" style="opacity:0;">
-                                <img src="assets/images/clockImage.png">
+                            <div id="roundOptions" class="col-xs-12 vcenter">
+                                <span>1</span>
+                                <img src="assets/images/hexa.png">
                             </div>
-                            <div class="row">
-                                <div id="restRound" class="col-xs-4"><img src="assets/images/arrowPurple.png"></div>
-                                <div id="roundOptions" class="col-xs-4 "> <span>1</span></div>
-                                <div id="sumRound" class="col-xs-4"><img src="assets/images/arrowPurple.png"></div>
+                            <div class="timeOptions col-xs-12">
+                                <div id="restRound" class="col-xs-2 col-xs-offset-1"><img src="assets/images/arrowPurple.png"></div>
+                                <div class="col-xs-6 textCustomize"> Battles</div>
+                                <div id="sumRound" class="col-xs-2"><img src="assets/images/arrowPurple.png"></div>
                             </div>
                             
                         </div>
@@ -237,11 +240,18 @@
             </div>
             
             
+<!--
             <div class="object-center col-xs-4 col-xs-offset-4" style="top:70%;">
                 <div id="cancelLooby" class="scaleButton">
                     <img src="assets/images/closeButton.png">
                 </div>
                 <div id="StartButton" class="greenBtn scaleButton">START</div>
+            </div>
+-->
+            
+            <div class="object-center col-xs-4 col-xs-offset-4" style="top:80%;">
+                <div id="cancelLooby" class="redBtn scaleButton" >BACK</div>
+                <div id="nextButton3" class="greenBtn scaleButton">START</div>
             </div>
             
 <div class="yogotarsSelections">
@@ -268,7 +278,9 @@
                     <div id="playerName2" class="imageYogotar">Player 2</div>  
                 </div>    
     
-        </div>              
+        </div>   
+            
+            
             
            <div id="modalCancel">
                 <div class="m-containerCancel">
@@ -454,7 +466,8 @@
     });
 
     $("#cancelButton").click(function(){
-        location.reload();
+        $("#section3").css("display","block");
+        $("#section5").css("display","none");
     })
     
 </script>
