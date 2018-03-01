@@ -98,25 +98,43 @@ function printRule(rule, operator){
 				break
 		}    
     
-    
-//	switch (operator){
-//		case "SUM":
-//			string+=" + "
-//            $(".headerDifficulty").find("p").text("ADDITION")
-//			break
-//		case "SUB":
-//			string+=" - "
-//            $(".headerDifficulty").find("p").text("SUBTRACTION")
-//			break
-//		case "MUL":
-//			string+=" x "
-//            $(".headerDifficulty").find("p").text("MULTIPLICATION")
-//			break
-//		case "DIV":
-//			string+=" ÷ "
-//            $(".headerDifficulty").find("p").text("DIVISION")
-//			break
-//	}
+
+	string += "<span class='highlight'>"
+	switch (operator){
+		case "SUM":
+			string+=" + "
+			// $(".headerDifficulty").find("p").text("ADDITION")
+			// $(".modal-header").css('background-color', '#912e99')
+			// $(".modal-footer").css('background-color', '#912e99')
+			// $(".modal-body").css('background-color', '#c0b4fc')
+			// operationColor = '#8b7bdb'
+			break
+		case "SUB":
+			string+=" - "
+			// $(".headerDifficulty").find("p").text("SUBSTRACTION")
+			// $(".modal-header").css('background-color', '#4595c0')
+			// $(".modal-footer").css('background-color', '#4595c0')
+			// $(".modal-body").css('background-color', '#b6e9ff')
+			// operationColor = '#7dc1de'
+			break
+		case "MUL":
+			string+=" x "
+			// $(".headerDifficulty").find("p").text("MULTIPLICATION")
+			// $(".modal-header").css('background-color', '#c93585')
+			// $(".modal-footer").css('background-color', '#c93585')
+			// $(".modal-body").css('background-color', '#ffb6e0')
+			// operationColor = '#de7db5'
+			break
+		case "DIV":
+			string+=" ÷ "
+			$(".headerDifficulty").find("p").text("DIVISION")
+			// $(".modal-header").css('background-color', '#e6bd5f')
+			// $(".modal-footer").css('background-color', '#e6bd5f')
+			// $(".modal-body").css('background-color', '#ffecae')
+			// operationColor = '#dec576'
+			break
+	}
+	string += "</span>"
 
 	if(rule.paramToAnswer === operationGenerator.OPERATION_PARAMS.operand2)
 		string += "?"
@@ -130,14 +148,14 @@ function printRule(rule, operator){
 	}
 
 	if(rule.paramToAnswer === operationGenerator.OPERATION_PARAMS.result)
-		string += " = ?"
+		string += " <span class='highlight'>=</span> ?"
 	else {
-		string += " = X"
+		string += " <span class='highlight'>=</span> X"
 	}
 
 	var operationExample = operationGenerator.getOperationRule(rule, operator)
 	var symbol = (operationExample.operator === "/" ? "÷" : operationExample.operator)
-	string += " (Example: " + operationExample.operand1 + " " + symbol + " " + operationExample.operand2 + " = " + operationExample.result + ")"
+	string += "  (Example: " + operationExample.operand1 + "<span class='highlight'> " + symbol + " </span>" + operationExample.operand2 + " <span class='highlight'>=</span> " + operationExample.result + ")"
 
 	var minRange = rule.minRange || 1
 	var maxRange = rule.maxRange || 1
