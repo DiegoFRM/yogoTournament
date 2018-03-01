@@ -350,14 +350,12 @@
     }
 
     .plus-btn{
-        width: 10%;
+        width: 5%;
         margin-right: 10%;
+        transform: translateY(10%);
     }
     
-    .plus-btn span {
-        padding: 1.3vw;
-        padding-top: 1.5vw;
-    }
+   
 
     
     
