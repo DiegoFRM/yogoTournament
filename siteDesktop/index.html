@@ -310,6 +310,8 @@
     
 
 <script>
+	var operationGenerator = parent.operationGenerator || operationGenerator
+
 	var server = parent.server;
 	var battleTime = 60000
 	var rule_set = operationGenerator.RULES_SET[current_set]
@@ -425,6 +427,9 @@
 		$("#section4").css("display","none");
 
 		var currentID = server.getIdGame()
+		if(currentID)
+			$("#pin").text(currentID)
+
 		function onStart() {
 			console.log("onStart", server.getIdGame())
 			$("#pin").text(server.getIdGame())
