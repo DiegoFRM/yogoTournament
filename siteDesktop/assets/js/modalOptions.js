@@ -118,13 +118,11 @@ function getRules(operator) {
 		var rule = ruleSet[p]
 
 		$(".choiceOptions")
-			.append(' <div id="operation' + p + '" class="optionOperations">' +
-				'<div class="operation">' + printRule(rule, operator) + '</div>' +
+			.append(' <div id="operation' + p + '" class="optionOperations">' + 
 				'<div id="checkChoice' + p + '"  class="checkChoice" data-num="' + p +'">' +
 				'<img src="assets/images/blank_check.png"> ' +
 				'<img class="markCheck" src="assets/images/mark_check.png"> ' +
-				'</div> ' +
-				'</div>');
+				'</div> ' + '<div class="operation">' + printRule(rule, operator) + '</div>' +'</div>');
 
     	if(!rule.disable)
 			$("#checkChoice" + p).attr("selection",1);
